@@ -1,4 +1,3 @@
-.claude/
 .DS_Store
 analysis/master_results.csv
 __pycache__/
