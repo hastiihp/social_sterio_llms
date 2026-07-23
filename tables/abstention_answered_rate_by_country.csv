@@ -1,0 +1,101 @@
+country,model,answered_rate,n_answered,n_total
+Argentina,deepseek,0.0,0,1890
+Argentina,gemma,1.0,1890,1890
+Argentina,llama,1.0,1890,1890
+Argentina,ministral,0.19365079365079366,366,1890
+Argentina,qwen,0.11534391534391535,218,1890
+Brazil,deepseek,0.0,0,1890
+Brazil,gemma,1.0,1890,1890
+Brazil,llama,1.0,1890,1890
+Brazil,ministral,0.1931216931216931,365,1890
+Brazil,qwen,0.1126984126984127,213,1890
+Canada,deepseek,0.0,0,1890
+Canada,gemma,1.0,1890,1890
+Canada,llama,1.0,1890,1890
+Canada,ministral,0.2402116402116402,454,1890
+Canada,qwen,0.21693121693121692,410,1890
+China,deepseek,0.0,0,1890
+China,gemma,1.0,1890,1890
+China,llama,1.0,1890,1890
+China,ministral,0.13174603174603175,249,1890
+China,qwen,0.05767195767195767,109,1890
+Egypt,deepseek,0.0,0,1890
+Egypt,gemma,1.0,1890,1890
+Egypt,llama,1.0,1890,1890
+Egypt,ministral,0.12804232804232804,242,1890
+Egypt,qwen,0.03650793650793651,69,1890
+France,deepseek,0.0,0,1890
+France,gemma,1.0,1890,1890
+France,llama,1.0,1890,1890
+France,ministral,0.1925925925925926,364,1890
+France,qwen,0.16560846560846562,313,1890
+Germany,deepseek,0.0,0,1890
+Germany,gemma,1.0,1890,1890
+Germany,llama,1.0,1890,1890
+Germany,ministral,0.2,378,1890
+Germany,qwen,0.1708994708994709,323,1890
+India,deepseek,0.0,0,1890
+India,gemma,1.0,1890,1890
+India,llama,1.0,1890,1890
+India,ministral,0.16507936507936508,312,1890
+India,qwen,0.09894179894179894,187,1890
+Italy,deepseek,0.0,0,1890
+Italy,gemma,1.0,1890,1890
+Italy,llama,1.0,1890,1890
+Italy,ministral,0.15661375661375662,296,1890
+Italy,qwen,0.09947089947089947,188,1890
+Japan,deepseek,0.0,0,1890
+Japan,gemma,1.0,1890,1890
+Japan,llama,1.0,1890,1890
+Japan,ministral,0.14497354497354498,274,1890
+Japan,qwen,0.11058201058201059,209,1890
+Kenya,deepseek,0.0,0,1890
+Kenya,gemma,1.0,1890,1890
+Kenya,llama,1.0,1890,1890
+Kenya,ministral,0.16296296296296298,308,1890
+Kenya,qwen,0.06666666666666667,126,1890
+Mexico,deepseek,0.0,0,1890
+Mexico,gemma,1.0,1890,1890
+Mexico,llama,1.0,1890,1890
+Mexico,ministral,0.15026455026455027,284,1890
+Mexico,qwen,0.06825396825396825,129,1890
+Morocco,deepseek,0.0,0,1890
+Morocco,gemma,1.0,1890,1890
+Morocco,llama,1.0,1890,1890
+Morocco,ministral,0.13968253968253969,264,1890
+Morocco,qwen,0.04497354497354497,85,1890
+Nigeria,deepseek,0.0,0,1890
+Nigeria,gemma,1.0,1890,1890
+Nigeria,llama,1.0,1890,1890
+Nigeria,ministral,0.15343915343915343,290,1890
+Nigeria,qwen,0.06984126984126984,132,1890
+Pakistan,deepseek,0.0,0,1890
+Pakistan,gemma,1.0,1890,1890
+Pakistan,llama,1.0,1890,1890
+Pakistan,ministral,0.14126984126984127,267,1890
+Pakistan,qwen,0.0380952380952381,72,1890
+Poland,deepseek,0.0,0,1890
+Poland,gemma,1.0,1890,1890
+Poland,llama,1.0,1890,1890
+Poland,ministral,0.15079365079365079,285,1890
+Poland,qwen,0.10052910052910052,190,1890
+South Africa,deepseek,0.0,0,1890
+South Africa,gemma,1.0,1890,1890
+South Africa,llama,1.0,1890,1890
+South Africa,ministral,0.16455026455026456,311,1890
+South Africa,qwen,0.12804232804232804,242,1890
+South Korea,deepseek,0.0,0,1890
+South Korea,gemma,1.0,1890,1890
+South Korea,llama,1.0,1890,1890
+South Korea,ministral,0.1523809523809524,288,1890
+South Korea,qwen,0.08571428571428572,162,1890
+Turkey,deepseek,0.0,0,1890
+Turkey,gemma,1.0,1890,1890
+Turkey,llama,1.0,1890,1890
+Turkey,ministral,0.14497354497354498,274,1890
+Turkey,qwen,0.0455026455026455,86,1890
+USA,deepseek,0.0,0,1890
+USA,gemma,1.0,1890,1890
+USA,llama,1.0,1890,1890
+USA,ministral,0.20052910052910053,379,1890
+USA,qwen,0.17354497354497356,328,1890

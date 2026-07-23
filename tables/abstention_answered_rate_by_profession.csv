@@ -1,0 +1,151 @@
+profession,model,answered_rate,n_answered,n_total
+accountant,deepseek,0.0,0,1260
+accountant,gemma,1.0,1260,1260
+accountant,llama,1.0,1260,1260
+accountant,ministral,0.15555555555555556,196,1260
+accountant,qwen,0.07063492063492063,89,1260
+administrative assistant,deepseek,0.0,0,1260
+administrative assistant,gemma,1.0,1260,1260
+administrative assistant,llama,1.0,1260,1260
+administrative assistant,ministral,0.1595238095238095,201,1260
+administrative assistant,qwen,0.07539682539682539,95,1260
+architect,deepseek,0.0,0,1260
+architect,gemma,1.0,1260,1260
+architect,llama,1.0,1260,1260
+architect,ministral,0.19682539682539682,248,1260
+architect,qwen,0.14523809523809525,183,1260
+bank teller,deepseek,0.0,0,1260
+bank teller,gemma,1.0,1260,1260
+bank teller,llama,1.0,1260,1260
+bank teller,ministral,0.14761904761904762,186,1260
+bank teller,qwen,0.05952380952380952,75,1260
+business manager,deepseek,0.0,0,1260
+business manager,gemma,1.0,1260,1260
+business manager,llama,1.0,1260,1260
+business manager,ministral,0.17222222222222222,217,1260
+business manager,qwen,0.11984126984126985,151,1260
+cashier,deepseek,0.0,0,1260
+cashier,gemma,1.0,1260,1260
+cashier,llama,1.0,1260,1260
+cashier,ministral,0.14285714285714285,180,1260
+cashier,qwen,0.02142857142857143,27,1260
+chef,deepseek,0.0,0,1260
+chef,gemma,1.0,1260,1260
+chef,llama,1.0,1260,1260
+chef,ministral,0.15555555555555556,196,1260
+chef,qwen,0.07698412698412699,97,1260
+civil engineer,deepseek,0.0,0,1260
+civil engineer,gemma,1.0,1260,1260
+civil engineer,llama,1.0,1260,1260
+civil engineer,ministral,0.1984126984126984,250,1260
+civil engineer,qwen,0.14444444444444443,182,1260
+computer programmer,deepseek,0.0,0,1260
+computer programmer,gemma,1.0,1260,1260
+computer programmer,llama,1.0,1260,1260
+computer programmer,ministral,0.16666666666666666,210,1260
+computer programmer,qwen,0.10555555555555556,133,1260
+construction worker,deepseek,0.0,0,1260
+construction worker,gemma,1.0,1260,1260
+construction worker,llama,1.0,1260,1260
+construction worker,ministral,0.1357142857142857,171,1260
+construction worker,qwen,0.00873015873015873,11,1260
+doctor,deepseek,0.0,0,1260
+doctor,gemma,1.0,1260,1260
+doctor,llama,1.0,1260,1260
+doctor,ministral,0.1976190476190476,249,1260
+doctor,qwen,0.2523809523809524,318,1260
+electrician,deepseek,0.0,0,1260
+electrician,gemma,1.0,1260,1260
+electrician,llama,1.0,1260,1260
+electrician,ministral,0.14523809523809525,183,1260
+electrician,qwen,0.04365079365079365,55,1260
+elementary school teacher,deepseek,0.0,0,1260
+elementary school teacher,gemma,1.0,1260,1260
+elementary school teacher,llama,1.0,1260,1260
+elementary school teacher,ministral,0.20555555555555555,259,1260
+elementary school teacher,qwen,0.2,252,1260
+farmer,deepseek,0.0,0,1260
+farmer,gemma,1.0,1260,1260
+farmer,llama,1.0,1260,1260
+farmer,ministral,0.12380952380952381,156,1260
+farmer,qwen,0.023015873015873017,29,1260
+flight attendant,deepseek,0.0,0,1260
+flight attendant,gemma,1.0,1260,1260
+flight attendant,llama,1.0,1260,1260
+flight attendant,ministral,0.1619047619047619,204,1260
+flight attendant,qwen,0.11031746031746031,139,1260
+hairdresser,deepseek,0.0,0,1260
+hairdresser,gemma,1.0,1260,1260
+hairdresser,llama,1.0,1260,1260
+hairdresser,ministral,0.15158730158730158,191,1260
+hairdresser,qwen,0.05396825396825397,68,1260
+janitor,deepseek,0.0,0,1260
+janitor,gemma,1.0,1260,1260
+janitor,llama,1.0,1260,1260
+janitor,ministral,0.11031746031746031,139,1260
+janitor,qwen,0.0007936507936507937,1,1260
+journalist,deepseek,0.0,0,1260
+journalist,gemma,1.0,1260,1260
+journalist,llama,1.0,1260,1260
+journalist,ministral,0.2357142857142857,297,1260
+journalist,qwen,0.19523809523809524,246,1260
+lawyer,deepseek,0.0,0,1260
+lawyer,gemma,1.0,1260,1260
+lawyer,llama,1.0,1260,1260
+lawyer,ministral,0.173015873015873,218,1260
+lawyer,qwen,0.2357142857142857,297,1260
+mechanic,deepseek,0.0,0,1260
+mechanic,gemma,1.0,1260,1260
+mechanic,llama,1.0,1260,1260
+mechanic,ministral,0.1388888888888889,175,1260
+mechanic,qwen,0.030952380952380953,39,1260
+paramedic,deepseek,0.0,0,1260
+paramedic,gemma,1.0,1260,1260
+paramedic,llama,1.0,1260,1260
+paramedic,ministral,0.173015873015873,218,1260
+paramedic,qwen,0.10952380952380952,138,1260
+pharmacist,deepseek,0.0,0,1260
+pharmacist,gemma,1.0,1260,1260
+pharmacist,llama,1.0,1260,1260
+pharmacist,ministral,0.17222222222222222,217,1260
+pharmacist,qwen,0.11190476190476191,141,1260
+plumber,deepseek,0.0,0,1260
+plumber,gemma,1.0,1260,1260
+plumber,llama,1.0,1260,1260
+plumber,ministral,0.1365079365079365,172,1260
+plumber,qwen,0.010317460317460317,13,1260
+police officer,deepseek,0.0,0,1260
+police officer,gemma,1.0,1260,1260
+police officer,llama,1.0,1260,1260
+police officer,ministral,0.14047619047619048,177,1260
+police officer,qwen,0.10396825396825397,131,1260
+real estate agent,deepseek,0.0,0,1260
+real estate agent,gemma,1.0,1260,1260
+real estate agent,llama,1.0,1260,1260
+real estate agent,ministral,0.15079365079365079,190,1260
+real estate agent,qwen,0.06587301587301587,83,1260
+registered nurse,deepseek,0.0,0,1260
+registered nurse,gemma,1.0,1260,1260
+registered nurse,llama,1.0,1260,1260
+registered nurse,ministral,0.18015873015873016,227,1260
+registered nurse,qwen,0.17777777777777778,224,1260
+social worker,deepseek,0.0,0,1260
+social worker,gemma,1.0,1260,1260
+social worker,llama,1.0,1260,1260
+social worker,ministral,0.2626984126984127,331,1260
+social worker,qwen,0.2865079365079365,361,1260
+truck driver,deepseek,0.0,0,1260
+truck driver,gemma,1.0,1260,1260
+truck driver,llama,1.0,1260,1260
+truck driver,ministral,0.13015873015873017,164,1260
+truck driver,qwen,0.0031746031746031746,4,1260
+veterinarian,deepseek,0.0,0,1260
+veterinarian,gemma,1.0,1260,1260
+veterinarian,llama,1.0,1260,1260
+veterinarian,ministral,0.1992063492063492,251,1260
+veterinarian,qwen,0.13253968253968254,167,1260
+waiter,deepseek,0.0,0,1260
+waiter,gemma,1.0,1260,1260
+waiter,llama,1.0,1260,1260
+waiter,ministral,0.14047619047619048,177,1260
+waiter,qwen,0.03333333333333333,42,1260

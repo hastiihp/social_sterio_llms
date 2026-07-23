@@ -1,0 +1,17 @@
+# Claude Code session/config files -- local and machine/session-specific,
+# never committed (settings.local.json holds personal permission settings;
+# scheduled_tasks.lock holds a live session ID/PID).
+.claude/
+
+# macOS Finder metadata
+.DS_Store
+
+# Build artifact, not source data: 136MB, exceeds GitHub's 100MB hard file-size
+# limit and would cause any push containing it to be rejected outright. Fully
+# reproducible via `python3 analysis/01_merge_dataset.py` from results/*.csv,
+# which are all individually well under the limit and remain tracked.
+analysis/master_results.csv
+
+# Python cache
+__pycache__/
+*.pyc

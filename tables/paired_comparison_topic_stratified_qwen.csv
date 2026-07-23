@@ -1,0 +1,5 @@
+model,topic,n_abstained,n_answered,pct_A_eq3_abstained,pct_A_eq3_answered,clustered_deterministic,clustered_coef,clustered_p,ztest_stat_uncorrected,ztest_p_uncorrected
+qwen,climate change,4766,634,0.3113722198908938,0.0,True,,,16.49909407252751,3.7243818095763654e-61
+qwen,economic redistribution,5340,60,0.7760299625468164,0.0,True,,,14.148712773289935,1.9020707445236667e-45
+qwen,gender equality,3175,2225,0.045039370078740155,0.0,True,,,10.14586438428259,3.457042545057789e-24
+qwen,lgbtq rights,4531,869,0.4213197969543147,0.0,True,,,23.7978529610059,3.5151743535265497e-125

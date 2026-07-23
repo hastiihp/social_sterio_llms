@@ -1,0 +1,16 @@
+gender,model,answered_rate,n_answered,n_total
+female,deepseek,0.0,0,12600
+female,gemma,1.0,12600,12600
+female,llama,1.0,12600,12600
+female,ministral,0.18825396825396826,2372,12600
+female,qwen,0.19333333333333333,2436,12600
+male,deepseek,0.0,0,12600
+male,gemma,1.0,12600,12600
+male,llama,1.0,12600,12600
+male,ministral,0.1403174603174603,1768,12600
+male,qwen,0.050793650793650794,640,12600
+neutral,deepseek,0.0,0,12600
+neutral,gemma,1.0,12600,12600
+neutral,llama,1.0,12600,12600
+neutral,ministral,0.16746031746031745,2110,12600
+neutral,qwen,0.056746031746031746,715,12600

@@ -1,0 +1,29 @@
+model,topic,r2,n
+llama,climate change,0.03741654302670572,5400
+llama,economic redistribution,,5400
+llama,gender equality,0.7512444587891239,5400
+llama,immigration,0.3969568522879252,5400
+llama,lgbtq rights,0.4170611000984399,5400
+llama,religion and secularism,0.6211704893985865,5400
+llama,trust in government,0.6356434168397304,5400
+gemma,climate change,0.37024308400639916,5400
+gemma,economic redistribution,0.5473674846873738,5400
+gemma,gender equality,0.22765081608879456,5400
+gemma,immigration,0.3726350576522469,5400
+gemma,lgbtq rights,0.8401412986666634,5400
+gemma,religion and secularism,0.5806809272775824,5400
+gemma,trust in government,0.4250097666563125,5400
+qwen,climate change,0.5952311446450491,5400
+qwen,economic redistribution,0.5679787271652188,5400
+qwen,gender equality,0.5153323031777381,5400
+qwen,immigration,0.33987268584774954,5400
+qwen,lgbtq rights,0.6321367659772603,5400
+qwen,religion and secularism,0.3342260596127966,5400
+qwen,trust in government,0.26889682513679114,5400
+ministral,climate change,0.34348657069884647,5400
+ministral,economic redistribution,0.26324560473467995,5400
+ministral,gender equality,,5400
+ministral,immigration,0.5158797091118408,5400
+ministral,lgbtq rights,0.6741636613446143,5400
+ministral,religion and secularism,0.11088287166718547,5400
+ministral,trust in government,0.08854599066731561,5400

@@ -1,0 +1,4 @@
+model,topic,n_abstained,n_answered,pct_A_eq3_abstained,pct_A_eq3_answered,clustered_deterministic,clustered_coef,clustered_p,ztest_stat_uncorrected,ztest_p_uncorrected
+ministral,climate change,4825,575,0.08518134715025907,0.0,True,,,7.281088375081539,3.3113765721792895e-13
+ministral,gender equality,149,5251,0.0,0.0,True,,,,
+ministral,lgbtq rights,4976,424,0.5534565916398714,0.0,True,,,21.883998200871005,3.6902968231145804e-106

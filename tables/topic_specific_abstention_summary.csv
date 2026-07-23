@@ -1,0 +1,15 @@
+model,topic,n_total,n_answered,answered_rate,status,ci_low,ci_high,n_clusters,pseudo_r2,n_params
+qwen,climate change,5400,634,0.1174074074074074,converged,,,5400,0.33304212720256776,24.0
+qwen,economic redistribution,5400,60,0.011111111111111112,converged,,,5400,0.08921752968255947,5.0
+qwen,gender equality,5400,2225,0.41203703703703703,converged,,,5400,0.7080064873028389,53.0
+qwen,immigration,5400,0,0.0,deterministic,0.0,0.0,5400,,
+qwen,lgbtq rights,5400,869,0.16092592592592592,converged,,,5400,0.10340141690139659,5.0
+qwen,religion and secularism,5400,3,0.0005555555555555556,all_factors_dropped,-7.298673496407705e-05,0.001184097846075188,5400,,
+qwen,trust in government,5400,0,0.0,deterministic,0.0,0.0,5400,,
+ministral,climate change,5400,575,0.10648148148148148,converged,,,5400,0.21171809910562223,5.0
+ministral,economic redistribution,5400,0,0.0,deterministic,0.0,0.0,5400,,
+ministral,gender equality,5400,5251,0.9724074074074074,converged,,,5400,0.1039234228371978,3.0
+ministral,immigration,5400,0,0.0,deterministic,0.0,0.0,5400,,
+ministral,lgbtq rights,5400,424,0.07851851851851852,converged,,,5400,0.22134067126875412,5.0
+ministral,religion and secularism,5400,0,0.0,deterministic,0.0,0.0,5400,,
+ministral,trust in government,5400,0,0.0,deterministic,0.0,0.0,5400,,

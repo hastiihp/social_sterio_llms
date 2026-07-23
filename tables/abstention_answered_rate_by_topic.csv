@@ -1,0 +1,8 @@
+topic,llama,gemma,qwen,ministral,deepseek
+climate change,1.0,1.0,0.1174074074074074,0.10648148148148148,0.0
+economic redistribution,1.0,1.0,0.011111111111111112,0.0,0.0
+gender equality,1.0,1.0,0.41203703703703703,0.9724074074074074,0.0
+immigration,1.0,1.0,0.0,0.0,0.0
+lgbtq rights,1.0,1.0,0.16092592592592592,0.07851851851851852,0.0
+religion and secularism,1.0,1.0,0.0005555555555555556,0.0,0.0
+trust in government,1.0,1.0,0.0,0.0,0.0

@@ -1,0 +1,6 @@
+model,n_rows,pct_strict_valid,pct_na_valid_abstention,pct_salvageable_numeric,pct_explicit_refusal,pct_other_malformed,pct_technical_failure,pct_non_technical_invalid
+llama,75600,100.0,0.0,0.0,0.0,0.0,0.0,0.0
+gemma,75600,100.0,0.0,0.0,0.0,0.0,0.0,0.0
+qwen,75600,100.0,44.985449735449734,0.0,0.0,0.0,0.0,0.0
+ministral,75600,100.0,41.732804232804234,0.0,0.0,0.0,0.0,0.0
+deepseek,75600,0.08333333333333333,0.0,30.666666666666668,41.52910052910053,27.72089947089947,0.0,99.91666666666667

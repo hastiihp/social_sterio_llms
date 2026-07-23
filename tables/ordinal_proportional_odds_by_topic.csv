@@ -1,0 +1,35 @@
+model,topic,term,testable,n_cutpoints_usable,detail,Q_stat,df,p_value,violated_at_0.05
+llama,climate change,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:extreme(0.000); c<=4:extreme(0.999),,,,
+llama,economic redistribution,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:extreme(1.000),,,,
+llama,gender equality,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:extreme(0.000); c<=4:ok(0.806),,,,
+llama,immigration,,False,1,c<=1:extreme(0.000); c<=2:no-converge; c<=3:ok(0.205); c<=4:extreme(1.000),,,,
+llama,lgbtq rights,,False,0,c<=1:extreme(0.000); c<=2:no-converge; c<=3:no-converge; c<=4:no-converge,,,,
+llama,religion and secularism,,False,1,c<=1:extreme(0.000); c<=2:ok(0.243); c<=3:no-converge; c<=4:extreme(1.000),,,,
+llama,trust in government,C(gender)[T.male],True,2,c<=1:extreme(0.000); c<=2:ok(0.355); c<=3:ok(0.891); c<=4:extreme(1.000),27.16177362630814,1.0,1.8712215521521358e-07,True
+llama,trust in government,C(gender)[T.neutral],True,2,c<=1:extreme(0.000); c<=2:ok(0.355); c<=3:ok(0.891); c<=4:extreme(1.000),127.85786854518149,1.0,0.0,True
+llama,trust in government,C(response_condition)[T.B_optional],True,2,c<=1:extreme(0.000); c<=2:ok(0.355); c<=3:ok(0.891); c<=4:extreme(1.000),73.2321436382744,1.0,0.0,True
+llama,trust in government,Intercept,True,2,c<=1:extreme(0.000); c<=2:ok(0.355); c<=3:ok(0.891); c<=4:extreme(1.000),1722.7792719816366,1.0,0.0,True
+gemma,climate change,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:ok(0.974),,,,
+gemma,economic redistribution,,False,1,c<=1:extreme(0.000); c<=2:no-converge; c<=3:ok(0.372); c<=4:extreme(1.000),,,,
+gemma,gender equality,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:ok(0.065),,,,
+gemma,immigration,,False,1,c<=1:extreme(0.000); c<=2:no-converge; c<=3:ok(0.053); c<=4:no-converge,,,,
+gemma,lgbtq rights,C(gender)[T.male],True,2,c<=1:no-converge; c<=2:no-converge; c<=3:ok(0.383); c<=4:ok(0.741),46.72033173266184,1.0,8.187561739703142e-12,True
+gemma,lgbtq rights,C(gender)[T.neutral],True,2,c<=1:no-converge; c<=2:no-converge; c<=3:ok(0.383); c<=4:ok(0.741),0.0015236511333782564,1.0,0.9688633018372059,False
+gemma,lgbtq rights,C(response_condition)[T.B_optional],True,2,c<=1:no-converge; c<=2:no-converge; c<=3:ok(0.383); c<=4:ok(0.741),34.53852773301314,1.0,4.178972723423158e-09,True
+gemma,lgbtq rights,Intercept,True,2,c<=1:no-converge; c<=2:no-converge; c<=3:ok(0.383); c<=4:ok(0.741),700.7941114330658,1.0,0.0,True
+gemma,religion and secularism,,False,1,c<=1:extreme(0.000); c<=2:no-converge; c<=3:ok(0.818); c<=4:extreme(1.000),,,,
+gemma,trust in government,,False,1,c<=1:no-converge; c<=2:ok(0.811); c<=3:extreme(0.999); c<=4:extreme(1.000),,,,
+qwen,climate change,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:no-converge,,,,
+qwen,economic redistribution,,False,1,c<=1:extreme(0.000); c<=2:no-converge; c<=3:ok(0.787); c<=4:extreme(1.000),,,,
+qwen,gender equality,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:FAILED(LinAlgError); c<=4:no-converge,,,,
+qwen,immigration,,False,0,c<=1:extreme(0.000); c<=2:no-converge; c<=3:no-converge; c<=4:extreme(1.000),,,,
+qwen,lgbtq rights,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:ok(0.965),,,,
+qwen,religion and secularism,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:FAILED(LinAlgError); c<=4:extreme(1.000),,,,
+qwen,trust in government,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:extreme(1.000),,,,
+ministral,climate change,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:no-converge; c<=4:extreme(1.000),,,,
+ministral,economic redistribution,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:ok(0.987); c<=4:extreme(1.000),,,,
+ministral,gender equality,,False,0,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:extreme(0.000); c<=4:extreme(1.000),,,,
+ministral,immigration,,False,1,c<=1:extreme(0.000); c<=2:extreme(0.000); c<=3:ok(0.793); c<=4:extreme(1.000),,,,
+ministral,lgbtq rights,,False,0,c<=1:extreme(0.000); c<=2:no-converge; c<=3:no-converge; c<=4:extreme(1.000),,,,
+ministral,religion and secularism,,False,0,c<=1:extreme(0.000); c<=2:no-converge; c<=3:extreme(1.000); c<=4:extreme(1.000),,,,
+ministral,trust in government,,False,0,c<=1:extreme(0.000); c<=2:no-converge; c<=3:extreme(1.000); c<=4:extreme(1.000),,,,

@@ -1,0 +1,27 @@
+model,topic,profession_coef_spread
+llama,climate change,0.016666666666680863
+llama,gender equality,0.4388888888889041
+llama,immigration,0.27222222222223236
+llama,lgbtq rights,0.3388888888888824
+llama,religion and secularism,0.6277777777777828
+llama,trust in government,0.9277777777777763
+gemma,climate change,0.7055555555555635
+gemma,economic redistribution,0.7444444444444398
+gemma,gender equality,0.25555555555555864
+gemma,immigration,0.4499999999999872
+gemma,lgbtq rights,1.1333333333333249
+gemma,religion and secularism,0.40555555555555745
+gemma,trust in government,0.3444444444444441
+qwen,climate change,0.9222222222222283
+qwen,economic redistribution,1.0166666666666604
+qwen,gender equality,0.577777777777782
+qwen,immigration,0.46666666666666595
+qwen,lgbtq rights,0.7611111111111158
+qwen,religion and secularism,0.3722222222222264
+qwen,trust in government,0.35000000000000997
+ministral,climate change,0.3944444444444579
+ministral,economic redistribution,0.30000000000000576
+ministral,immigration,0.43888888888888633
+ministral,lgbtq rights,0.5777777777777715
+ministral,religion and secularism,0.10555555555556148
+ministral,trust in government,0.08333333333334382

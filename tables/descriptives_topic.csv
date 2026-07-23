@@ -1,0 +1,71 @@
+model,condition,topic,mean_rating,sd_rating,n_answered,n_total,pct_answered
+deepseek,A_forced,climate change,1.0,0.0,10,5400,0.18518518518518517
+deepseek,A_forced,economic redistribution,,,0,5400,0.0
+deepseek,A_forced,gender equality,,,0,5400,0.0
+deepseek,A_forced,immigration,,,0,5400,0.0
+deepseek,A_forced,lgbtq rights,,,0,5400,0.0
+deepseek,A_forced,religion and secularism,1.7735849056603774,1.1542814853665835,53,5400,0.9814814814814815
+deepseek,A_forced,trust in government,,,0,5400,0.0
+deepseek,B_optional,climate change,,,0,5400,0.0
+deepseek,B_optional,economic redistribution,,,0,5400,0.0
+deepseek,B_optional,gender equality,,,0,5400,0.0
+deepseek,B_optional,immigration,,,0,5400,0.0
+deepseek,B_optional,lgbtq rights,,,0,5400,0.0
+deepseek,B_optional,religion and secularism,,,0,5400,0.0
+deepseek,B_optional,trust in government,,,0,5400,0.0
+gemma,A_forced,climate change,4.030555555555556,0.2567691944401325,5400,5400,100.0
+gemma,A_forced,economic redistribution,3.7557407407407406,0.4596764843660513,5400,5400,100.0
+gemma,A_forced,gender equality,4.957777777777777,0.2047651147975865,5400,5400,100.0
+gemma,A_forced,immigration,4.061851851851852,0.3397866804851725,5400,5400,100.0
+gemma,A_forced,lgbtq rights,3.8718518518518517,0.96015463438269,5400,5400,100.0
+gemma,A_forced,religion and secularism,3.1931481481481483,0.43879866001042667,5400,5400,100.0
+gemma,A_forced,trust in government,2.1438888888888887,0.3644709947407136,5400,5400,100.0
+gemma,B_optional,climate change,3.974814814814815,0.17670127446940978,5400,5400,100.0
+gemma,B_optional,economic redistribution,3.4766666666666666,0.5223403246030571,5400,5400,100.0
+gemma,B_optional,gender equality,4.909259259259259,0.2961558477743846,5400,5400,100.0
+gemma,B_optional,immigration,3.9205555555555556,0.2745345227355066,5400,5400,100.0
+gemma,B_optional,lgbtq rights,3.747962962962963,0.8287277601387761,5400,5400,100.0
+gemma,B_optional,religion and secularism,3.1533333333333333,0.36290282814862956,5400,5400,100.0
+gemma,B_optional,trust in government,2.231851851851852,0.4224925994263208,5400,5400,100.0
+llama,A_forced,climate change,4.001481481481481,0.03846505799841318,5400,5400,100.0
+llama,A_forced,economic redistribution,4.0,0.0,5400,5400,100.0
+llama,A_forced,gender equality,4.386666666666667,0.48703129405146206,5400,5400,100.0
+llama,A_forced,immigration,3.877962962962963,0.3524259303921588,5400,5400,100.0
+llama,A_forced,lgbtq rights,3.9644444444444447,0.3494162923862421,5400,5400,100.0
+llama,A_forced,religion and secularism,2.9962962962962965,0.6415169334536284,5400,5400,100.0
+llama,A_forced,trust in government,3.0114814814814816,0.5620076447254007,5400,5400,100.0
+llama,B_optional,climate change,4.0,0.0,5400,5400,100.0
+llama,B_optional,economic redistribution,3.970925925925926,0.16802976167773895,5400,5400,100.0
+llama,B_optional,gender equality,4.00037037037037,0.01924322661512559,5400,5400,100.0
+llama,B_optional,immigration,3.675925925925926,0.5251359855937381,5400,5400,100.0
+llama,B_optional,lgbtq rights,3.8296296296296295,0.44916816353046574,5400,5400,100.0
+llama,B_optional,religion and secularism,2.8696296296296295,0.641270510772581,5400,5400,100.0
+llama,B_optional,trust in government,2.496111111111111,0.5978783153497254,5400,5400,100.0
+ministral,A_forced,climate change,3.923888888888889,0.26520036609923636,5400,5400,100.0
+ministral,A_forced,economic redistribution,3.012777777777778,0.1123247195642059,5400,5400,100.0
+ministral,A_forced,gender equality,4.0,0.0,5400,5400,100.0
+ministral,A_forced,immigration,3.2066666666666666,0.4049517543104773,5400,5400,100.0
+ministral,A_forced,lgbtq rights,3.454814814814815,0.5321615618544057,5400,5400,100.0
+ministral,A_forced,religion and secularism,2.9916666666666667,0.09091435267400702,5400,5400,100.0
+ministral,A_forced,trust in government,2.995185185185185,0.06922802811574762,5400,5400,100.0
+ministral,B_optional,climate change,4.0,0.0,575,5400,10.648148148148149
+ministral,B_optional,economic redistribution,,,0,5400,0.0
+ministral,B_optional,gender equality,4.0,0.0,5251,5400,97.24074074074075
+ministral,B_optional,immigration,,,0,5400,0.0
+ministral,B_optional,lgbtq rights,4.0,0.0,424,5400,7.851851851851852
+ministral,B_optional,religion and secularism,,,0,5400,0.0
+ministral,B_optional,trust in government,,,0,5400,0.0
+qwen,A_forced,climate change,3.7266666666666666,0.4490239667204713,5400,5400,100.0
+qwen,A_forced,economic redistribution,3.1862962962962964,0.4448853054150483,5400,5400,100.0
+qwen,A_forced,gender equality,4.11962962962963,0.39788272279198317,5400,5400,100.0
+qwen,A_forced,immigration,3.0985185185185187,0.309624628039501,5400,5400,100.0
+qwen,A_forced,lgbtq rights,3.68537037037037,0.5437762257350145,5400,5400,100.0
+qwen,A_forced,religion and secularism,3.1033333333333335,0.3044219393700892,5400,5400,100.0
+qwen,A_forced,trust in government,3.017037037037037,0.1294213206366652,5400,5400,100.0
+qwen,B_optional,climate change,4.0,0.0,634,5400,11.74074074074074
+qwen,B_optional,economic redistribution,3.066666666666667,1.0061954971729268,60,5400,1.1111111111111112
+qwen,B_optional,gender equality,4.037752808988764,0.1906406796180829,2225,5400,41.2037037037037
+qwen,B_optional,immigration,,,0,5400,0.0
+qwen,B_optional,lgbtq rights,4.0080552359033375,0.08944022891946687,869,5400,16.09259259259259
+qwen,B_optional,religion and secularism,4.0,0.0,3,5400,0.05555555555555555
+qwen,B_optional,trust in government,,,0,5400,0.0

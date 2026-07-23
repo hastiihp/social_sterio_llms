@@ -1,0 +1,61 @@
+country,region,country_set,gender,name,validation_status,evidence_type,usage_skew,notes
+Germany,Europe,original_10,male,Thomas,strong,prior project data,n/a,carried from v9 dataset
+Germany,Europe,original_10,female,Emma,strong,prior project data,n/a,carried from v9 dataset
+Germany,Europe,original_10,neutral,Robin,strong,registry/aggregator,roughly balanced,established German unisex name
+France,Europe,original_10,male,Pierre,strong,prior project data,n/a,carried from v9 dataset
+France,Europe,original_10,female,Camille,strong,prior project data,n/a,carried from v9 dataset
+France,Europe,original_10,neutral,Dominique,strong,registry/aggregator,roughly balanced,classic French unisex name; Camille was already the female name in this dataset
+USA,North America,original_10,male,Tyler,strong,prior project data,n/a,carried from v9 dataset
+USA,North America,original_10,female,Ashley,strong,prior project data,n/a,carried from v9 dataset
+USA,North America,original_10,neutral,Taylor,strong,registry (SSA),roughly balanced,well-documented US unisex name
+Brazil,Latin America,original_10,male,Carlos,strong,prior project data,n/a,carried from v9 dataset
+Brazil,Latin America,original_10,female,Ana,strong,prior project data,n/a,carried from v9 dataset
+Brazil,Latin America,original_10,neutral,Ariel,acceptable,cultural/literature,unverified,used across genders in Brazil
+Kenya,Africa,original_10,male,James,strong,prior project data,n/a,carried from v9 dataset
+Kenya,Africa,original_10,female,Aisha,strong,prior project data,n/a,carried from v9 dataset
+Kenya,Africa,original_10,neutral,Amani,acceptable,cultural/literature,unverified,"Swahili 'peace', used across genders"
+Egypt,MENA,original_10,male,Omar,strong,prior project data,n/a,carried from v9 dataset
+Egypt,MENA,original_10,female,Fatima,strong,prior project data,n/a,carried from v9 dataset
+Egypt,MENA,original_10,neutral,Nour,strong,cultural/literature,balanced,"transliteration variant of Pakistan's 'Noor' -- intentional, documented"
+India,South Asia,original_10,male,Raj,strong,prior project data,n/a,carried from v9 dataset
+India,South Asia,original_10,female,Priya,strong,prior project data,n/a,carried from v9 dataset
+India,South Asia,original_10,neutral,Kiran,strong,"cultural/literature, widely documented",balanced,textbook Indian unisex name
+Japan,East Asia,original_10,male,Kenji,strong,prior project data,n/a,carried from v9 dataset
+Japan,East Asia,original_10,female,Yuki,strong,prior project data,n/a,carried from v9 dataset
+Japan,East Asia,original_10,neutral,Hikaru,acceptable,cultural/literature,unverified,genuinely usable across genders
+China,East Asia,original_10,male,Wei,strong,prior project data,n/a,carried from v9 dataset
+China,East Asia,original_10,female,Mei,strong,prior project data,n/a,carried from v9 dataset
+China,East Asia,original_10,neutral,Yu,acceptable,cultural/literature,unverified,'Wei' was already the male name in this dataset; Yu used across genders
+Mexico,Latin America,original_10,male,Diego,strong,prior project data,n/a,carried from v9 dataset
+Mexico,Latin America,original_10,female,Valentina,strong,prior project data,n/a,carried from v9 dataset
+Mexico,Latin America,original_10,neutral,Guadalupe,strong,"cultural/literature, widely documented",balanced,famously borne across genders
+Italy,Europe,added_10,male,Marco,strong,registry/cultural convention,n/a,
+Italy,Europe,added_10,female,Giulia,strong,registry/cultural convention,n/a,
+Italy,Europe,added_10,neutral,Celeste,acceptable,registry/aggregator,female-leaning,"attested cross-gender, likely skews female in practice"
+Poland,Europe,added_10,male,Piotr,strong,registry/cultural convention,n/a,
+Poland,Europe,added_10,female,Katarzyna,strong,registry/cultural convention,n/a,
+Poland,Europe,added_10,neutral,Alex,weak,literature,masculine-skewed internationally,no traditional Polish neutral name exists; international form used pragmatically
+Canada,North America,added_10,male,Noah,strong,registry/cultural convention,n/a,
+Canada,North America,added_10,female,Olivia,strong,registry/cultural convention,n/a,
+Canada,North America,added_10,neutral,Riley,acceptable,registry/aggregator,roughly balanced,established unisex name in English-speaking Canada
+Argentina,Latin America,added_10,male,Mateo,strong,registry/cultural convention,n/a,
+Argentina,Latin America,added_10,female,Martina,strong,registry/cultural convention,n/a,'Valentina' was already the female name for Mexico in this dataset
+Argentina,Latin America,added_10,neutral,Sol,acceptable,cultural/literature,"unverified, believed balanced",replaces 'Cruz' (64/36 male-skewed per genderize.io aggregator data)
+Nigeria,Africa,added_10,male,Adebayo,strong,registry/cultural convention,n/a,Yoruba
+Nigeria,Africa,added_10,female,Folake,strong,registry/cultural convention,n/a,Yoruba
+Nigeria,Africa,added_10,neutral,Ayomide,provisional,cultural/literature,unverified,"Yoruba, used across genders; distribution not yet documented"
+South Africa,Africa,added_10,male,Sipho,strong,registry/cultural convention,n/a,
+South Africa,Africa,added_10,female,Thandiwe,strong,registry/cultural convention,n/a,
+South Africa,Africa,added_10,neutral,Thando,provisional,cultural/literature,unverified,"replaces 'Themba', which skews male in practice"
+Morocco,MENA,added_10,male,Youssef,strong,registry/cultural convention,n/a,
+Morocco,MENA,added_10,female,Khadija,strong,registry/cultural convention,n/a,'Fatima' was already the female name for Egypt in this dataset
+Morocco,MENA,added_10,neutral,Ihsan,provisional,cultural/literature,unverified,kept pending further validation
+Turkey,MENA,added_10,male,Mehmet,strong,registry/cultural convention,n/a,
+Turkey,MENA,added_10,female,Elif,strong,registry/cultural convention,n/a,
+Turkey,MENA,added_10,neutral,Deniz,strong,"cultural/literature, widely documented",balanced,textbook unisex Turkish name
+Pakistan,South Asia,added_10,male,Ahmed,strong,registry/cultural convention,n/a,
+Pakistan,South Asia,added_10,female,Ayesha,strong,registry/cultural convention,n/a,
+Pakistan,South Asia,added_10,neutral,Noor,strong,cultural/literature,balanced,"transliteration variant of Egypt's 'Nour' -- intentional, documented"
+South Korea,East Asia,added_10,male,Min-jun,strong,registry/cultural convention,n/a,
+South Korea,East Asia,added_10,female,Seo-yeon,strong,registry/cultural convention,n/a,
+South Korea,East Asia,added_10,neutral,Haneul,acceptable,registry/aggregator,"unverified, pure-Korean names typically more balanced than Sino-Korean",replaces 'Ji-woo' (71/29 female-skewed per name-statistics aggregator)

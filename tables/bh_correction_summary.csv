@@ -1,0 +1,15 @@
+family,p_type,n_terms,n_raw_sig,n_bh_sig,n_lost,pct_survive
+pooled_model,p_hc3,236,174,172,2,98.9
+pooled_model,p_cluster,236,196,194,2,99.0
+per_model_ols_llama,p_hc3,60,46,45,1,97.8
+per_model_ols_llama,p_cluster,60,51,51,0,100.0
+per_model_ols_gemma,p_hc3,60,51,51,0,100.0
+per_model_ols_gemma,p_cluster,60,53,53,0,100.0
+per_model_ols_qwen,p_hc3,60,56,56,0,100.0
+per_model_ols_qwen,p_cluster,60,58,58,0,100.0
+per_model_ols_ministral,p_hc3,60,57,57,0,100.0
+per_model_ols_ministral,p_cluster,60,59,59,0,100.0
+per_model_ols_deepseek,p_hc3,30,6,1,5,16.7
+per_model_ols_deepseek,p_cluster,30,16,12,4,75.0
+abstention_logit_qwen_ministral,p_original,58,51,50,1,98.0
+abstention_logit_qwen_ministral,p_cluster,58,54,54,0,100.0
