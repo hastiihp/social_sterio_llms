@@ -2,3 +2,5 @@
 analysis/master_results.csv
 __pycache__/
 *.pyc
+health_staging/
+data_health/health_prompts_full.csv

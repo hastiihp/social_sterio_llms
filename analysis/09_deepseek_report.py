@@ -91,11 +91,15 @@ def main():
     print("=" * 78)
     print("""
   Step 5 (hypothesis models):
-    - Per-model OLS: INCLUDED, n=63. gender and response_condition dropped from its formula
+    - Per-model OLS: NON-INFERENTIAL / EXPLORATORY ONLY, n=63. gender and response_condition
+      dropped from its formula
       (zero variance: all 63 rows are Condition A, gender constant "neutral"). R^2=0.85,
       n_params=30 vs n=63 (df_resid=33) -- flagged as low observation-to-parameter ratio. Also
       fit with persona-clustered SEs and a mixed-effects (random-intercept) variant per Fix 2,
-      reported alongside the original HC3 SEs in tables/hypothesis_model_deepseek.csv.
+      reported alongside the original HC3 SEs in tables/hypothesis_model_deepseek.csv. The sparse,
+      rank-deficient design is numerically unstable, so none of its coefficients, SEs, raw or
+      BH-adjusted p-values, confidence intervals, or apparent significance may be interpreted
+      inferentially. The CSV repeats this warning on every coefficient row.
     - Pooled model (Condition A only, Section 4 spec): EXCLUDED per Fix 4. An earlier version of
       this pipeline included deepseek here with the C(model) reference level pinned to llama to
       contain numerical instability (deepseek-as-reference had caused ~1e10 coefficients that
@@ -104,7 +108,7 @@ def main():
       interaction terms non-identifiable IN PRINCIPLE, not merely numerically unstable -- pinning
       the reference level only relocated where the instability showed up. The pooled model is now
       fit on llama/gemma/qwen/ministral only (236 terms, 0 unstable), and deepseek's own per-model
-      regression above remains its separately reported, heavily-caveated result.
+      regression above remains separately reported solely as an exploratory diagnostic.
 
   Step 6 (abstention / optional-condition logistic regression):
     - EXCLUDED from the fitted regression: deepseek has zero variance in the "answered" outcome

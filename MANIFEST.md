@@ -20,7 +20,9 @@ to those directories. `{model}` ranges over the models each script actually incl
 ## `05_hypothesis_models.py`
 - `hypothesis_model_llama.csv`, `hypothesis_model_gemma.csv`, `hypothesis_model_qwen.csv`,
   `hypothesis_model_ministral.csv`, `hypothesis_model_deepseek.csv` (per-model OLS,
-  HC3 + persona-clustered + mixed-effects SEs side by side)
+  HC3 + persona-clustered + mixed-effects SEs side by side; every DeepSeek coefficient
+  row is explicitly marked **NON-INFERENTIAL / EXPLORATORY ONLY** because n=63 yields
+  a sparse, rank-deficient, numerically unstable regression)
 - `hypothesis_model_pooled.csv` (pooled model, 4 models -- DeepSeek excluded, Fix 4)
 
 ## `05b_ordinal_robustness.py` (run per model: `--model {llama,gemma,qwen,ministral}`)

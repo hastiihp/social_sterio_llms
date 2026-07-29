@@ -1,0 +1,11 @@
+framing,metric,n,rate
+original,category_explicit_refusal,31396,0.41529100529100527
+original,category_salvageable_numeric,23184,0.30666666666666664
+original,category_other_malformed,20957,0.2772089947089947
+original,category_valid,63,0.0008333333333333334
+original,no_space_long_response,0,0.0
+original,careful_compact_numeric_candidate,0,0.0
+health,category_other_malformed,65536,0.8668783068783069
+health,category_explicit_refusal,10064,0.1331216931216931
+health,no_space_long_response,11553,0.15281746031746032
+health,careful_compact_numeric_candidate,11234,0.1485978835978836

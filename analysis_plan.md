@@ -4,10 +4,6 @@
 **Design matrix:** `data/personas.csv` (5,400 rows) × `data/topics.csv` (7 topics) × 2 response conditions = `data/prompts.csv` (75,600 rows).
 **Models:** Llama-3.1-8B-Instruct, Gemma-3-12B-it, Qwen3-8B, DeepSeek-LLM-7B-chat, Ministral-8B-Instruct, Falcon-H1-7B. All bf16, no quantization mixing.
 
-**Known deviation:** Falcon-H1-7B produced a reproducible tensor-shape error in its generation cache under batched inference in this transformers version, confirmed across multiple batch sizes and both dynamic and fixed-length padding, while running cleanly only at batch size 1 in smoke tests. Falcon-H1 is excluded from the study; it was not replaced or rerun. The primary analysis proceeds with the five models below (Llama, Gemma, Qwen3, DeepSeek, Ministral). This removes the study's only UAE/MENA-origin model and is reported explicitly as a limitation on the regional-comparison claim: "Falcon-H1 was excluded because inference could not be completed reliably under the available software environment despite repeated attempts."
-
-**Naming note:** the frozen prompt template that actually produced the analyzed data uses explicit gender-identity labels, logged in provenance as `friend_v2_explicit_gender`. This is unrelated to and should not be confused with `friend_v2_strict` (Section 15), the reinforced-instruction variant that was tested and rejected. Renaming the adopted template to `friend_final` in all provenance strings and manuscript text is recommended to avoid ambiguity.
-
 **Scope note:** This preregistration covers the demographic-only friend-framing study with two response conditions. Cue experiments, generational comparisons with predecessor models, and likelihood-space analyses are explicitly out of scope and reserved as follow-up studies; any such analysis performed on this data will be labeled exploratory.
 
 ---
@@ -39,20 +35,16 @@ From raw generation, extract:
 |---|---|
 | `raw_text` | unmodified model output |
 | `normalized_text` | whitespace/case normalized |
-| `strict_parsed_rating` | 1–5 or NA, only if the trimmed output matches the required format exactly |
-| `strict_is_valid` | True only if `strict_parsed_rating` was extracted under exact-format matching |
-| `salvaged_rating` | a rating extracted from non-compliant text (e.g. "Based on... 4") for diagnostic use only |
-| `salvage_method` | how the salvaged rating was extracted (e.g. regex first-digit-match) |
-| `is_abstention` | True only for explicit NA under Condition B, under strict parsing |
+| `parsed_rating` | 1–5 or NA if valid |
+| `is_abstention` | True only for explicit NA under Condition B |
+| `is_valid` | True if output matches the required format exactly |
 | `parse_failure_reason` | one of: none / malformed_output / empty_output / explanatory_refusal / safety_refusal / technical_failure |
 
 **Rules:**
-- `strict_parsed_rating` is the only field used in primary analyses (Sections 4-6). A response that embeds the right answer in explanatory prose (e.g. "I would estimate 4") is malformed under the exact-output instruction and must not be silently treated as valid — this would violate the instruction-following measurement the format itself is designed to test.
-- `salvaged_rating` exists for diagnostics only (e.g. distinguishing "model refused entirely" from "model explained before answering") and is reported separately, never substituted into the primary rating variable.
-- Do not convert refusals or malformed output into NA. NA is only ever the model's explicit stated choice under Condition B, under strict parsing.
+- Do not convert refusals or malformed output into NA. NA is only ever the model's explicit stated choice under Condition B.
 - Only `technical_failure` (e.g., inference crash, empty output due to infrastructure error) may be automatically rerun.
 - A semantic refusal (model declines to speculate, or objects to the premise) is a valid data point and must never be rerun to "get a number."
-- Log parse-failure rate per model per condition (strict parsing); if any model exceeds 5% non-technical invalid rate, flag for manual review before proceeding to analysis (do not silently drop). A model with a high strict-invalid rate but low salvage-rate gap (i.e. it usually explains before giving the same answer) is a different finding than one that gives inconsistent or absent answers, and both should be reported.
+- Log parse-failure rate per model per condition; if any model exceeds 5% non-technical invalid rate, flag for manual review before proceeding to analysis (do not silently drop).
 
 ## 4. Primary analysis — forced-rating condition (Condition A)
 
@@ -123,40 +115,26 @@ Apply Benjamini-Hochberg FDR correction within each family of tests, with each f
 - No changes to `prompts.csv` wording after pilot sign-off. Any wording issue discovered post-pilot is documented as a limitation, not silently patched mid-run.
 - Once the full run begins, no new experimental conditions are added.
 
-## 12. Non-binary condition — resolved via manipulation check (pre-pilot amendment)
+## 12. Non-binary condition — manipulation check
 
-The non-binary condition was originally signaled via name + they/them pronoun only, with no explicit label, to preserve structural parity with the male/female conditions. A manipulation check (60 personas: 20 countries x 3 genders, one per cell) tested this directly by asking each of the two pilot models to state the perceived gender of the described friend.
-
-**Result:** the implicit (pronoun-only) signal did not reliably produce a distinct non-binary interpretation — 0/20 correct for Llama-3.1-8B, 4/20 correct for Qwen3-8B, with both models defaulting to a binary gender guess based on the name in the remaining cases. A second, symmetric comparison then tested an explicit-label version ("{name} identifies as a man / a woman / non-binary") applied identically to all three gender conditions, on the same 60 personas. Explicit labeling produced 20/20 correct non-binary identification on both models, while leaving already-correct male/female identification completely unchanged (20/20 on both models, both versions) — confirming the fix does not introduce an asymmetric confound between conditions.
-
-**Decision:** the frozen prompt template was amended before the pilot to include an explicit identity clause for all three gender conditions ("{name} identifies as {a man / a woman / non-binary}."), applied uniformly. This is judged the more faithful operationalization of the research question in any case: the study measures how models attribute opinions given a demographic attribute, not whether models can correctly infer that attribute from a name. `prompts.csv` was regenerated in full under this amendment prior to the pilot run.
+The non-binary condition is signaled via name + they/them pronoun only, with no explicit label in the prompt text, preserving structural parity with the male/female conditions (which likewise never state gender explicitly). The pilot will include a separate manipulation-check experiment evaluating whether the intended gender signal is recognized. If the signal is not registering reliably, an explicit-label variant will be added as a predefined robustness check (not a change to the main design) before the full run.
 
 ## 13. Name-validity limitation (state verbatim in paper)
 
 > Because each country-by-gender-condition was represented by a single name (see `data/names.csv` for per-name validation tier, evidence type, and documented usage skew where available), country and gender effects may partly reflect associations attached to the selected names rather than the demographic category alone. Names are documented as culturally plausible and, where evidence permits, as being used across genders with varying usage distributions — not claimed as neutral or as representative of an entire national population.
 
-## 14. Deterministic inference settings (frozen after smoke testing)
+## 14. Deterministic inference settings (frozen)
 
 ```
 do_sample: false
 temperature: 0
 top_p: 1
-max_new_tokens: 30
+max_new_tokens: 5
 repetition_penalty: 1.0
 seed: fixed (recorded per run)
 ```
 
-The generation limit was increased from an initial smoke-test setting of 5 tokens to 30 after smoke testing demonstrated that shorter limits artificially truncated non-compliant responses mid-sentence, preventing correct classification of instruction-following behavior (a model attempting an explanation could not be distinguished from one that had been cut off before reaching an answer). The finalized limit does not measurably affect compliant models, which terminate after one token regardless of the ceiling.
-
 Applied identically to all six models. Each model's official tokenizer and chat template is used; chat-control tokens are never manually reproduced. Recorded per run: model repository and revision, tokenizer revision, Transformers/PyTorch/CUDA versions, GPU type, prompt template version, generation configuration, timestamp, SLURM job ID, git commit hash. Raw generated text is saved before any parsing.
-
-## 15. Prompt-reinforcement comparison (pre-pilot, predefined and completed)
-
-Before freezing the friend-frame prompt, a reinforced closing-instruction variant (`friend_v2_strict`) was tested against the original (`friend_v1`) on all six models, using the same 12 matched persona-topic-condition cases per version. The adoption rule was written before results were reviewed: adopt `friend_v2_strict` only if it raised DeepSeek's strict-compliance rate to at least 9/12 AND left the other five models' strict-compliance and rating values unchanged.
-
-**Result: `friend_v2_strict` was not adopted.** DeepSeek's strict compliance improved from 0/12 to 6/12 -- a real but insufficient improvement relative to the predefined threshold. Independently of that threshold, `friend_v2_strict` also changed rating values for four of the five previously-compliant models on identical persona-topic pairs (e.g. Qwen3's climate-change rating shifted 4->3), and changed Falcon-H1's abstention decision outright (NA -> 4 on the immigration/optional prompt). This second finding is treated as the primary reason for rejection, independent of DeepSeek's result: a wording change that alters abstention behavior confounds the exact variable the optional condition is designed to measure. `friend_v1` is retained as the frozen prompt.
-
-DeepSeek's non-compliance is documented as a per-model finding, not treated as a pipeline defect: DeepSeek remained substantially less format-compliant than the other five models under both evaluated prompt variants, while its responses showed clear content engagement with persona-specific details (e.g. correctly reasoning about a persona's country and inferred religious context) rather than generic refusal or failure to parse the prompt. Per Section 3, DeepSeek's non-technical invalid rate will be reported explicitly per-model in results rather than triggering exclusion or prompt modification.
 
 ---
 

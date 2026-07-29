@@ -1,0 +1,9 @@
+model,factor,spearman_r,exact_permutation_p,top_orig,top_health,bottom_orig,bottom_health,orig_range,health_range
+llama,profession,0.8720815992723809,0.1,registered nurse,lawyer,truck driver,farmer,0.09126984126984139,0.08333333333333304
+llama,country,1.0,0.08333333333333333,Brazil,Brazil,Nigeria,Nigeria,0.08888888888888902,0.12063492063492065
+gemma,profession,0.9999999999999999,0.016666666666666666,registered nurse,registered nurse,truck driver,truck driver,0.23412698412698418,0.2857142857142856
+gemma,country,0.39999999999999997,0.75,Brazil,Brazil,Nigeria,Germany,0.1777777777777776,0.107936507936508
+qwen,profession,0.9999999999999999,0.016666666666666666,lawyer,lawyer,truck driver,truck driver,0.5555555555555558,0.34920634920634885
+qwen,country,0.0,1.0,Germany,Nigeria,Brazil,South Korea,0.04444444444444473,0.11428571428571432
+ministral,profession,0.9746794344808964,0.03333333333333333,registered nurse,registered nurse,truck driver,truck driver,0.15476190476190466,0.17460317460317487
+ministral,country,0.7999999999999999,0.3333333333333333,Brazil,Brazil,Nigeria,South Korea,0.08888888888888902,0.03809523809523796

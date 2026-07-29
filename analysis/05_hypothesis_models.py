@@ -321,8 +321,18 @@ def main():
         result = fit_per_model(df, model)
         per_model_results[model] = result
         out_path = f"{TABLES_DIR}/hypothesis_model_{model}.csv"
-        result["ct"].to_csv(out_path, index=False)
+        table = result["ct"].copy()
+        if model == "deepseek":
+            table["inferential_status"] = "NON-INFERENTIAL / EXPLORATORY ONLY"
+            table["analysis_note"] = (
+                "n=63 strict-valid rows; rank-deficient sparse design and numerically "
+                "unstable coefficients/SEs/p-values. Do not interpret significance."
+            )
+        table.to_csv(out_path, index=False)
         print(f"  Wrote {out_path} (columns: coef/se/p for hc3, cluster, and mixedlm side by side)")
+        if model == "deepseek":
+            print("  DEEPSEEK OUTPUT WARNING: every coefficient row is NON-INFERENTIAL / "
+                  "EXPLORATORY ONLY (n=63; sparse rank-deficient design; numerically unstable).")
 
     pooled_result = fit_pooled(df)
     out_path = f"{TABLES_DIR}/hypothesis_model_pooled.csv"
@@ -352,8 +362,10 @@ def main():
     print("mixing Condition A and Condition B ratings. For qwen/ministral this conflates the condition")
     print("effect with abstention-selection. The pooled model avoids this via Condition A only.")
     print()
-    print("DeepSeek caveat: 63 valid rows total, all Condition A, gender-constant subset. Included in (a)")
-    print("with low-power caveats; EXCLUDED from the pooled model (b) per Fix 4 -- see step 9 for full treatment.")
+    print("DeepSeek caveat: 63 valid rows total, all Condition A, gender-constant subset.")
+    print("Its separately emitted coefficient table is NON-INFERENTIAL / EXPLORATORY ONLY: the sparse,")
+    print("rank-deficient design produces numerically unstable coefficients, SEs, and p-values. DeepSeek")
+    print("is EXCLUDED from the pooled model (b) per Fix 4 -- see step 9 for full treatment.")
 
 
 if __name__ == "__main__":
