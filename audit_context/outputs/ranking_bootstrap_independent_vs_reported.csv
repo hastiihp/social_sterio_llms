@@ -1,0 +1,145 @@
+context,model,framing,factor,level,p_top_audit,p_bottom_audit,bootstrap_B_audit,p_top_reported,p_bottom_reported,bootstrap_B_reported,p_top_absdiff,p_bottom_absdiff
+health,llama,original,profession,computer programmer,0.0,0.283,1000,0.0,0.283,1000,0.0,0.0
+health,llama,original,profession,farmer,0.0,0.371,1000,0.0,0.371,1000,0.0,0.0
+health,llama,original,profession,lawyer,0.101,0.001,1000,0.101,0.001,1000,0.0,0.0
+health,llama,original,profession,registered nurse,0.899,0.0,1000,0.899,0.0,1000,0.0,0.0
+health,llama,original,profession,truck driver,0.0,0.345,1000,0.0,0.345,1000,0.0,0.0
+health,llama,original,country,Brazil,0.849,0.0,1000,0.849,0.0,1000,0.0,0.0
+health,llama,original,country,Germany,0.151,0.0,1000,0.151,0.0,1000,0.0,0.0
+health,llama,original,country,Nigeria,0.0,0.67,1000,0.0,0.67,1000,0.0,0.0
+health,llama,original,country,South Korea,0.0,0.33,1000,0.0,0.33,1000,0.0,0.0
+health,gemma,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+health,gemma,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+health,gemma,original,profession,lawyer,0.001,0.0,1000,0.001,0.0,1000,0.0,0.0
+health,gemma,original,profession,registered nurse,0.999,0.0,1000,0.999,0.0,1000,0.0,0.0
+health,gemma,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+health,gemma,original,country,Brazil,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+health,gemma,original,country,Germany,0.0,0.001,1000,0.0,0.001,1000,0.0,0.0
+health,gemma,original,country,Nigeria,0.0,0.93,1000,0.0,0.93,1000,0.0,0.0
+health,gemma,original,country,South Korea,0.0,0.069,1000,0.0,0.069,1000,0.0,0.0
+health,qwen,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+health,qwen,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+health,qwen,original,profession,lawyer,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+health,qwen,original,profession,registered nurse,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+health,qwen,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+health,qwen,original,country,Brazil,0.021,0.558,1000,0.021,0.558,1000,0.0,0.0
+health,qwen,original,country,Germany,0.789,0.019,1000,0.789,0.019,1000,0.0,0.0
+health,qwen,original,country,Nigeria,0.082,0.303,1000,0.082,0.303,1000,0.0,0.0
+health,qwen,original,country,South Korea,0.108,0.12,1000,0.108,0.12,1000,0.0,0.0
+health,ministral,original,profession,computer programmer,0.133,0.0,1000,0.133,0.0,1000,0.0,0.0
+health,ministral,original,profession,farmer,0.0,0.03,1000,0.0,0.03,1000,0.0,0.0
+health,ministral,original,profession,lawyer,0.255,0.0,1000,0.255,0.0,1000,0.0,0.0
+health,ministral,original,profession,registered nurse,0.612,0.0,1000,0.612,0.0,1000,0.0,0.0
+health,ministral,original,profession,truck driver,0.0,0.97,1000,0.0,0.97,1000,0.0,0.0
+health,ministral,original,country,Brazil,0.831,0.0,1000,0.831,0.0,1000,0.0,0.0
+health,ministral,original,country,Germany,0.168,0.0,1000,0.168,0.0,1000,0.0,0.0
+health,ministral,original,country,Nigeria,0.0,0.999,1000,0.0,0.999,1000,0.0,0.0
+health,ministral,original,country,South Korea,0.001,0.001,1000,0.001,0.001,1000,0.0,0.0
+neutral,llama,original,profession,computer programmer,0.0,0.283,1000,0.0,0.283,1000,0.0,0.0
+neutral,llama,original,profession,farmer,0.0,0.371,1000,0.0,0.371,1000,0.0,0.0
+neutral,llama,original,profession,lawyer,0.101,0.001,1000,0.101,0.001,1000,0.0,0.0
+neutral,llama,original,profession,registered nurse,0.899,0.0,1000,0.899,0.0,1000,0.0,0.0
+neutral,llama,original,profession,truck driver,0.0,0.345,1000,0.0,0.345,1000,0.0,0.0
+neutral,llama,original,country,Brazil,0.849,0.0,1000,0.849,0.0,1000,0.0,0.0
+neutral,llama,original,country,Germany,0.151,0.0,1000,0.151,0.0,1000,0.0,0.0
+neutral,llama,original,country,Nigeria,0.0,0.67,1000,0.0,0.67,1000,0.0,0.0
+neutral,llama,original,country,South Korea,0.0,0.33,1000,0.0,0.33,1000,0.0,0.0
+neutral,gemma,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+neutral,gemma,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+neutral,gemma,original,profession,lawyer,0.001,0.0,1000,0.001,0.0,1000,0.0,0.0
+neutral,gemma,original,profession,registered nurse,0.999,0.0,1000,0.999,0.0,1000,0.0,0.0
+neutral,gemma,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+neutral,gemma,original,country,Brazil,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+neutral,gemma,original,country,Germany,0.0,0.001,1000,0.0,0.001,1000,0.0,0.0
+neutral,gemma,original,country,Nigeria,0.0,0.93,1000,0.0,0.93,1000,0.0,0.0
+neutral,gemma,original,country,South Korea,0.0,0.069,1000,0.0,0.069,1000,0.0,0.0
+neutral,qwen,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+neutral,qwen,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+neutral,qwen,original,profession,lawyer,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+neutral,qwen,original,profession,registered nurse,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+neutral,qwen,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+neutral,qwen,original,country,Brazil,0.021,0.558,1000,0.021,0.558,1000,0.0,0.0
+neutral,qwen,original,country,Germany,0.789,0.019,1000,0.789,0.019,1000,0.0,0.0
+neutral,qwen,original,country,Nigeria,0.082,0.303,1000,0.082,0.303,1000,0.0,0.0
+neutral,qwen,original,country,South Korea,0.108,0.12,1000,0.108,0.12,1000,0.0,0.0
+neutral,ministral,original,profession,computer programmer,0.133,0.0,1000,0.133,0.0,1000,0.0,0.0
+neutral,ministral,original,profession,farmer,0.0,0.03,1000,0.0,0.03,1000,0.0,0.0
+neutral,ministral,original,profession,lawyer,0.255,0.0,1000,0.255,0.0,1000,0.0,0.0
+neutral,ministral,original,profession,registered nurse,0.612,0.0,1000,0.612,0.0,1000,0.0,0.0
+neutral,ministral,original,profession,truck driver,0.0,0.97,1000,0.0,0.97,1000,0.0,0.0
+neutral,ministral,original,country,Brazil,0.831,0.0,1000,0.831,0.0,1000,0.0,0.0
+neutral,ministral,original,country,Germany,0.168,0.0,1000,0.168,0.0,1000,0.0,0.0
+neutral,ministral,original,country,Nigeria,0.0,0.999,1000,0.0,0.999,1000,0.0,0.0
+neutral,ministral,original,country,South Korea,0.001,0.001,1000,0.001,0.001,1000,0.0,0.0
+positive,llama,original,profession,computer programmer,0.0,0.283,1000,0.0,0.283,1000,0.0,0.0
+positive,llama,original,profession,farmer,0.0,0.371,1000,0.0,0.371,1000,0.0,0.0
+positive,llama,original,profession,lawyer,0.101,0.001,1000,0.101,0.001,1000,0.0,0.0
+positive,llama,original,profession,registered nurse,0.899,0.0,1000,0.899,0.0,1000,0.0,0.0
+positive,llama,original,profession,truck driver,0.0,0.345,1000,0.0,0.345,1000,0.0,0.0
+positive,llama,original,country,Brazil,0.849,0.0,1000,0.849,0.0,1000,0.0,0.0
+positive,llama,original,country,Germany,0.151,0.0,1000,0.151,0.0,1000,0.0,0.0
+positive,llama,original,country,Nigeria,0.0,0.67,1000,0.0,0.67,1000,0.0,0.0
+positive,llama,original,country,South Korea,0.0,0.33,1000,0.0,0.33,1000,0.0,0.0
+positive,gemma,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+positive,gemma,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+positive,gemma,original,profession,lawyer,0.001,0.0,1000,0.001,0.0,1000,0.0,0.0
+positive,gemma,original,profession,registered nurse,0.999,0.0,1000,0.999,0.0,1000,0.0,0.0
+positive,gemma,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+positive,gemma,original,country,Brazil,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+positive,gemma,original,country,Germany,0.0,0.001,1000,0.0,0.001,1000,0.0,0.0
+positive,gemma,original,country,Nigeria,0.0,0.93,1000,0.0,0.93,1000,0.0,0.0
+positive,gemma,original,country,South Korea,0.0,0.069,1000,0.0,0.069,1000,0.0,0.0
+positive,qwen,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+positive,qwen,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+positive,qwen,original,profession,lawyer,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+positive,qwen,original,profession,registered nurse,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+positive,qwen,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+positive,qwen,original,country,Brazil,0.021,0.558,1000,0.021,0.558,1000,0.0,0.0
+positive,qwen,original,country,Germany,0.789,0.019,1000,0.789,0.019,1000,0.0,0.0
+positive,qwen,original,country,Nigeria,0.082,0.303,1000,0.082,0.303,1000,0.0,0.0
+positive,qwen,original,country,South Korea,0.108,0.12,1000,0.108,0.12,1000,0.0,0.0
+positive,ministral,original,profession,computer programmer,0.133,0.0,1000,0.133,0.0,1000,0.0,0.0
+positive,ministral,original,profession,farmer,0.0,0.03,1000,0.0,0.03,1000,0.0,0.0
+positive,ministral,original,profession,lawyer,0.255,0.0,1000,0.255,0.0,1000,0.0,0.0
+positive,ministral,original,profession,registered nurse,0.612,0.0,1000,0.612,0.0,1000,0.0,0.0
+positive,ministral,original,profession,truck driver,0.0,0.97,1000,0.0,0.97,1000,0.0,0.0
+positive,ministral,original,country,Brazil,0.831,0.0,1000,0.831,0.0,1000,0.0,0.0
+positive,ministral,original,country,Germany,0.168,0.0,1000,0.168,0.0,1000,0.0,0.0
+positive,ministral,original,country,Nigeria,0.0,0.999,1000,0.0,0.999,1000,0.0,0.0
+positive,ministral,original,country,South Korea,0.001,0.001,1000,0.001,0.001,1000,0.0,0.0
+negative_minor,llama,original,profession,computer programmer,0.0,0.283,1000,0.0,0.283,1000,0.0,0.0
+negative_minor,llama,original,profession,farmer,0.0,0.371,1000,0.0,0.371,1000,0.0,0.0
+negative_minor,llama,original,profession,lawyer,0.101,0.001,1000,0.101,0.001,1000,0.0,0.0
+negative_minor,llama,original,profession,registered nurse,0.899,0.0,1000,0.899,0.0,1000,0.0,0.0
+negative_minor,llama,original,profession,truck driver,0.0,0.345,1000,0.0,0.345,1000,0.0,0.0
+negative_minor,llama,original,country,Brazil,0.849,0.0,1000,0.849,0.0,1000,0.0,0.0
+negative_minor,llama,original,country,Germany,0.151,0.0,1000,0.151,0.0,1000,0.0,0.0
+negative_minor,llama,original,country,Nigeria,0.0,0.67,1000,0.0,0.67,1000,0.0,0.0
+negative_minor,llama,original,country,South Korea,0.0,0.33,1000,0.0,0.33,1000,0.0,0.0
+negative_minor,gemma,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+negative_minor,gemma,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+negative_minor,gemma,original,profession,lawyer,0.001,0.0,1000,0.001,0.0,1000,0.0,0.0
+negative_minor,gemma,original,profession,registered nurse,0.999,0.0,1000,0.999,0.0,1000,0.0,0.0
+negative_minor,gemma,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+negative_minor,gemma,original,country,Brazil,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+negative_minor,gemma,original,country,Germany,0.0,0.001,1000,0.0,0.001,1000,0.0,0.0
+negative_minor,gemma,original,country,Nigeria,0.0,0.93,1000,0.0,0.93,1000,0.0,0.0
+negative_minor,gemma,original,country,South Korea,0.0,0.069,1000,0.0,0.069,1000,0.0,0.0
+negative_minor,qwen,original,profession,computer programmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+negative_minor,qwen,original,profession,farmer,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+negative_minor,qwen,original,profession,lawyer,1.0,0.0,1000,1.0,0.0,1000,0.0,0.0
+negative_minor,qwen,original,profession,registered nurse,0.0,0.0,1000,0.0,0.0,1000,0.0,0.0
+negative_minor,qwen,original,profession,truck driver,0.0,1.0,1000,0.0,1.0,1000,0.0,0.0
+negative_minor,qwen,original,country,Brazil,0.021,0.558,1000,0.021,0.558,1000,0.0,0.0
+negative_minor,qwen,original,country,Germany,0.789,0.019,1000,0.789,0.019,1000,0.0,0.0
+negative_minor,qwen,original,country,Nigeria,0.082,0.303,1000,0.082,0.303,1000,0.0,0.0
+negative_minor,qwen,original,country,South Korea,0.108,0.12,1000,0.108,0.12,1000,0.0,0.0
+negative_minor,ministral,original,profession,computer programmer,0.133,0.0,1000,0.133,0.0,1000,0.0,0.0
+negative_minor,ministral,original,profession,farmer,0.0,0.03,1000,0.0,0.03,1000,0.0,0.0
+negative_minor,ministral,original,profession,lawyer,0.255,0.0,1000,0.255,0.0,1000,0.0,0.0
+negative_minor,ministral,original,profession,registered nurse,0.612,0.0,1000,0.612,0.0,1000,0.0,0.0
+negative_minor,ministral,original,profession,truck driver,0.0,0.97,1000,0.0,0.97,1000,0.0,0.0
+negative_minor,ministral,original,country,Brazil,0.831,0.0,1000,0.831,0.0,1000,0.0,0.0
+negative_minor,ministral,original,country,Germany,0.168,0.0,1000,0.168,0.0,1000,0.0,0.0
+negative_minor,ministral,original,country,Nigeria,0.0,0.999,1000,0.0,0.999,1000,0.0,0.0
+negative_minor,ministral,original,country,South Korea,0.001,0.001,1000,0.001,0.001,1000,0.0,0.0

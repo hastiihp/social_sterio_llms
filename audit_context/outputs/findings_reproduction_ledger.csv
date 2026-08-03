@@ -1,0 +1,129 @@
+section,claim,reported,reproduced,status,independent_source
+1 rating,llama/health shift,-0.174,-0.173810,MATCH,rating_findings_raw.csv
+1 rating,llama/health clustered p,~8e-77,7.60916e-77,MATCH,rating_findings_raw.csv
+1 rating,gemma/health shift,-0.185,-0.184921,MATCH,rating_findings_raw.csv
+1 rating,gemma/health clustered p,~8e-52,8.2679e-52,MATCH,rating_findings_raw.csv
+1 rating,qwen/health shift,-0.018,-0.155556,MISMATCH,rating_findings_raw.csv
+1 rating,qwen/health clustered p,.15,3.21753e-22,MISMATCH,rating_findings_raw.csv
+1 rating,ministral/health shift,0.003,-0.097619,MISMATCH,rating_findings_raw.csv
+1 rating,ministral/health clustered p,.73,2.43917e-31,MISMATCH,rating_findings_raw.csv
+1 rating,llama/neutral shift,-0.112,-0.111905,MATCH,rating_findings_raw.csv
+1 rating,llama/neutral clustered p,~9e-20,8.72766e-20,MATCH,rating_findings_raw.csv
+1 rating,gemma/neutral shift,-0.125,-0.125397,MATCH,rating_findings_raw.csv
+1 rating,gemma/neutral clustered p,~2e-20,1.98247e-20,MATCH,rating_findings_raw.csv
+1 rating,qwen/neutral shift,-0.018,-0.018254,MATCH,rating_findings_raw.csv
+1 rating,qwen/neutral clustered p,.15,0.148554,MATCH,rating_findings_raw.csv
+1 rating,ministral/neutral shift,0.003,0.003175,MATCH,rating_findings_raw.csv
+1 rating,ministral/neutral clustered p,.73,0.726363,MATCH,rating_findings_raw.csv
+1 rating,llama/positive shift,-0.017,-0.084127,MISMATCH,rating_findings_raw.csv
+1 rating,llama/positive clustered p,.06,6.11063e-15,MISMATCH,rating_findings_raw.csv
+1 rating,gemma/positive shift,-0.054,-0.053968,MATCH,rating_findings_raw.csv
+1 rating,gemma/positive clustered p,~5e-5,5.11687e-05,MATCH,rating_findings_raw.csv
+1 rating,qwen/positive shift,-0.155,-0.154762,MATCH,rating_findings_raw.csv
+1 rating,qwen/positive clustered p,~1e-28,1.48768e-28,MATCH,rating_findings_raw.csv
+1 rating,ministral/positive shift,0.002,0.002381,MATCH,rating_findings_raw.csv
+1 rating,ministral/positive clustered p,.82,0.817966,MATCH,rating_findings_raw.csv
+1 rating,llama/negative_minor shift,-0.101,-0.100794,MATCH,rating_findings_raw.csv
+1 rating,llama/negative_minor clustered p,~4e-15,3.73668e-15,MATCH,rating_findings_raw.csv
+1 rating,gemma/negative_minor shift,-0.15,-0.150000,MATCH,rating_findings_raw.csv
+1 rating,gemma/negative_minor clustered p,~2e-28,2.02518e-28,MATCH,rating_findings_raw.csv
+1 rating,qwen/negative_minor shift,-0.098,-0.098413,MATCH,rating_findings_raw.csv
+1 rating,qwen/negative_minor clustered p,~9e-14,8.49524e-14,MATCH,rating_findings_raw.csv
+1 rating,ministral/negative_minor shift,-0.071,-0.070635,MATCH,rating_findings_raw.csv
+1 rating,ministral/negative_minor clustered p,~4e-17,3.63164e-17,MATCH,rating_findings_raw.csv
+1 rating,pairs per cell,1260,1260,MATCH,rating_findings_raw.csv
+1 rating,clusters per cell,180,180,MATCH,rating_findings_raw.csv
+1 rating,exact-agreement range,74%-92%,68.81%-90.71%,MISMATCH,rating_findings_raw.csv
+1 rating,Spearman range,0.71-0.90,0.686-0.894,MISMATCH,rating_findings_raw.csv
+2-3 abstention,qwen/health shift pp,2.11,2.11376,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,qwen/neutral shift pp,-3.19,-3.18783,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,qwen/positive shift pp,4.7,4.69841,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,qwen/negative_minor shift pp,0.96,0.96032,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,ministral/health shift pp,-34.95,-34.95238,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,ministral/neutral shift pp,-41.46,-41.45767,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,ministral/positive shift pp,-46.24,-46.24339,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,ministral/negative_minor shift pp,-53.67,-53.66667,MATCH,all_model_context_rates_raw.csv
+2-3 abstention,largest-topic drop range,60-98pp,56.11-98.33pp,QUALIFY,raw-derived pilot topic CSVs
+2-3 abstention,small-topic drop range,0-5pp,0.56-4.44pp,MATCH,raw-derived pilot topic CSVs
+2-3 abstention,neutral both-answered n,209,209,MATCH,ministral_neutral_degenerate_raw.csv
+2-3 abstention,neutral both sides all rating 4,yes,True,MATCH,ministral_neutral_degenerate_raw.csv
+4 ranking,profession/llama mean rho,0.92,0.923381,MATCH,ranking_exact_independent.csv
+4 ranking,profession/gemma mean rho,0.93,0.925000,MATCH,ranking_exact_independent.csv
+4 ranking,profession/qwen mean rho,0.98,0.975000,MATCH,ranking_exact_independent.csv
+4 ranking,profession/ministral mean rho,0.97,0.968670,MATCH,ranking_exact_independent.csv
+4 ranking,country/llama mean rho,1,1.000000,MATCH,ranking_exact_independent.csv
+4 ranking,country/gemma mean rho,0.35,0.350000,MATCH,ranking_exact_independent.csv
+4 ranking,country/qwen mean rho,-0.3,-0.300000,MATCH,ranking_exact_independent.csv
+4 ranking,country/ministral mean rho,0.56,0.558114,MATCH,ranking_exact_independent.csv
+4 ranking,profession levels/permutations,n=5 / 120,5 / 120,MATCH,ranking_exact_independent.csv
+4 ranking,country levels/permutations,n=4 / 24,4 / 24,MATCH,ranking_exact_independent.csv
+4 ranking,minimum two-sided exact country p,2/24=0.083,0.083333,MATCH,ranking_exact_independent.csv
+4 ranking,bootstrap replicates all comparisons,1000,[np.int64(1000)],MATCH,ranking_bootstrap_independent_vs_reported.csv
+4 ranking,maximum bootstrap probability discrepancy,0,0,MATCH,ranking_bootstrap_independent_vs_reported.csv
+5 agreement,mean context-context rho,0.879,0.878602,MATCH,cross_context_correlation_summary.csv
+5 agreement,mean context-original rho,0.791,0.790584,MATCH,cross_context_correlation_summary.csv
+5 agreement,context-pair mean range,0.858-0.902,0.857467-0.901570,MATCH,cross_context_pair_means.csv
+5 agreement,health/negative_minor mean rho,0.902,0.901570,MATCH,cross_context_pair_means.csv
+5 agreement,neutral/positive mean rho,0.895,0.894615,MATCH,cross_context_pair_means.csv
+5 agreement,six-pair span,0.044,0.044104,MATCH,cross_context_pair_means.csv
+Step 3,llama/original abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,llama/health abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,llama/neutral abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,llama/positive abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,llama/negative_minor abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma/original abstention_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma/health abstention_all_pct,0,0.001323,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma/neutral abstention_all_pct,0.0026,0.002646,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma/positive abstention_all_pct,0.0503,0.050265,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma/negative_minor abstention_all_pct,0.0026,0.002646,MATCH,all_model_context_rates_raw.csv
+Step 3,qwen/original abstention_B_pct,89.97,89.970899,MATCH,all_model_context_rates_raw.csv
+Step 3,qwen/health abstention_B_pct,92.08,92.084656,MATCH,all_model_context_rates_raw.csv
+Step 3,qwen/neutral abstention_B_pct,86.78,86.783069,MATCH,all_model_context_rates_raw.csv
+Step 3,qwen/positive abstention_B_pct,94.67,94.669312,MATCH,all_model_context_rates_raw.csv
+Step 3,qwen/negative_minor abstention_B_pct,90.93,90.931217,MATCH,all_model_context_rates_raw.csv
+Step 3,ministral/original abstention_B_pct,83.47,83.465608,MATCH,all_model_context_rates_raw.csv
+Step 3,ministral/health abstention_B_pct,48.51,48.513228,MATCH,all_model_context_rates_raw.csv
+Step 3,ministral/neutral abstention_B_pct,42.01,42.007937,MATCH,all_model_context_rates_raw.csv
+Step 3,ministral/positive abstention_B_pct,37.22,37.222222,MATCH,all_model_context_rates_raw.csv
+Step 3,ministral/negative_minor abstention_B_pct,29.8,29.798942,MATCH,all_model_context_rates_raw.csv
+Step 3,deepseek/original strict_valid_all_pct,0.083,0.083333,MATCH,all_model_context_rates_raw.csv
+Step 3,deepseek/health strict_valid_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,deepseek/neutral strict_valid_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,deepseek/positive strict_valid_all_pct,0,0.000000,MATCH,all_model_context_rates_raw.csv
+Step 3,deepseek/negative_minor strict_valid_all_pct,0.27,0.269841,MATCH,all_model_context_rates_raw.csv
+Step 3,gemma positive abstention count,38,38,MATCH,raw count
+Step 3,gemma positive clustered p,~6e-10,6.18487e-10,MATCH,analysis independently checked formula/output
+Step 4,original strict pct,0.08,0.083333,MATCH,deepseek_reconciliation_raw.csv
+Step 4,original salvageable pct,30.67,30.666667,MATCH,deepseek_reconciliation_raw.csv
+Step 4,original new compact pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,original true total pct,30.75,30.750000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,health strict pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,health salvageable pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,health new compact pct,14.86,14.859788,MATCH,deepseek_reconciliation_raw.csv
+Step 4,health true total pct,14.86,14.859788,MATCH,deepseek_reconciliation_raw.csv
+Step 4,neutral strict pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,neutral salvageable pct,0.12,0.121693,MATCH,deepseek_reconciliation_raw.csv
+Step 4,neutral new compact pct,68.24,68.239418,MATCH,deepseek_reconciliation_raw.csv
+Step 4,neutral true total pct,68.36,68.361111,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive strict pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive salvageable pct,0.03,0.033069,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive new compact pct,90.77,90.764550,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive true total pct,90.8,90.797619,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor strict pct,0.27,0.269841,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor salvageable pct,0.07,0.072751,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor new compact pct,41.05,41.047619,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor true total pct,41.39,41.390212,MATCH,deepseek_reconciliation_raw.csv
+Step 4,original compact matches,8599,8599,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive newly recovered rows,68618,68618,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive new rows digit 4 pct,99.96,99.957737,MATCH,deepseek_new_digit_distribution.csv
+Step 4,original salvageable digit 4 pct,62,61.908051,MATCH,raw original DeepSeek
+Step 4,original salvageable digit 2 pct,23,22.581481,MATCH,raw original DeepSeek
+Step 4,original salvageable digit 3 pct,15,15.376646,MATCH,raw original DeepSeek
+Step 4,original zero-space >5 chars pct,0,0.000000,MATCH,deepseek_reconciliation_raw.csv
+Step 4,health zero-space >5 chars pct,15.7,15.702381,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor zero-space >5 chars pct,73.35,73.345238,MATCH,deepseek_reconciliation_raw.csv
+Step 4,neutral zero-space >5 chars pct,81.32,81.318783,MATCH,deepseek_reconciliation_raw.csv
+Step 4,positive zero-space >5 chars pct,97.29,97.288360,MATCH,deepseek_reconciliation_raw.csv
+Step 4,negative_minor strict rows,204,204,MATCH,deepseek_negative_strict_slice.csv
+Step 4,negative_minor strict economic pct,91,91.176471,MATCH,deepseek_negative_strict_slice.csv
+Step 4,negative_minor strict digit 4 pct,100,100.000000,MATCH,deepseek_negative_strict_slice.csv

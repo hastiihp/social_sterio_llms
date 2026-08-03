@@ -1,0 +1,9 @@
+Audit date: 2026-08-02 (Europe/Paris)
+Scope: read-only validation of existing prompts, results, and analysis outputs.
+Writes: audit_context/ only.
+Experiments/inference launched: none.
+Main audit: python audit_context/run_audit.py (exit 0)
+Supplemental checks: python audit_context/run_supplemental.py (exit 0)
+Ledger: python audit_context/build_reproduction_ledger.py (exit 0; 128 claims)
+Bootstrap: 1,000 persona-cluster resamples per model/framing; 144 output rows; maximum discrepancy vs published output = 0.
+Environment note: pandas emitted a non-fatal numexpr-version warning; computations completed.
