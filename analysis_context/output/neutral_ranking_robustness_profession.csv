@@ -1,0 +1,21 @@
+level,coef_orig,coef_ctx,model,context,rank_orig,rank_label_orig,rank_ctx,rank_label_ctx
+farmer,-0.003968253968252179,-0.08730158730158546,llama,neutral,4,tied for rank 4,5,rank 5
+lawyer,0.0555555555555578,0.06349206349206567,llama,neutral,2,rank 2,1,rank 1
+registered nurse,0.08730158730158812,0.031746031746032466,llama,neutral,1,rank 1,2,rank 2
+truck driver,-0.0039682539682522125,-0.07142857142856975,llama,neutral,4,tied for rank 4,4,rank 4
+computer programmer,0.0,0.0,llama,neutral,3,rank 3,3,rank 3
+farmer,-0.003968253968252197,0.01587301587301789,gemma,neutral,4,rank 4,2,rank 2
+lawyer,0.03968253968254194,0.003968253968256296,gemma,neutral,2,rank 2,3,rank 3
+registered nurse,0.12301587301587406,0.13888888888889,gemma,neutral,1,rank 1,1,rank 1
+truck driver,-0.11111111111110916,-0.1388888888888871,gemma,neutral,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,gemma,neutral,3,rank 3,4,rank 4
+farmer,-0.15079365079364918,-0.19444444444444275,qwen,neutral,4,rank 4,4,rank 4
+lawyer,0.2619047619047642,0.22222222222222454,qwen,neutral,1,rank 1,1,rank 1
+registered nurse,0.10714285714285787,0.14285714285714365,qwen,neutral,2,rank 2,2,rank 2
+truck driver,-0.29365079365079183,-0.31349206349206166,qwen,neutral,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,qwen,neutral,3,rank 3,3,rank 3
+farmer,-0.10714285714285575,-0.13095238095237943,ministral,neutral,4,rank 4,4,rank 4
+lawyer,0.00793650793650975,0.015873015873017836,ministral,neutral,2,rank 2,2,rank 2
+registered nurse,0.015873015873016656,0.03174603174603258,ministral,neutral,1,rank 1,1,rank 1
+truck driver,-0.13888888888888717,-0.2103174603174585,ministral,neutral,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,ministral,neutral,3,rank 3,3,rank 3

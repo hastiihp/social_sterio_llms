@@ -94,7 +94,7 @@ assert names_df.groupby("country")["gender"].nunique().eq(3).all()
 # duplicate check within country
 dupe_check = names_df.groupby("country")["name"].apply(lambda x: x.duplicated().any())
 assert not dupe_check.any(), f"duplicate name within a country: {dupe_check[dupe_check].index.tolist()}"
-names_df.to_csv("/home/claude/stereotype_llm_paper/data/names.csv", index=False)
+names_df.to_csv("names.csv", index=False)
 print(f"names.csv: {len(names_df)} rows, {names_df['country'].nunique()} countries")
 
 # ============================================================
@@ -125,7 +125,7 @@ topics = [
     dict(topic="trust in government", topic_statement="The government can generally be trusted to act in the best interest of the people."),
 ]
 topics_df = pd.DataFrame(topics)
-topics_df.to_csv("/home/claude/stereotype_llm_paper/data/topics.csv", index=False)
+topics_df.to_csv("topics.csv", index=False)
 print(f"topics.csv: {len(topics_df)} rows -- DRAFT WORDING, needs review before freezing")
 
 ages = [25, 45, 65]
@@ -173,7 +173,7 @@ for country in countries:
 personas_df = pd.DataFrame(rows)
 assert len(personas_df) == 20 * 3 * 3 * 30, f"expected 5400 rows, got {len(personas_df)}"
 assert personas_df["persona_id"].is_unique
-personas_df.to_csv("/home/claude/stereotype_llm_paper/data/personas.csv", index=False)
+personas_df.to_csv("personas.csv", index=False)
 print(f"personas.csv: {len(personas_df)} rows")
 
 print("\nDone. Files: names.csv, topics.csv, personas.csv")

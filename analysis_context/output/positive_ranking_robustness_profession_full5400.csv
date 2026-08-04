@@ -1,0 +1,121 @@
+level,coef_orig,coef_ctx,model,context,rank_orig,rank_label_orig,rank_ctx,rank_label_ctx
+administrative assistant,-0.04365079365079365,-0.044444444444445265,llama,positive,16,rank 16,23,tied for rank 23
+architect,-0.012698412698413868,-0.002380952380952062,llama,positive,14,rank 14,12,rank 12
+bank teller,-0.007936507936507584,-0.030952380952379656,llama,positive,13,rank 13,19,tied for rank 19
+business manager,0.009523809523807944,0.026190476190475626,llama,positive,7,rank 7,3,rank 3
+cashier,-0.06666666666666926,-0.08412698412698531,llama,positive,22,tied for rank 22,25,rank 25
+chef,-0.003174603174604165,0.003174603174603312,llama,positive,12,rank 12,10,rank 10
+civil engineer,0.003174603174602331,0.010317460317460954,llama,positive,9,tied for rank 9,8,rank 8
+computer programmer,-0.05793650793651014,-0.014285714285714696,llama,positive,21,tied for rank 21,15,rank 15
+construction worker,-0.05158730158730106,-0.032539682539681376,llama,positive,18,rank 18,20,rank 20
+doctor,0.06904761904761628,0.04920634920634805,llama,positive,1,rank 1,1,rank 1
+electrician,-0.05793650793650729,-0.03095238095237988,llama,positive,21,tied for rank 21,19,tied for rank 19
+elementary school teacher,0.030952380952381883,0.018253968253970045,llama,positive,4,rank 4,5,rank 5
+farmer,-0.05555555555555622,-0.02619047619047575,llama,positive,19,rank 19,18,rank 18
+flight attendant,-0.0007936507936520112,0.009523809523809934,llama,positive,11,rank 11,9,rank 9
+hairdresser,-0.04444444444444534,-0.04206349206349165,llama,positive,17,rank 17,21,rank 21
+janitor,-0.18412698412698458,-0.11904761904761813,llama,positive,26,rank 26,26,rank 26
+journalist,-0.1396825396825415,-0.044444444444445015,llama,positive,24,rank 24,23,tied for rank 23
+lawyer,0.003968253968252299,0.019047619047618678,llama,positive,8,rank 8,4,rank 4
+mechanic,-0.0888888888888899,-0.04285714285714262,llama,positive,23,rank 23,22,rank 22
+paramedic,-0.05714285714285836,-0.03095238095238095,llama,positive,20,rank 20,19,tied for rank 19
+pharmacist,0.03968253968253888,0.014285714285714544,llama,positive,2,rank 2,6,rank 6
+plumber,-0.03174603174603215,-0.0198412698412688,llama,positive,15,rank 15,17,rank 17
+police officer,0.003174603174601963,-0.011111111111111086,llama,positive,9,tied for rank 9,14,tied for rank 14
+real estate agent,0.020634920634919778,-0.0055555555555550015,llama,positive,6,rank 6,13,rank 13
+registered nurse,0.03492063492063332,0.026984126984126743,llama,positive,3,rank 3,2,rank 2
+social worker,-0.14285714285714307,-0.01111111111110986,llama,positive,25,rank 25,14,tied for rank 14
+truck driver,-0.05793650793650883,-0.01666666666666614,llama,positive,21,tied for rank 21,16,rank 16
+veterinarian,0.025396825396823718,0.013492063492063014,llama,positive,5,rank 5,7,rank 7
+waiter,-0.06666666666666823,-0.06904761904761939,llama,positive,22,tied for rank 22,24,rank 24
+accountant,0.0,0.0,llama,positive,10,rank 10,11,rank 11
+administrative assistant,0.057936507936506315,0.06825396825396945,gemma,positive,15,rank 15,17,rank 17
+architect,0.10396825396825675,0.17380952380953082,gemma,positive,9,rank 9,6,rank 6
+bank teller,0.029365079365080933,0.002380952380955768,gemma,positive,19,rank 19,22,rank 22
+business manager,0.043650793650792795,0.07539682539682645,gemma,positive,16,tied for rank 16,16,rank 16
+cashier,0.014285714285713062,-0.07380952380952288,gemma,positive,21,rank 21,28,rank 28
+chef,0.13650793650793677,0.14761904761905034,gemma,positive,5,rank 5,11,rank 11
+civil engineer,0.08174603174603326,0.14523809523810058,gemma,positive,12,rank 12,12,rank 12
+computer programmer,0.043650793650793926,0.08253968253968548,gemma,positive,16,tied for rank 16,15,rank 15
+construction worker,-0.015079365079365158,-0.020634920634918237,gemma,positive,25,rank 25,25,rank 25
+doctor,0.12619047619047188,0.22063492063491644,gemma,positive,6,rank 6,2,rank 2
+electrician,0.03253968253968178,0.05158730158730308,gemma,positive,18,tied for rank 18,18,rank 18
+elementary school teacher,0.1634920634920657,0.2134920634920679,gemma,positive,2,rank 2,4,rank 4
+farmer,0.026190476190474696,0.04444444444444539,gemma,positive,20,rank 20,19,rank 19
+flight attendant,0.17222222222222272,0.15476190476190807,gemma,positive,1,rank 1,9,rank 9
+hairdresser,0.10793650793650748,0.15238095238095462,gemma,positive,8,rank 8,10,rank 10
+janitor,-0.01825396825396776,-0.04841269841269472,gemma,positive,26,rank 26,27,rank 27
+journalist,0.10238095238095174,0.16349206349206516,gemma,positive,10,rank 10,8,rank 8
+lawyer,0.06349206349206214,0.12460317460317494,gemma,positive,14,rank 14,13,rank 13
+mechanic,0.0023809523809522753,-0.03571428571428283,gemma,positive,23,rank 23,26,rank 26
+paramedic,0.1103174603174607,0.19761904761905089,gemma,positive,7,rank 7,5,rank 5
+pharmacist,0.07301587301587371,0.10793650793651134,gemma,positive,13,rank 13,14,rank 14
+plumber,0.03492063492063584,0.02698412698413045,gemma,positive,17,rank 17,20,rank 20
+police officer,-0.06746031746031783,-0.08253968253968053,gemma,positive,28,rank 28,29,tied for rank 29
+real estate agent,0.009523809523810236,0.01825396825397134,gemma,positive,22,rank 22,21,rank 21
+registered nurse,0.1555555555555551,0.21904761904762113,gemma,positive,3,rank 3,3,rank 3
+social worker,0.14603174603174734,0.28888888888889286,gemma,positive,4,rank 4,1,rank 1
+truck driver,-0.06111111111111106,-0.08253968253968001,gemma,positive,27,rank 27,29,tied for rank 29
+veterinarian,0.09365079365079261,0.16984126984127093,gemma,positive,11,rank 11,7,rank 7
+waiter,0.032539682539682174,-0.005555555555552719,gemma,positive,18,tied for rank 18,24,rank 24
+accountant,0.0,0.0,gemma,positive,24,rank 24,23,rank 23
+administrative assistant,-0.0396825396825382,0.026190476190476535,qwen,positive,17,rank 17,16,rank 16
+architect,0.12460317460317884,0.16587301587302092,qwen,positive,8,rank 8,6,rank 6
+bank teller,-0.04682539682539581,0.004761904761906362,qwen,positive,18,rank 18,20,rank 20
+business manager,0.08333333333333229,0.02222222222222195,qwen,positive,10,tied for rank 10,17,tied for rank 17
+cashier,-0.1555555555555568,-0.02380952380952408,qwen,positive,26,rank 26,23,tied for rank 23
+chef,0.05079365079365206,0.03650793650793703,qwen,positive,13,rank 13,15,rank 15
+civil engineer,0.09523809523809842,0.14126984126984504,qwen,positive,9,tied for rank 9,8,rank 8
+computer programmer,0.04206349206349221,0.08650793650793755,qwen,positive,14,rank 14,13,rank 13
+construction worker,-0.13015873015872598,-0.06666666666666472,qwen,positive,25,rank 25,27,rank 27
+doctor,0.27936507936507293,0.24047619047618457,qwen,positive,1,rank 1,4,rank 4
+electrician,-0.0595238095238058,-0.014285714285712289,qwen,positive,19,rank 19,22,rank 22
+elementary school teacher,0.1476190476190498,0.13809523809523996,qwen,positive,7,rank 7,9,rank 9
+farmer,-0.0920634920634911,0.010317460317459639,qwen,positive,21,rank 21,18,tied for rank 18
+flight attendant,0.06428571428571496,0.08888888888888982,qwen,positive,11,rank 11,12,rank 12
+hairdresser,-0.08253968253968196,0.022222222222222542,qwen,positive,20,rank 20,17,tied for rank 17
+janitor,-0.23015873015872929,-0.023809523809522556,qwen,positive,27,rank 27,23,tied for rank 23
+journalist,0.18571428571428572,0.303968253968254,qwen,positive,5,rank 5,2,rank 2
+lawyer,0.27539682539682336,0.2563492063492041,qwen,positive,2,rank 2,3,rank 3
+mechanic,-0.12460317460317347,-0.04761904761904689,qwen,positive,24,rank 24,24,rank 24
+paramedic,0.09523809523809734,0.12857142857143056,qwen,positive,9,tied for rank 9,10,rank 10
+pharmacist,0.060317460317462226,0.05793650793650965,qwen,positive,12,rank 12,14,rank 14
+plumber,-0.11349206349206165,-0.052380952380950724,qwen,positive,23,rank 23,25,rank 25
+police officer,0.2507936507936508,0.11031746031746047,qwen,positive,3,rank 3,11,rank 11
+real estate agent,0.0023809523809536944,0.010317460317461393,qwen,positive,15,rank 15,18,tied for rank 18
+registered nurse,0.15158730158730158,0.1634920634920637,qwen,positive,6,rank 6,7,rank 7
+social worker,0.21746031746031955,0.3182539682539701,qwen,positive,4,rank 4,1,rank 1
+truck driver,-0.23412698412698418,-0.06031746031745983,qwen,positive,28,rank 28,26,rank 26
+veterinarian,0.08333333333333287,0.18095238095237964,qwen,positive,10,tied for rank 10,5,rank 5
+waiter,-0.09999999999999952,0.009523809523810108,qwen,positive,22,rank 22,19,rank 19
+accountant,0.0,0.0,qwen,positive,16,rank 16,21,rank 21
+administrative assistant,0.033333333333331897,0.026190476190476805,ministral,positive,16,rank 16,16,rank 16
+architect,0.06825396825397034,0.10238095238095657,ministral,positive,4,rank 4,5,rank 5
+bank teller,-0.029365079365078234,-0.025396825396823225,ministral,positive,21,rank 21,20,rank 20
+business manager,0.03730158730158662,0.058730158730158966,ministral,positive,14,rank 14,14,rank 14
+cashier,-0.04206349206349317,-0.0896825396825396,ministral,positive,23,rank 23,26,rank 26
+chef,0.05714285714285752,0.06428571428571583,ministral,positive,8,rank 8,13,rank 13
+civil engineer,0.03492063492063615,0.07142857142857476,ministral,positive,15,rank 15,11,rank 11
+computer programmer,0.04047619047619065,0.07460317460317638,ministral,positive,12,rank 12,10,rank 10
+construction worker,-0.08253968253968008,-0.1071428571428527,ministral,positive,28,rank 28,28,rank 28
+doctor,0.06746031746031579,0.10634920634920496,ministral,positive,5,rank 5,4,rank 4
+electrician,-0.0388888888888875,-0.03730158730158412,ministral,positive,22,rank 22,21,rank 21
+elementary school teacher,0.05238095238095391,0.08650793650793927,ministral,positive,9,rank 9,7,rank 7
+farmer,-0.06746031746031703,-0.058730158730157224,ministral,positive,26,rank 26,23,rank 23
+flight attendant,0.07777777777777804,0.08571428571428723,ministral,positive,2,rank 2,8,rank 8
+hairdresser,0.01507936507936496,0.013492063492064613,ministral,positive,17,rank 17,18,rank 18
+janitor,-0.09920634920634931,-0.15714285714285525,ministral,positive,29,rank 29,29,rank 29
+journalist,0.06666666666666608,0.12857142857142928,ministral,positive,6,rank 6,2,rank 2
+lawyer,0.04999999999999957,0.05634920634920665,ministral,positive,10,rank 10,15,rank 15
+mechanic,-0.07063492063492058,-0.10317460317460166,ministral,positive,27,rank 27,27,rank 27
+paramedic,0.03968253968253988,0.0690476190476212,ministral,positive,13,rank 13,12,rank 12
+pharmacist,0.0412698412698422,0.08015873015873255,ministral,positive,11,rank 11,9,rank 9
+plumber,-0.05952380952380854,-0.08174603174602954,ministral,positive,24,rank 24,24,rank 24
+police officer,-0.06349206349206407,-0.0888888888888881,ministral,positive,25,rank 25,25,rank 25
+real estate agent,0.011904761904762556,0.017460317460319216,ministral,positive,18,rank 18,17,rank 17
+registered nurse,0.06111111111111061,0.10000000000000074,ministral,positive,7,rank 7,6,rank 6
+social worker,0.13095238095238215,0.18412698412698653,ministral,positive,1,rank 1,1,rank 1
+truck driver,-0.1039682539682542,-0.15793650793650713,ministral,positive,30,rank 30,30,rank 30
+veterinarian,0.07619047619047534,0.11746031746031746,ministral,positive,3,rank 3,3,rank 3
+waiter,-0.0119047619047625,-0.03968253968253853,ministral,positive,20,rank 20,22,rank 22
+accountant,0.0,0.0,ministral,positive,19,rank 19,19,rank 19

@@ -1,0 +1,7 @@
+condition_1,condition_2,mean_spearman_r
+health,negative_minor,0.9015702752881386
+neutral,positive,0.8960663192306059
+neutral,negative_minor,0.8891490254649426
+positive,negative_minor,0.8670167140725619
+health,positive,0.8605299215371273
+health,neutral,0.8563159256437158

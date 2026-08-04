@@ -25,7 +25,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-PROMPTS_CSV = "../data/prompts.csv"
+PROMPTS_CSV = "../data/prompts_original.csv"
 DEFAULT_BATCH_SIZE = 16
 
 MODELS = {
@@ -161,7 +161,7 @@ def run_full(model_key):
     df = pd.read_csv(PROMPTS_CSV)
     print(f"Full dataset: {len(df)} prompts", flush=True)
 
-    out_path = f"full_results_{model_key}.csv"
+    out_path = f"../results/results_original_{model_key}.csv"
     fieldnames = list(provenance.keys()) + [
         "persona_id", "country", "gender", "age", "profession", "topic",
         "response_condition", "raw_text", "normalized_text",

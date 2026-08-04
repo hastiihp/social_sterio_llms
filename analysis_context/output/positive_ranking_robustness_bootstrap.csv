@@ -1,0 +1,73 @@
+factor,level,p_top,p_bottom,bootstrap_B,model,context,framing
+profession,computer programmer,0.0,0.283,1000,llama,positive,original
+profession,farmer,0.0,0.371,1000,llama,positive,original
+profession,lawyer,0.101,0.001,1000,llama,positive,original
+profession,registered nurse,0.899,0.0,1000,llama,positive,original
+profession,truck driver,0.0,0.345,1000,llama,positive,original
+country,Brazil,0.849,0.0,1000,llama,positive,original
+country,Germany,0.151,0.0,1000,llama,positive,original
+country,Nigeria,0.0,0.67,1000,llama,positive,original
+country,South Korea,0.0,0.33,1000,llama,positive,original
+profession,computer programmer,0.046,0.02,1000,llama,positive,context
+profession,farmer,0.0,0.942,1000,llama,positive,context
+profession,lawyer,0.214,0.022,1000,llama,positive,context
+profession,registered nurse,0.685,0.0,1000,llama,positive,context
+profession,truck driver,0.055,0.016,1000,llama,positive,context
+country,Brazil,0.995,0.0,1000,llama,positive,context
+country,Germany,0.005,0.0,1000,llama,positive,context
+country,Nigeria,0.0,0.99,1000,llama,positive,context
+country,South Korea,0.0,0.01,1000,llama,positive,context
+profession,computer programmer,0.0,0.0,1000,gemma,positive,original
+profession,farmer,0.0,0.0,1000,gemma,positive,original
+profession,lawyer,0.001,0.0,1000,gemma,positive,original
+profession,registered nurse,0.999,0.0,1000,gemma,positive,original
+profession,truck driver,0.0,1.0,1000,gemma,positive,original
+country,Brazil,1.0,0.0,1000,gemma,positive,original
+country,Germany,0.0,0.001,1000,gemma,positive,original
+country,Nigeria,0.0,0.93,1000,gemma,positive,original
+country,South Korea,0.0,0.069,1000,gemma,positive,original
+profession,computer programmer,0.0,0.0,1000,gemma,positive,context
+profession,farmer,0.0,0.0,1000,gemma,positive,context
+profession,lawyer,0.0,0.0,1000,gemma,positive,context
+profession,registered nurse,1.0,0.0,1000,gemma,positive,context
+profession,truck driver,0.0,1.0,1000,gemma,positive,context
+country,Brazil,0.996,0.0,1000,gemma,positive,context
+country,Germany,0.0,0.336,1000,gemma,positive,context
+country,Nigeria,0.004,0.047,1000,gemma,positive,context
+country,South Korea,0.0,0.617,1000,gemma,positive,context
+profession,computer programmer,0.0,0.0,1000,qwen,positive,original
+profession,farmer,0.0,0.0,1000,qwen,positive,original
+profession,lawyer,1.0,0.0,1000,qwen,positive,original
+profession,registered nurse,0.0,0.0,1000,qwen,positive,original
+profession,truck driver,0.0,1.0,1000,qwen,positive,original
+country,Brazil,0.021,0.558,1000,qwen,positive,original
+country,Germany,0.789,0.019,1000,qwen,positive,original
+country,Nigeria,0.082,0.303,1000,qwen,positive,original
+country,South Korea,0.108,0.12,1000,qwen,positive,original
+profession,computer programmer,0.0,0.0,1000,qwen,positive,context
+profession,farmer,0.0,0.006,1000,qwen,positive,context
+profession,lawyer,1.0,0.0,1000,qwen,positive,context
+profession,registered nurse,0.0,0.0,1000,qwen,positive,context
+profession,truck driver,0.0,0.994,1000,qwen,positive,context
+country,Brazil,0.0,0.129,1000,qwen,positive,context
+country,Germany,0.0,0.078,1000,qwen,positive,context
+country,Nigeria,1.0,0.0,1000,qwen,positive,context
+country,South Korea,0.0,0.793,1000,qwen,positive,context
+profession,computer programmer,0.133,0.0,1000,ministral,positive,original
+profession,farmer,0.0,0.03,1000,ministral,positive,original
+profession,lawyer,0.255,0.0,1000,ministral,positive,original
+profession,registered nurse,0.612,0.0,1000,ministral,positive,original
+profession,truck driver,0.0,0.97,1000,ministral,positive,original
+country,Brazil,0.831,0.0,1000,ministral,positive,original
+country,Germany,0.168,0.0,1000,ministral,positive,original
+country,Nigeria,0.0,0.999,1000,ministral,positive,original
+country,South Korea,0.001,0.001,1000,ministral,positive,original
+profession,computer programmer,0.067,0.0,1000,ministral,positive,context
+profession,farmer,0.0,0.0,1000,ministral,positive,context
+profession,lawyer,0.003,0.0,1000,ministral,positive,context
+profession,registered nurse,0.93,0.0,1000,ministral,positive,context
+profession,truck driver,0.0,1.0,1000,ministral,positive,context
+country,Brazil,0.626,0.003,1000,ministral,positive,context
+country,Germany,0.058,0.368,1000,ministral,positive,context
+country,Nigeria,0.313,0.034,1000,ministral,positive,context
+country,South Korea,0.003,0.595,1000,ministral,positive,context

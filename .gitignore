@@ -2,5 +2,8 @@
 analysis/master_results.csv
 __pycache__/
 *.pyc
-health_staging/
-data_health/health_prompts_full.csv
+data/prompts_original.csv
+data/prompts_health.csv
+data/prompts_neutral.csv
+data/prompts_positive.csv
+data/prompts_negative_minor.csv

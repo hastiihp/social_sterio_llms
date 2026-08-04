@@ -12,11 +12,11 @@ FIGURES_DIR = os.path.join(ROOT_DIR, "figures")
 MASTER_CSV = os.path.join(ANALYSIS_DIR, "master_results.csv")
 
 MODEL_FILES = {
-    "llama": "full_results_llama.csv",
-    "gemma": "full_results_gemma.csv",
-    "qwen": "full_results_qwen.csv",
-    "ministral": "full_results_ministral.csv",
-    "deepseek": "full_results_deepseek.csv",
+    "llama": "results_original_llama.csv",
+    "gemma": "results_original_gemma.csv",
+    "qwen": "results_original_qwen.csv",
+    "ministral": "results_original_ministral.csv",
+    "deepseek": "results_original_deepseek.csv",
 }
 MODEL_ORDER = ["llama", "gemma", "qwen", "ministral", "deepseek"]
 

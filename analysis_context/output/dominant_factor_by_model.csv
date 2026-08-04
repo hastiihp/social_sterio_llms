@@ -1,0 +1,5 @@
+model,dominant_original,dominant_health,dominant_neutral,dominant_positive,dominant_negative_minor,changes_across_prompt_types,verdict
+llama,gender,gender,gender,gender,gender,False,llama: gender dominates in all 5 prompt types
+gemma,country,gender,gender,gender,gender,True,"gemma: gender dominates in 4 of 5 prompt types, but country takes over under original"
+qwen,profession,gender,profession,gender,profession,True,"qwen: profession dominates in 3 of 5 prompt types, but gender takes over under health, gender takes over under positive"
+ministral,profession,gender,gender,gender,gender,True,"ministral: gender dominates in 4 of 5 prompt types, but profession takes over under original"

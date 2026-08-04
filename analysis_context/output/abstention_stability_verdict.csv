@@ -1,0 +1,6 @@
+model,metric_used,range_across_conditions,verdict
+llama,abstention_rate_allrows_pct,0.0,STABLE (near-0% in all 5 conditions)
+gemma,abstention_rate_allrows_pct,0.05026455026455026,STABLE (near-0% in all 5 conditions)
+qwen,abstention_rate_condB_pct,7.738095238095241,"STABLE (high abstention, narrow range across conditions)"
+ministral,abstention_rate_condB_pct,53.66666666666667,NOT STABLE -- abstention rate shifts materially with context
+deepseek,strict_valid_rate_allrows_pct,0.2698412698412699,STABLE (near-total non-compliance in all 5 conditions)

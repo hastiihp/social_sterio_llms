@@ -1,0 +1,3 @@
+comparison,mean_spearman_r,n_pairs
+context_vs_original,0.790519006399607,16
+context_vs_context,0.8784413635395154,24

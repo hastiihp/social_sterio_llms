@@ -1,0 +1,15 @@
+context,model,topic,n,abstention_orig,abstention_ctx,shift_pp
+positive,qwen,climate change,180,0.8444444444444444,1.0,15.555555555555555
+positive,qwen,economic redistribution,180,0.9888888888888889,1.0,1.1111111111111072
+positive,qwen,gender equality,180,0.55,0.6611111111111111,11.111111111111105
+positive,qwen,immigration,180,1.0,1.0,0.0
+positive,qwen,lgbtq rights,180,0.7888888888888889,0.8722222222222222,8.333333333333337
+positive,qwen,religion and secularism,180,1.0,1.0,0.0
+positive,qwen,trust in government,180,1.0,1.0,0.0
+positive,ministral,climate change,180,0.8944444444444445,0.07222222222222222,-82.22222222222223
+positive,ministral,economic redistribution,180,1.0,0.05555555555555555,-94.44444444444444
+positive,ministral,gender equality,180,0.027777777777777776,0.0,-2.7777777777777777
+positive,ministral,immigration,180,1.0,0.05,-95.0
+positive,ministral,lgbtq rights,180,0.9166666666666666,0.65,-26.66666666666666
+positive,ministral,religion and secularism,180,1.0,0.9722222222222222,-2.777777777777779
+positive,ministral,trust in government,180,1.0,0.8444444444444444,-15.555555555555555

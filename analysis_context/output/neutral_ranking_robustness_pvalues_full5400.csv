@@ -1,0 +1,9 @@
+context,model,factor,spearman_r,permutation_p,n_permutations,method,top_orig,top_ctx,bottom_orig,bottom_ctx
+neutral,llama,profession,0.5853170189098998,0.0008999955000224999,200000,monte_carlo_200000,doctor,doctor,janitor,janitor
+neutral,llama,country,0.6541353383458646,0.0022949885250573747,200000,monte_carlo_200000,Italy,Argentina,Egypt,Turkey
+neutral,gemma,profession,0.9497219132369298,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,police officer
+neutral,gemma,country,0.6601503759398496,0.0019399903000484997,200000,monte_carlo_200000,Canada,Kenya,USA,Poland
+neutral,qwen,profession,0.9523915461624026,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,doctor,truck driver,truck driver
+neutral,qwen,country,0.7082706766917292,0.000644996775016125,200000,monte_carlo_200000,Canada,Nigeria,Morocco,China
+neutral,ministral,profession,0.9746384872080088,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,truck driver
+neutral,ministral,country,0.7684210526315788,0.0001399993000035,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan

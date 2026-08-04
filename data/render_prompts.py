@@ -66,8 +66,8 @@ for prow in personas.itertuples():
 prompts_df = pd.DataFrame(rows)
 expected = 5400 * 7 * 2
 assert len(prompts_df) == expected, f"expected {expected}, got {len(prompts_df)}"
-prompts_df.to_csv("prompts.csv", index=False)
-print(f"prompts.csv: {len(prompts_df)} rows")
+prompts_df.to_csv("prompts_original.csv", index=False)
+print(f"prompts_original.csv: {len(prompts_df)} rows")
 print("\n--- sample forced prompt ---")
 print(prompts_df.iloc[0]["prompt"])
 print("\n--- sample optional prompt (same persona/topic) ---")

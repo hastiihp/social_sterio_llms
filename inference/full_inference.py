@@ -1,9 +1,9 @@
 """
-Full run: all six models, complete prompts.csv (75,600 rows each).
+Full run: all six models, complete prompts_original.csv (75,600 rows each).
 Same frozen settings, same batching, same strict/salvage parsing and
 provenance logging as the pilot script.
 
-Run on a GPU node:
+Run on a GPU node with inference/ as the working directory:
     python full_inference.py llama
     python full_inference.py qwen
     python full_inference.py gemma
@@ -25,7 +25,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-PROMPTS_CSV = "../data/prompts.csv"
+PROMPTS_CSV = "../data/prompts_original.csv"
 BATCH_SIZE = 16
 
 MODELS = {
@@ -146,7 +146,7 @@ def run_full(model_key):
     df = pd.read_csv(PROMPTS_CSV)
     print(f"Full dataset: {len(df)} prompts", flush=True)
 
-    out_path = f"full_results_{model_key}.csv"
+    out_path = f"../results/results_original_{model_key}.csv"
     fieldnames = list(provenance.keys()) + [
         "persona_id", "country", "gender", "age", "profession", "topic",
         "response_condition", "raw_text", "normalized_text",

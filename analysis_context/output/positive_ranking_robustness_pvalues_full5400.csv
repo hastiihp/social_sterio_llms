@@ -1,0 +1,9 @@
+context,model,factor,spearman_r,permutation_p,n_permutations,method,top_orig,top_ctx,bottom_orig,bottom_ctx
+positive,llama,profession,0.8438264738598443,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,doctor,janitor,janitor
+positive,llama,country,0.6015037593984961,0.0060799696001519994,200000,monte_carlo_200000,Italy,Argentina,Egypt,Pakistan
+positive,gemma,profession,0.9408231368186873,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,"police officer / truck driver, tied for lowest"
+positive,gemma,country,0.5984962406015037,0.006034969825150874,200000,monte_carlo_200000,Canada,South Africa,USA,USA
+positive,qwen,profession,0.9292547274749722,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,social worker,truck driver,construction worker
+positive,qwen,country,0.7518796992481201,0.00025499872500637496,200000,monte_carlo_200000,Canada,Nigeria,Morocco,China
+positive,ministral,profession,0.96440489432703,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,truck driver
+positive,ministral,country,0.6571428571428571,0.001959990200049,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan

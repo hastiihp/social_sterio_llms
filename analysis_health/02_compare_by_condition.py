@@ -38,7 +38,7 @@ prints pre/post row counts plus any left-only/right-only rows, matching
 01_compare_health_vs_original.py's fix.
 
 Independent of analysis/ (same self-contained design as 01_*.py): reads
-results/*.csv and results_health/health_full_results_*.csv directly,
+results/results_original_*.csv and results/results_health_*.csv directly,
 filtered to the 180-persona pilot subset (4 countries x 5 professions x 3
 genders x 3 ages). Does not touch analysis/ or master_results.csv.
 """
@@ -99,8 +99,8 @@ def main():
     print("=" * 78)
     orig_frames, health_frames = [], []
     for m in MODEL_ORDER:
-        orig_frames.append(filter_pilot(load_safe(f"{ROOT}/results/full_results_{m}.csv", m)))
-        health_frames.append(filter_pilot(load_safe(f"{ROOT}/results_health/health_full_results_{m}.csv", m)))
+        orig_frames.append(filter_pilot(load_safe(f"{ROOT}/results/results_original_{m}.csv", m)))
+        health_frames.append(filter_pilot(load_safe(f"{ROOT}/results/results_health_{m}.csv", m)))
     orig_df = pd.concat(orig_frames, ignore_index=True)
     health_df = pd.concat(health_frames, ignore_index=True)
 

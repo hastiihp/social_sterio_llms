@@ -7,15 +7,12 @@ FALCON_EXCLUSION.md), all 5,400 personas x 7 topics x 2 conditions =
 This is a direct adaptation of inference/full_inference.py -- identical
 generation settings, batching, parsing, and provenance logging. The ONLY
 difference: each row's prompt is a multi-turn conversation stored as JSON
-in the `messages_json` column (health_prompts_full.csv), rather than a
+in the `messages_json` column (data/prompts_health.csv), rather than a
 single string in a `prompt` column. build_batch_inputs and generate_batch
 are adapted to pass the full message list to apply_chat_template instead
 of wrapping a single string in one user turn.
 
-Kept in health_staging/ -- separate from the main project's inference/
-folder until results are validated.
-
-Run on a GPU node:
+Run on a GPU node with inference/ as the working directory:
     python full_health_inference.py llama
     python full_health_inference.py gemma
     python full_health_inference.py qwen
@@ -36,7 +33,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-PROMPTS_CSV = "health_prompts_full.csv"
+PROMPTS_CSV = "../data/prompts_health.csv"
 BATCH_SIZE = 16
 
 MODELS = {
@@ -158,7 +155,7 @@ def run_full(model_key):
     df = pd.read_csv(PROMPTS_CSV)
     print(f"Full dataset: {len(df)} prompts", flush=True)
 
-    out_path = f"health_full_results_{model_key}.csv"
+    out_path = f"../results/results_health_{model_key}.csv"
     fieldnames = list(provenance.keys()) + [
         "persona_id", "country", "gender", "age", "profession", "topic",
         "response_condition", "raw_text", "normalized_text",

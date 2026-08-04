@@ -1,0 +1,17 @@
+level,coef_orig,coef_ctx,model,context,rank_orig,rank_label_orig,rank_ctx,rank_label_ctx
+Germany,-0.019047619047618855,-0.034920634920634575,llama,positive,2,rank 2,2,rank 2
+Nigeria,-0.08888888888888889,-0.12063492063492044,llama,positive,4,rank 4,4,rank 4
+South Korea,-0.07936507936507801,-0.07936507936507765,llama,positive,3,rank 3,3,rank 3
+Brazil,0.0,0.0,llama,positive,1,rank 1,1,rank 1
+Germany,-0.08888888888888834,-0.10476190476190399,gemma,positive,2,rank 2,3,rank 3
+Nigeria,-0.17777777777777745,-0.07936507936507872,gemma,positive,4,rank 4,2,rank 2
+South Korea,-0.14285714285714135,-0.11746031746031559,gemma,positive,3,rank 3,4,rank 4
+Brazil,0.0,0.0,gemma,positive,1,rank 1,1,rank 1
+Germany,0.04444444444444483,0.0031746031746034895,qwen,positive,1,rank 1,2,rank 2
+Nigeria,0.009523809523810071,0.09841269841269894,qwen,positive,3,rank 3,1,rank 1
+South Korea,0.01904761904762039,-0.02222222222222113,qwen,positive,2,rank 2,4,rank 4
+Brazil,0.0,0.0,qwen,positive,4,rank 4,3,rank 3
+Germany,-0.01587301587301527,-0.025396825396825005,ministral,positive,2,rank 2,3,rank 3
+Nigeria,-0.08888888888888831,-0.006349206349205803,ministral,positive,4,rank 4,2,rank 2
+South Korea,-0.041269841269839756,-0.031746031746030384,ministral,positive,3,rank 3,4,rank 4
+Brazil,0.0,0.0,ministral,positive,1,rank 1,1,rank 1

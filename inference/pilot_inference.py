@@ -2,7 +2,11 @@
 Pilot inference run.
 
 Models: Llama-3.1-8B-Instruct, Qwen3-8B only.
-Prompt: friend_v1 (frozen, unmodified -- prompts.csv as generated).
+Prompt: friend_v1 (frozen, unmodified -- prompts_original.csv as generated).
+Historical/superseded: this pilot preceded the full six-model run
+(full_inference.py); its raw outputs were not retained (see AUDIT_HISTORY.md
+Round 2). Kept for provenance, not for re-execution as part of the current
+pipeline.
 Generation: frozen settings from analysis_plan.md Section 14
     (do_sample=False, max_new_tokens=30, repetition_penalty=1.0, bf16).
 
@@ -40,7 +44,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-PROMPTS_CSV = "../data/prompts.csv"
+PROMPTS_CSV = "../data/prompts_original.csv"
 BATCH_SIZE = 16
 
 MODELS = {

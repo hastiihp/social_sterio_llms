@@ -4,10 +4,10 @@ pilot subset (4 countries x 5 professions x 3 genders x 3 ages) used
 throughout this comparison.
 
 Independent of analysis/: does not import from or write to analysis/,
-master_results.csv, or anything under tables/. Reads results/*.csv (original)
-and results_health/health_full_results_*.csv (health variant) directly, each
+master_results.csv, or anything under tables/. Reads results/results_original_*.csv
+(original) and results/results_health_*.csv (health variant) directly, each
 filtered down to the pilot subset. Both source files cover the FULL 5,400
-persona design (verified directly -- data_health/health_prompts_full.csv has
+persona design (verified directly -- data/prompts_health.csv has
 75,600 rows / 5,400 unique personas / all 20 countries / all 30 professions;
 there is no separate pre-filtered pilot file), so the 180-persona subset is
 derived here by filtering on country + profession, not loaded from a
@@ -95,8 +95,8 @@ def main():
     print("=" * 78)
     orig_frames, health_frames = [], []
     for m in MODEL_ORDER:
-        orig = filter_pilot(load_safe(f"{ROOT}/results/full_results_{m}.csv", m))
-        health = filter_pilot(load_safe(f"{ROOT}/results_health/health_full_results_{m}.csv", m))
+        orig = filter_pilot(load_safe(f"{ROOT}/results/results_original_{m}.csv", m))
+        health = filter_pilot(load_safe(f"{ROOT}/results/results_health_{m}.csv", m))
         orig_frames.append(orig)
         health_frames.append(health)
         print(f"  {m:10s} original pilot rows={len(orig):,} personas={orig['persona_id'].nunique()}   "
@@ -252,8 +252,8 @@ def main():
     print("changed between those two numbers, not the denominator alone. All four cells below, so the")
     print("full picture is visible in one place:\n")
 
-    ministral_orig_full = load_safe(f"{ROOT}/results/full_results_ministral.csv", "ministral")
-    ministral_health_full = load_safe(f"{ROOT}/results_health/health_full_results_ministral.csv", "ministral")
+    ministral_orig_full = load_safe(f"{ROOT}/results/results_original_ministral.csv", "ministral")
+    ministral_health_full = load_safe(f"{ROOT}/results/results_health_ministral.csv", "ministral")
     ministral_orig_pilot = filter_pilot(ministral_orig_full)
     ministral_health_pilot = filter_pilot(ministral_health_full)
 

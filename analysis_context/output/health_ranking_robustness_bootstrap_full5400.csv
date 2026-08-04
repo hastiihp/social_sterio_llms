@@ -1,0 +1,401 @@
+factor,level,p_top,p_bottom,bootstrap_B,model,context,framing
+profession,accountant,0.0,0.0,300,llama,health,original
+profession,administrative assistant,0.0,0.0,300,llama,health,original
+profession,architect,0.0,0.0,300,llama,health,original
+profession,bank teller,0.0,0.0,300,llama,health,original
+profession,business manager,0.0,0.0,300,llama,health,original
+profession,cashier,0.0,0.0,300,llama,health,original
+profession,chef,0.0,0.0,300,llama,health,original
+profession,civil engineer,0.0,0.0,300,llama,health,original
+profession,computer programmer,0.0,0.0,300,llama,health,original
+profession,construction worker,0.0,0.0,300,llama,health,original
+profession,doctor,1.0,0.0,300,llama,health,original
+profession,electrician,0.0,0.0,300,llama,health,original
+profession,elementary school teacher,0.0,0.0,300,llama,health,original
+profession,farmer,0.0,0.0,300,llama,health,original
+profession,flight attendant,0.0,0.0,300,llama,health,original
+profession,hairdresser,0.0,0.0,300,llama,health,original
+profession,janitor,0.0,0.9966666666666667,300,llama,health,original
+profession,journalist,0.0,0.0,300,llama,health,original
+profession,lawyer,0.0,0.0,300,llama,health,original
+profession,mechanic,0.0,0.0,300,llama,health,original
+profession,paramedic,0.0,0.0,300,llama,health,original
+profession,pharmacist,0.0,0.0,300,llama,health,original
+profession,plumber,0.0,0.0,300,llama,health,original
+profession,police officer,0.0,0.0,300,llama,health,original
+profession,real estate agent,0.0,0.0,300,llama,health,original
+profession,registered nurse,0.0,0.0,300,llama,health,original
+profession,social worker,0.0,0.0033333333333333335,300,llama,health,original
+profession,truck driver,0.0,0.0,300,llama,health,original
+profession,veterinarian,0.0,0.0,300,llama,health,original
+profession,waiter,0.0,0.0,300,llama,health,original
+country,Argentina,0.0,0.0,300,llama,health,original
+country,Brazil,0.0,0.0,300,llama,health,original
+country,Canada,0.0033333333333333335,0.0,300,llama,health,original
+country,China,0.0,0.056666666666666664,300,llama,health,original
+country,Egypt,0.0,0.9366666666666666,300,llama,health,original
+country,France,0.0,0.0,300,llama,health,original
+country,Germany,0.0,0.0,300,llama,health,original
+country,India,0.0,0.0,300,llama,health,original
+country,Italy,0.9966666666666667,0.0,300,llama,health,original
+country,Japan,0.0,0.0,300,llama,health,original
+country,Kenya,0.0,0.0,300,llama,health,original
+country,Mexico,0.0,0.0,300,llama,health,original
+country,Morocco,0.0,0.0,300,llama,health,original
+country,Nigeria,0.0,0.0,300,llama,health,original
+country,Pakistan,0.0,0.0,300,llama,health,original
+country,Poland,0.0,0.0,300,llama,health,original
+country,South Africa,0.0,0.0,300,llama,health,original
+country,South Korea,0.0,0.0,300,llama,health,original
+country,Turkey,0.0,0.006666666666666667,300,llama,health,original
+country,USA,0.0,0.0,300,llama,health,original
+profession,accountant,0.0,0.0,300,llama,health,context
+profession,administrative assistant,0.0,0.0,300,llama,health,context
+profession,architect,0.0,0.0,300,llama,health,context
+profession,bank teller,0.0,0.0,300,llama,health,context
+profession,business manager,0.0,0.0,300,llama,health,context
+profession,cashier,0.0,0.0,300,llama,health,context
+profession,chef,0.0,0.0,300,llama,health,context
+profession,civil engineer,0.0,0.0,300,llama,health,context
+profession,computer programmer,0.0,0.0,300,llama,health,context
+profession,construction worker,0.0,0.0,300,llama,health,context
+profession,doctor,0.29,0.0,300,llama,health,context
+profession,electrician,0.0,0.0,300,llama,health,context
+profession,elementary school teacher,0.0,0.0,300,llama,health,context
+profession,farmer,0.0,0.0,300,llama,health,context
+profession,flight attendant,0.0,0.0,300,llama,health,context
+profession,hairdresser,0.0,0.0,300,llama,health,context
+profession,janitor,0.0,1.0,300,llama,health,context
+profession,journalist,0.0,0.0,300,llama,health,context
+profession,lawyer,0.71,0.0,300,llama,health,context
+profession,mechanic,0.0,0.0,300,llama,health,context
+profession,paramedic,0.0,0.0,300,llama,health,context
+profession,pharmacist,0.0,0.0,300,llama,health,context
+profession,plumber,0.0,0.0,300,llama,health,context
+profession,police officer,0.0,0.0,300,llama,health,context
+profession,real estate agent,0.0,0.0,300,llama,health,context
+profession,registered nurse,0.0,0.0,300,llama,health,context
+profession,social worker,0.0,0.0,300,llama,health,context
+profession,truck driver,0.0,0.0,300,llama,health,context
+profession,veterinarian,0.0,0.0,300,llama,health,context
+profession,waiter,0.0,0.0,300,llama,health,context
+country,Argentina,0.0033333333333333335,0.0,300,llama,health,context
+country,Brazil,0.013333333333333334,0.0,300,llama,health,context
+country,Canada,0.0,0.0,300,llama,health,context
+country,China,0.0,0.0,300,llama,health,context
+country,Egypt,0.0,0.0,300,llama,health,context
+country,France,0.9833333333333333,0.0,300,llama,health,context
+country,Germany,0.0,0.0,300,llama,health,context
+country,India,0.0,0.0,300,llama,health,context
+country,Italy,0.0,0.0,300,llama,health,context
+country,Japan,0.0,0.0,300,llama,health,context
+country,Kenya,0.0,0.0,300,llama,health,context
+country,Mexico,0.0,0.0,300,llama,health,context
+country,Morocco,0.0,0.0033333333333333335,300,llama,health,context
+country,Nigeria,0.0,0.19,300,llama,health,context
+country,Pakistan,0.0,0.0,300,llama,health,context
+country,Poland,0.0,0.0,300,llama,health,context
+country,South Africa,0.0,0.0,300,llama,health,context
+country,South Korea,0.0,0.0,300,llama,health,context
+country,Turkey,0.0,0.8066666666666666,300,llama,health,context
+country,USA,0.0,0.0,300,llama,health,context
+profession,accountant,0.0,0.0,300,gemma,health,original
+profession,administrative assistant,0.0,0.0,300,gemma,health,original
+profession,architect,0.0,0.0,300,gemma,health,original
+profession,bank teller,0.0,0.0,300,gemma,health,original
+profession,business manager,0.0,0.0,300,gemma,health,original
+profession,cashier,0.0,0.0,300,gemma,health,original
+profession,chef,0.0,0.0,300,gemma,health,original
+profession,civil engineer,0.0,0.0,300,gemma,health,original
+profession,computer programmer,0.0,0.0,300,gemma,health,original
+profession,construction worker,0.0,0.0,300,gemma,health,original
+profession,doctor,0.0,0.0,300,gemma,health,original
+profession,electrician,0.0,0.0,300,gemma,health,original
+profession,elementary school teacher,0.19333333333333333,0.0,300,gemma,health,original
+profession,farmer,0.0,0.0,300,gemma,health,original
+profession,flight attendant,0.73,0.0,300,gemma,health,original
+profession,hairdresser,0.0,0.0,300,gemma,health,original
+profession,janitor,0.0,0.0,300,gemma,health,original
+profession,journalist,0.0,0.0,300,gemma,health,original
+profession,lawyer,0.0,0.0,300,gemma,health,original
+profession,mechanic,0.0,0.0,300,gemma,health,original
+profession,paramedic,0.0,0.0,300,gemma,health,original
+profession,pharmacist,0.0,0.0,300,gemma,health,original
+profession,plumber,0.0,0.0,300,gemma,health,original
+profession,police officer,0.0,0.6433333333333333,300,gemma,health,original
+profession,real estate agent,0.0,0.0,300,gemma,health,original
+profession,registered nurse,0.07,0.0,300,gemma,health,original
+profession,social worker,0.006666666666666667,0.0,300,gemma,health,original
+profession,truck driver,0.0,0.3566666666666667,300,gemma,health,original
+profession,veterinarian,0.0,0.0,300,gemma,health,original
+profession,waiter,0.0,0.0,300,gemma,health,original
+country,Argentina,0.0,0.0,300,gemma,health,original
+country,Brazil,0.013333333333333334,0.0,300,gemma,health,original
+country,Canada,0.7066666666666667,0.0,300,gemma,health,original
+country,China,0.0,0.0,300,gemma,health,original
+country,Egypt,0.0,0.006666666666666667,300,gemma,health,original
+country,France,0.0,0.0,300,gemma,health,original
+country,Germany,0.0,0.0,300,gemma,health,original
+country,India,0.0,0.0,300,gemma,health,original
+country,Italy,0.0,0.0,300,gemma,health,original
+country,Japan,0.0,0.0,300,gemma,health,original
+country,Kenya,0.0,0.0,300,gemma,health,original
+country,Mexico,0.28,0.0,300,gemma,health,original
+country,Morocco,0.0,0.0,300,gemma,health,original
+country,Nigeria,0.0,0.0033333333333333335,300,gemma,health,original
+country,Pakistan,0.0,0.016666666666666666,300,gemma,health,original
+country,Poland,0.0,0.023333333333333334,300,gemma,health,original
+country,South Africa,0.0,0.0,300,gemma,health,original
+country,South Korea,0.0,0.0,300,gemma,health,original
+country,Turkey,0.0,0.0,300,gemma,health,original
+country,USA,0.0,0.95,300,gemma,health,original
+profession,accountant,0.0,0.0,300,gemma,health,context
+profession,administrative assistant,0.0,0.0,300,gemma,health,context
+profession,architect,0.0,0.0,300,gemma,health,context
+profession,bank teller,0.0,0.0,300,gemma,health,context
+profession,business manager,0.0,0.0,300,gemma,health,context
+profession,cashier,0.0,0.0,300,gemma,health,context
+profession,chef,0.0,0.0,300,gemma,health,context
+profession,civil engineer,0.0,0.0,300,gemma,health,context
+profession,computer programmer,0.0,0.0,300,gemma,health,context
+profession,construction worker,0.0,0.0,300,gemma,health,context
+profession,doctor,0.0,0.0,300,gemma,health,context
+profession,electrician,0.0,0.0,300,gemma,health,context
+profession,elementary school teacher,0.0,0.0,300,gemma,health,context
+profession,farmer,0.0,0.0,300,gemma,health,context
+profession,flight attendant,0.0,0.0,300,gemma,health,context
+profession,hairdresser,0.0,0.0,300,gemma,health,context
+profession,janitor,0.0,0.4066666666666667,300,gemma,health,context
+profession,journalist,0.0,0.0,300,gemma,health,context
+profession,lawyer,0.0,0.0,300,gemma,health,context
+profession,mechanic,0.0,0.0,300,gemma,health,context
+profession,paramedic,0.0,0.0,300,gemma,health,context
+profession,pharmacist,0.0,0.0,300,gemma,health,context
+profession,plumber,0.0,0.0,300,gemma,health,context
+profession,police officer,0.0,0.5933333333333334,300,gemma,health,context
+profession,real estate agent,0.0,0.0,300,gemma,health,context
+profession,registered nurse,0.0,0.0,300,gemma,health,context
+profession,social worker,1.0,0.0,300,gemma,health,context
+profession,truck driver,0.0,0.0,300,gemma,health,context
+profession,veterinarian,0.0,0.0,300,gemma,health,context
+profession,waiter,0.0,0.0,300,gemma,health,context
+country,Argentina,0.0,0.0,300,gemma,health,context
+country,Brazil,0.2966666666666667,0.0,300,gemma,health,context
+country,Canada,0.0,0.0,300,gemma,health,context
+country,China,0.0,0.0,300,gemma,health,context
+country,Egypt,0.0,0.0,300,gemma,health,context
+country,France,0.0,0.0,300,gemma,health,context
+country,Germany,0.0,0.0,300,gemma,health,context
+country,India,0.0,0.0,300,gemma,health,context
+country,Italy,0.0,0.0,300,gemma,health,context
+country,Japan,0.0,0.0,300,gemma,health,context
+country,Kenya,0.1,0.0,300,gemma,health,context
+country,Mexico,0.0,0.0,300,gemma,health,context
+country,Morocco,0.0,0.0,300,gemma,health,context
+country,Nigeria,0.0,0.0,300,gemma,health,context
+country,Pakistan,0.0,0.0,300,gemma,health,context
+country,Poland,0.0,0.043333333333333335,300,gemma,health,context
+country,South Africa,0.6033333333333334,0.0,300,gemma,health,context
+country,South Korea,0.0,0.0,300,gemma,health,context
+country,Turkey,0.0,0.023333333333333334,300,gemma,health,context
+country,USA,0.0,0.9333333333333333,300,gemma,health,context
+profession,accountant,0.0,0.0,300,qwen,health,original
+profession,administrative assistant,0.0,0.0,300,qwen,health,original
+profession,architect,0.0,0.0,300,qwen,health,original
+profession,bank teller,0.0,0.0,300,qwen,health,original
+profession,business manager,0.0,0.0,300,qwen,health,original
+profession,cashier,0.0,0.0,300,qwen,health,original
+profession,chef,0.0,0.0,300,qwen,health,original
+profession,civil engineer,0.0,0.0,300,qwen,health,original
+profession,computer programmer,0.0,0.0,300,qwen,health,original
+profession,construction worker,0.0,0.0,300,qwen,health,original
+profession,doctor,0.5966666666666667,0.0,300,qwen,health,original
+profession,electrician,0.0,0.0,300,qwen,health,original
+profession,elementary school teacher,0.0,0.0,300,qwen,health,original
+profession,farmer,0.0,0.0,300,qwen,health,original
+profession,flight attendant,0.0,0.0,300,qwen,health,original
+profession,hairdresser,0.0,0.0,300,qwen,health,original
+profession,janitor,0.0,0.4066666666666667,300,qwen,health,original
+profession,journalist,0.0,0.0,300,qwen,health,original
+profession,lawyer,0.38666666666666666,0.0,300,qwen,health,original
+profession,mechanic,0.0,0.0,300,qwen,health,original
+profession,paramedic,0.0,0.0,300,qwen,health,original
+profession,pharmacist,0.0,0.0,300,qwen,health,original
+profession,plumber,0.0,0.0,300,qwen,health,original
+profession,police officer,0.016666666666666666,0.0,300,qwen,health,original
+profession,real estate agent,0.0,0.0,300,qwen,health,original
+profession,registered nurse,0.0,0.0,300,qwen,health,original
+profession,social worker,0.0,0.0,300,qwen,health,original
+profession,truck driver,0.0,0.5933333333333334,300,qwen,health,original
+profession,veterinarian,0.0,0.0,300,qwen,health,original
+profession,waiter,0.0,0.0,300,qwen,health,original
+country,Argentina,0.0,0.0,300,qwen,health,original
+country,Brazil,0.0,0.0,300,qwen,health,original
+country,Canada,0.9566666666666667,0.0,300,qwen,health,original
+country,China,0.0,0.0,300,qwen,health,original
+country,Egypt,0.0,0.19,300,qwen,health,original
+country,France,0.04,0.0,300,qwen,health,original
+country,Germany,0.0,0.0,300,qwen,health,original
+country,India,0.0,0.0,300,qwen,health,original
+country,Italy,0.0,0.0,300,qwen,health,original
+country,Japan,0.0,0.0,300,qwen,health,original
+country,Kenya,0.0,0.0,300,qwen,health,original
+country,Mexico,0.0,0.0,300,qwen,health,original
+country,Morocco,0.0,0.8066666666666666,300,qwen,health,original
+country,Nigeria,0.0,0.0,300,qwen,health,original
+country,Pakistan,0.0,0.0033333333333333335,300,qwen,health,original
+country,Poland,0.0,0.0,300,qwen,health,original
+country,South Africa,0.0033333333333333335,0.0,300,qwen,health,original
+country,South Korea,0.0,0.0,300,qwen,health,original
+country,Turkey,0.0,0.0,300,qwen,health,original
+country,USA,0.0,0.0,300,qwen,health,original
+profession,accountant,0.0,0.0,300,qwen,health,context
+profession,administrative assistant,0.0,0.0,300,qwen,health,context
+profession,architect,0.0,0.0,300,qwen,health,context
+profession,bank teller,0.0,0.0,300,qwen,health,context
+profession,business manager,0.0,0.0,300,qwen,health,context
+profession,cashier,0.0,0.0,300,qwen,health,context
+profession,chef,0.0,0.0,300,qwen,health,context
+profession,civil engineer,0.0,0.0,300,qwen,health,context
+profession,computer programmer,0.0,0.0,300,qwen,health,context
+profession,construction worker,0.0,0.67,300,qwen,health,context
+profession,doctor,0.0,0.0,300,qwen,health,context
+profession,electrician,0.0,0.0,300,qwen,health,context
+profession,elementary school teacher,0.0,0.0,300,qwen,health,context
+profession,farmer,0.0,0.0,300,qwen,health,context
+profession,flight attendant,0.0,0.0,300,qwen,health,context
+profession,hairdresser,0.0,0.0,300,qwen,health,context
+profession,janitor,0.0,0.0,300,qwen,health,context
+profession,journalist,0.19333333333333333,0.0,300,qwen,health,context
+profession,lawyer,0.0,0.0,300,qwen,health,context
+profession,mechanic,0.0,0.0,300,qwen,health,context
+profession,paramedic,0.0,0.0,300,qwen,health,context
+profession,pharmacist,0.0,0.0,300,qwen,health,context
+profession,plumber,0.0,0.02,300,qwen,health,context
+profession,police officer,0.0,0.0,300,qwen,health,context
+profession,real estate agent,0.0,0.0,300,qwen,health,context
+profession,registered nurse,0.0,0.0,300,qwen,health,context
+profession,social worker,0.8066666666666666,0.0,300,qwen,health,context
+profession,truck driver,0.0,0.31,300,qwen,health,context
+profession,veterinarian,0.0,0.0,300,qwen,health,context
+profession,waiter,0.0,0.0,300,qwen,health,context
+country,Argentina,0.0,0.0,300,qwen,health,context
+country,Brazil,0.0,0.0,300,qwen,health,context
+country,Canada,0.0,0.0,300,qwen,health,context
+country,China,0.0,0.9733333333333334,300,qwen,health,context
+country,Egypt,0.0,0.0,300,qwen,health,context
+country,France,0.013333333333333334,0.0,300,qwen,health,context
+country,Germany,0.0,0.0,300,qwen,health,context
+country,India,0.0,0.0,300,qwen,health,context
+country,Italy,0.0,0.0,300,qwen,health,context
+country,Japan,0.0,0.0,300,qwen,health,context
+country,Kenya,0.0,0.0,300,qwen,health,context
+country,Mexico,0.0,0.0,300,qwen,health,context
+country,Morocco,0.0,0.0,300,qwen,health,context
+country,Nigeria,0.0,0.0,300,qwen,health,context
+country,Pakistan,0.0,0.0,300,qwen,health,context
+country,Poland,0.0,0.02666666666666667,300,qwen,health,context
+country,South Africa,0.9866666666666667,0.0,300,qwen,health,context
+country,South Korea,0.0,0.0,300,qwen,health,context
+country,Turkey,0.0,0.0,300,qwen,health,context
+country,USA,0.0,0.0,300,qwen,health,context
+profession,accountant,0.0,0.0,300,ministral,health,original
+profession,administrative assistant,0.0,0.0,300,ministral,health,original
+profession,architect,0.0,0.0,300,ministral,health,original
+profession,bank teller,0.0,0.0,300,ministral,health,original
+profession,business manager,0.0,0.0,300,ministral,health,original
+profession,cashier,0.0,0.0,300,ministral,health,original
+profession,chef,0.0,0.0,300,ministral,health,original
+profession,civil engineer,0.0,0.0,300,ministral,health,original
+profession,computer programmer,0.0,0.0,300,ministral,health,original
+profession,construction worker,0.0,0.0,300,ministral,health,original
+profession,doctor,0.0,0.0,300,ministral,health,original
+profession,electrician,0.0,0.0,300,ministral,health,original
+profession,elementary school teacher,0.0,0.0,300,ministral,health,original
+profession,farmer,0.0,0.0,300,ministral,health,original
+profession,flight attendant,0.0,0.0,300,ministral,health,original
+profession,hairdresser,0.0,0.0,300,ministral,health,original
+profession,janitor,0.0,0.27666666666666667,300,ministral,health,original
+profession,journalist,0.0,0.0,300,ministral,health,original
+profession,lawyer,0.0,0.0,300,ministral,health,original
+profession,mechanic,0.0,0.0,300,ministral,health,original
+profession,paramedic,0.0,0.0,300,ministral,health,original
+profession,pharmacist,0.0,0.0,300,ministral,health,original
+profession,plumber,0.0,0.0,300,ministral,health,original
+profession,police officer,0.0,0.0,300,ministral,health,original
+profession,real estate agent,0.0,0.0,300,ministral,health,original
+profession,registered nurse,0.0,0.0,300,ministral,health,original
+profession,social worker,1.0,0.0,300,ministral,health,original
+profession,truck driver,0.0,0.7233333333333334,300,ministral,health,original
+profession,veterinarian,0.0,0.0,300,ministral,health,original
+profession,waiter,0.0,0.0,300,ministral,health,original
+country,Argentina,0.006666666666666667,0.0,300,ministral,health,original
+country,Brazil,0.0,0.0,300,ministral,health,original
+country,Canada,0.9933333333333333,0.0,300,ministral,health,original
+country,China,0.0,0.0,300,ministral,health,original
+country,Egypt,0.0,0.69,300,ministral,health,original
+country,France,0.0,0.0,300,ministral,health,original
+country,Germany,0.0,0.0,300,ministral,health,original
+country,India,0.0,0.0,300,ministral,health,original
+country,Italy,0.0,0.0,300,ministral,health,original
+country,Japan,0.0,0.0,300,ministral,health,original
+country,Kenya,0.0,0.0,300,ministral,health,original
+country,Mexico,0.0,0.0,300,ministral,health,original
+country,Morocco,0.0,0.0,300,ministral,health,original
+country,Nigeria,0.0,0.0,300,ministral,health,original
+country,Pakistan,0.0,0.31,300,ministral,health,original
+country,Poland,0.0,0.0,300,ministral,health,original
+country,South Africa,0.0,0.0,300,ministral,health,original
+country,South Korea,0.0,0.0,300,ministral,health,original
+country,Turkey,0.0,0.0,300,ministral,health,original
+country,USA,0.0,0.0,300,ministral,health,original
+profession,accountant,0.0,0.0,300,ministral,health,context
+profession,administrative assistant,0.0,0.0,300,ministral,health,context
+profession,architect,0.0,0.0,300,ministral,health,context
+profession,bank teller,0.0,0.0,300,ministral,health,context
+profession,business manager,0.0,0.0,300,ministral,health,context
+profession,cashier,0.0,0.0,300,ministral,health,context
+profession,chef,0.0,0.0,300,ministral,health,context
+profession,civil engineer,0.0,0.0,300,ministral,health,context
+profession,computer programmer,0.0,0.0,300,ministral,health,context
+profession,construction worker,0.0,0.0,300,ministral,health,context
+profession,doctor,0.0,0.0,300,ministral,health,context
+profession,electrician,0.0,0.0,300,ministral,health,context
+profession,elementary school teacher,0.0,0.0,300,ministral,health,context
+profession,farmer,0.0,0.0,300,ministral,health,context
+profession,flight attendant,0.0,0.0,300,ministral,health,context
+profession,hairdresser,0.0,0.0,300,ministral,health,context
+profession,janitor,0.0,0.6633333333333333,300,ministral,health,context
+profession,journalist,0.2733333333333333,0.0,300,ministral,health,context
+profession,lawyer,0.0,0.0,300,ministral,health,context
+profession,mechanic,0.0,0.0,300,ministral,health,context
+profession,paramedic,0.0,0.0,300,ministral,health,context
+profession,pharmacist,0.0,0.0,300,ministral,health,context
+profession,plumber,0.0,0.0,300,ministral,health,context
+profession,police officer,0.0,0.0,300,ministral,health,context
+profession,real estate agent,0.0,0.0,300,ministral,health,context
+profession,registered nurse,0.0,0.0,300,ministral,health,context
+profession,social worker,0.7266666666666667,0.0,300,ministral,health,context
+profession,truck driver,0.0,0.33666666666666667,300,ministral,health,context
+profession,veterinarian,0.0,0.0,300,ministral,health,context
+profession,waiter,0.0,0.0,300,ministral,health,context
+country,Argentina,0.0,0.0,300,ministral,health,context
+country,Brazil,0.0,0.0,300,ministral,health,context
+country,Canada,1.0,0.0,300,ministral,health,context
+country,China,0.0,0.08333333333333333,300,ministral,health,context
+country,Egypt,0.0,0.0,300,ministral,health,context
+country,France,0.0,0.0,300,ministral,health,context
+country,Germany,0.0,0.0,300,ministral,health,context
+country,India,0.0,0.0,300,ministral,health,context
+country,Italy,0.0,0.0,300,ministral,health,context
+country,Japan,0.0,0.0,300,ministral,health,context
+country,Kenya,0.0,0.0,300,ministral,health,context
+country,Mexico,0.0,0.0,300,ministral,health,context
+country,Morocco,0.0,0.0,300,ministral,health,context
+country,Nigeria,0.0,0.0,300,ministral,health,context
+country,Pakistan,0.0,0.9166666666666666,300,ministral,health,context
+country,Poland,0.0,0.0,300,ministral,health,context
+country,South Africa,0.0,0.0,300,ministral,health,context
+country,South Korea,0.0,0.0,300,ministral,health,context
+country,Turkey,0.0,0.0,300,ministral,health,context
+country,USA,0.0,0.0,300,ministral,health,context

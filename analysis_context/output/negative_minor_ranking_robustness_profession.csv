@@ -1,0 +1,21 @@
+level,coef_orig,coef_ctx,model,context,rank_orig,rank_label_orig,rank_ctx,rank_label_ctx
+farmer,-0.003968253968252179,-0.09126984126983954,llama,negative_minor,4,tied for rank 4,5,rank 5
+lawyer,0.0555555555555578,0.027777777777779847,llama,negative_minor,2,rank 2,2,rank 2
+registered nurse,0.08730158730158812,0.0555555555555563,llama,negative_minor,1,rank 1,1,rank 1
+truck driver,-0.0039682539682522125,-0.0634920634920618,llama,negative_minor,4,tied for rank 4,4,rank 4
+computer programmer,0.0,0.0,llama,negative_minor,3,rank 3,3,rank 3
+farmer,-0.003968253968252197,-0.08730158730158535,gemma,negative_minor,4,rank 4,4,rank 4
+lawyer,0.03968253968254194,0.015873015873018127,gemma,negative_minor,2,rank 2,2,rank 2
+registered nurse,0.12301587301587406,0.12301587301587405,gemma,negative_minor,1,rank 1,1,rank 1
+truck driver,-0.11111111111110916,-0.15873015873015703,gemma,negative_minor,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,gemma,negative_minor,3,rank 3,3,rank 3
+farmer,-0.15079365079364918,-0.1428571428571413,qwen,negative_minor,4,rank 4,4,rank 4
+lawyer,0.2619047619047642,0.134920634920637,qwen,negative_minor,1,rank 1,2,rank 2
+registered nurse,0.10714285714285787,0.1428571428571437,qwen,negative_minor,2,rank 2,1,rank 1
+truck driver,-0.29365079365079183,-0.2063492063492045,qwen,negative_minor,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,qwen,negative_minor,3,rank 3,3,rank 3
+farmer,-0.10714285714285575,-0.06746031746031611,ministral,negative_minor,4,rank 4,4,rank 4
+lawyer,0.00793650793650975,0.011904761904763634,ministral,negative_minor,2,rank 2,2,rank 2
+registered nurse,0.015873015873016656,0.031746031746032556,ministral,negative_minor,1,rank 1,1,rank 1
+truck driver,-0.13888888888888717,-0.11507936507936334,ministral,negative_minor,5,rank 5,5,rank 5
+computer programmer,0.0,0.0,ministral,negative_minor,3,rank 3,3,rank 3

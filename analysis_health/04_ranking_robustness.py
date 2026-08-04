@@ -43,8 +43,8 @@ valid Condition-A rows in the health version (see
 03_deepseek_health_diagnosis.py), so there is nothing to fit.
 
 Independent of analysis/ (same self-contained design as the other
-analysis_health scripts): reads results/*.csv and
-results_health/health_full_results_*.csv directly. Does not touch
+analysis_health scripts): reads results/results_original_*.csv and
+results/results_health_*.csv directly. Does not touch
 analysis/ or master_results.csv.
 """
 import itertools
@@ -245,8 +245,8 @@ def main():
 
     for m in MODEL_ORDER:
         print(f"\n{'='*78}\nMODEL: {m}\n{'='*78}")
-        orig = filter_pilot_condA(load_safe(f"{ROOT}/results/full_results_{m}.csv", m))
-        health = filter_pilot_condA(load_safe(f"{ROOT}/results_health/health_full_results_{m}.csv", m))
+        orig = filter_pilot_condA(load_safe(f"{ROOT}/results/results_original_{m}.csv", m))
+        health = filter_pilot_condA(load_safe(f"{ROOT}/results/results_health_{m}.csv", m))
         print(f"  original: n={len(orig):,} valid Condition-A rows (pilot subset)")
         print(f"  health:   n={len(health):,} valid Condition-A rows (pilot subset)")
 

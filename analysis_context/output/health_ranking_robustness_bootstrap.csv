@@ -1,0 +1,73 @@
+factor,level,p_top,p_bottom,bootstrap_B,model,context,framing
+profession,computer programmer,0.0,0.283,1000,llama,health,original
+profession,farmer,0.0,0.371,1000,llama,health,original
+profession,lawyer,0.101,0.001,1000,llama,health,original
+profession,registered nurse,0.899,0.0,1000,llama,health,original
+profession,truck driver,0.0,0.345,1000,llama,health,original
+country,Brazil,0.849,0.0,1000,llama,health,original
+country,Germany,0.151,0.0,1000,llama,health,original
+country,Nigeria,0.0,0.67,1000,llama,health,original
+country,South Korea,0.0,0.33,1000,llama,health,original
+profession,computer programmer,0.001,0.014,1000,llama,health,context
+profession,farmer,0.0,0.628,1000,llama,health,context
+profession,lawyer,0.998,0.0,1000,llama,health,context
+profession,registered nurse,0.001,0.001,1000,llama,health,context
+profession,truck driver,0.0,0.357,1000,llama,health,context
+country,Brazil,0.995,0.0,1000,llama,health,context
+country,Germany,0.005,0.0,1000,llama,health,context
+country,Nigeria,0.0,0.832,1000,llama,health,context
+country,South Korea,0.0,0.168,1000,llama,health,context
+profession,computer programmer,0.0,0.0,1000,gemma,health,original
+profession,farmer,0.0,0.0,1000,gemma,health,original
+profession,lawyer,0.001,0.0,1000,gemma,health,original
+profession,registered nurse,0.999,0.0,1000,gemma,health,original
+profession,truck driver,0.0,1.0,1000,gemma,health,original
+country,Brazil,1.0,0.0,1000,gemma,health,original
+country,Germany,0.0,0.001,1000,gemma,health,original
+country,Nigeria,0.0,0.93,1000,gemma,health,original
+country,South Korea,0.0,0.069,1000,gemma,health,original
+profession,computer programmer,0.0,0.0,1000,gemma,health,context
+profession,farmer,0.0,0.009,1000,gemma,health,context
+profession,lawyer,0.0,0.0,1000,gemma,health,context
+profession,registered nurse,1.0,0.0,1000,gemma,health,context
+profession,truck driver,0.0,0.991,1000,gemma,health,context
+country,Brazil,0.97,0.0,1000,gemma,health,context
+country,Germany,0.0,0.775,1000,gemma,health,context
+country,Nigeria,0.003,0.153,1000,gemma,health,context
+country,South Korea,0.027,0.072,1000,gemma,health,context
+profession,computer programmer,0.0,0.0,1000,qwen,health,original
+profession,farmer,0.0,0.0,1000,qwen,health,original
+profession,lawyer,1.0,0.0,1000,qwen,health,original
+profession,registered nurse,0.0,0.0,1000,qwen,health,original
+profession,truck driver,0.0,1.0,1000,qwen,health,original
+country,Brazil,0.021,0.558,1000,qwen,health,original
+country,Germany,0.789,0.019,1000,qwen,health,original
+country,Nigeria,0.082,0.303,1000,qwen,health,original
+country,South Korea,0.108,0.12,1000,qwen,health,original
+profession,computer programmer,0.0,0.0,1000,qwen,health,context
+profession,farmer,0.0,0.0,1000,qwen,health,context
+profession,lawyer,0.905,0.0,1000,qwen,health,context
+profession,registered nurse,0.095,0.0,1000,qwen,health,context
+profession,truck driver,0.0,1.0,1000,qwen,health,context
+country,Brazil,0.001,0.006,1000,qwen,health,context
+country,Germany,0.021,0.001,1000,qwen,health,context
+country,Nigeria,0.978,0.0,1000,qwen,health,context
+country,South Korea,0.0,0.993,1000,qwen,health,context
+profession,computer programmer,0.133,0.0,1000,ministral,health,original
+profession,farmer,0.0,0.03,1000,ministral,health,original
+profession,lawyer,0.255,0.0,1000,ministral,health,original
+profession,registered nurse,0.612,0.0,1000,ministral,health,original
+profession,truck driver,0.0,0.97,1000,ministral,health,original
+country,Brazil,0.831,0.0,1000,ministral,health,original
+country,Germany,0.168,0.0,1000,ministral,health,original
+country,Nigeria,0.0,0.999,1000,ministral,health,original
+country,South Korea,0.001,0.001,1000,ministral,health,original
+profession,computer programmer,0.075,0.0,1000,ministral,health,context
+profession,farmer,0.0,0.0,1000,ministral,health,context
+profession,lawyer,0.087,0.0,1000,ministral,health,context
+profession,registered nurse,0.838,0.0,1000,ministral,health,context
+profession,truck driver,0.0,1.0,1000,ministral,health,context
+country,Brazil,0.84,0.0,1000,ministral,health,context
+country,Germany,0.151,0.005,1000,ministral,health,context
+country,Nigeria,0.009,0.22,1000,ministral,health,context
+country,South Korea,0.0,0.775,1000,ministral,health,context

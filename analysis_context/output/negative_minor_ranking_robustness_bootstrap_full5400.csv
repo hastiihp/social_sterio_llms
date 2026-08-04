@@ -1,0 +1,501 @@
+factor,level,p_top,p_bottom,bootstrap_B,model,context,framing
+profession,accountant,0.0,0.0,300,llama,negative_minor,original
+profession,administrative assistant,0.0,0.0,300,llama,negative_minor,original
+profession,architect,0.0,0.0,300,llama,negative_minor,original
+profession,bank teller,0.0,0.0,300,llama,negative_minor,original
+profession,business manager,0.0,0.0,300,llama,negative_minor,original
+profession,cashier,0.0,0.0,300,llama,negative_minor,original
+profession,chef,0.0,0.0,300,llama,negative_minor,original
+profession,civil engineer,0.0,0.0,300,llama,negative_minor,original
+profession,computer programmer,0.0,0.0,300,llama,negative_minor,original
+profession,construction worker,0.0,0.0,300,llama,negative_minor,original
+profession,doctor,1.0,0.0,300,llama,negative_minor,original
+profession,electrician,0.0,0.0,300,llama,negative_minor,original
+profession,elementary school teacher,0.0,0.0,300,llama,negative_minor,original
+profession,farmer,0.0,0.0,300,llama,negative_minor,original
+profession,flight attendant,0.0,0.0,300,llama,negative_minor,original
+profession,hairdresser,0.0,0.0,300,llama,negative_minor,original
+profession,janitor,0.0,0.9966666666666667,300,llama,negative_minor,original
+profession,journalist,0.0,0.0,300,llama,negative_minor,original
+profession,lawyer,0.0,0.0,300,llama,negative_minor,original
+profession,mechanic,0.0,0.0,300,llama,negative_minor,original
+profession,paramedic,0.0,0.0,300,llama,negative_minor,original
+profession,pharmacist,0.0,0.0,300,llama,negative_minor,original
+profession,plumber,0.0,0.0,300,llama,negative_minor,original
+profession,police officer,0.0,0.0,300,llama,negative_minor,original
+profession,real estate agent,0.0,0.0,300,llama,negative_minor,original
+profession,registered nurse,0.0,0.0,300,llama,negative_minor,original
+profession,social worker,0.0,0.0033333333333333335,300,llama,negative_minor,original
+profession,truck driver,0.0,0.0,300,llama,negative_minor,original
+profession,veterinarian,0.0,0.0,300,llama,negative_minor,original
+profession,waiter,0.0,0.0,300,llama,negative_minor,original
+country,Argentina,0.0,0.0,300,llama,negative_minor,original
+country,Brazil,0.0,0.0,300,llama,negative_minor,original
+country,Canada,0.0033333333333333335,0.0,300,llama,negative_minor,original
+country,China,0.0,0.056666666666666664,300,llama,negative_minor,original
+country,Egypt,0.0,0.9366666666666666,300,llama,negative_minor,original
+country,France,0.0,0.0,300,llama,negative_minor,original
+country,Germany,0.0,0.0,300,llama,negative_minor,original
+country,India,0.0,0.0,300,llama,negative_minor,original
+country,Italy,0.9966666666666667,0.0,300,llama,negative_minor,original
+country,Japan,0.0,0.0,300,llama,negative_minor,original
+country,Kenya,0.0,0.0,300,llama,negative_minor,original
+country,Mexico,0.0,0.0,300,llama,negative_minor,original
+country,Morocco,0.0,0.0,300,llama,negative_minor,original
+country,Nigeria,0.0,0.0,300,llama,negative_minor,original
+country,Pakistan,0.0,0.0,300,llama,negative_minor,original
+country,Poland,0.0,0.0,300,llama,negative_minor,original
+country,South Africa,0.0,0.0,300,llama,negative_minor,original
+country,South Korea,0.0,0.0,300,llama,negative_minor,original
+country,Turkey,0.0,0.006666666666666667,300,llama,negative_minor,original
+country,USA,0.0,0.0,300,llama,negative_minor,original
+profession,accountant,0.0,0.0,300,llama,negative_minor,context
+profession,administrative assistant,0.0,0.0,300,llama,negative_minor,context
+profession,architect,0.0,0.0,300,llama,negative_minor,context
+profession,bank teller,0.0,0.0,300,llama,negative_minor,context
+profession,business manager,0.0,0.0,300,llama,negative_minor,context
+profession,cashier,0.0,0.006666666666666667,300,llama,negative_minor,context
+profession,chef,0.0,0.0,300,llama,negative_minor,context
+profession,civil engineer,0.0,0.0,300,llama,negative_minor,context
+profession,computer programmer,0.0,0.0,300,llama,negative_minor,context
+profession,construction worker,0.0,0.0,300,llama,negative_minor,context
+profession,doctor,0.9966666666666667,0.0,300,llama,negative_minor,context
+profession,electrician,0.0,0.0,300,llama,negative_minor,context
+profession,elementary school teacher,0.0,0.0,300,llama,negative_minor,context
+profession,farmer,0.0,0.0,300,llama,negative_minor,context
+profession,flight attendant,0.0,0.0,300,llama,negative_minor,context
+profession,hairdresser,0.0,0.0,300,llama,negative_minor,context
+profession,janitor,0.0,0.9933333333333333,300,llama,negative_minor,context
+profession,journalist,0.0,0.0,300,llama,negative_minor,context
+profession,lawyer,0.0,0.0,300,llama,negative_minor,context
+profession,mechanic,0.0,0.0,300,llama,negative_minor,context
+profession,paramedic,0.0,0.0,300,llama,negative_minor,context
+profession,pharmacist,0.0,0.0,300,llama,negative_minor,context
+profession,plumber,0.0,0.0,300,llama,negative_minor,context
+profession,police officer,0.0,0.0,300,llama,negative_minor,context
+profession,real estate agent,0.0,0.0,300,llama,negative_minor,context
+profession,registered nurse,0.0033333333333333335,0.0,300,llama,negative_minor,context
+profession,social worker,0.0,0.0,300,llama,negative_minor,context
+profession,truck driver,0.0,0.0,300,llama,negative_minor,context
+profession,veterinarian,0.0,0.0,300,llama,negative_minor,context
+profession,waiter,0.0,0.0,300,llama,negative_minor,context
+country,Argentina,1.0,0.0,300,llama,negative_minor,context
+country,Brazil,0.0,0.0,300,llama,negative_minor,context
+country,Canada,0.0,0.0,300,llama,negative_minor,context
+country,China,0.0,0.0,300,llama,negative_minor,context
+country,Egypt,0.0,0.06,300,llama,negative_minor,context
+country,France,0.0,0.0,300,llama,negative_minor,context
+country,Germany,0.0,0.0,300,llama,negative_minor,context
+country,India,0.0,0.0,300,llama,negative_minor,context
+country,Italy,0.0,0.0,300,llama,negative_minor,context
+country,Japan,0.0,0.0,300,llama,negative_minor,context
+country,Kenya,0.0,0.0,300,llama,negative_minor,context
+country,Mexico,0.0,0.0,300,llama,negative_minor,context
+country,Morocco,0.0,0.44333333333333336,300,llama,negative_minor,context
+country,Nigeria,0.0,0.4033333333333333,300,llama,negative_minor,context
+country,Pakistan,0.0,0.09333333333333334,300,llama,negative_minor,context
+country,Poland,0.0,0.0,300,llama,negative_minor,context
+country,South Africa,0.0,0.0,300,llama,negative_minor,context
+country,South Korea,0.0,0.0,300,llama,negative_minor,context
+country,Turkey,0.0,0.0,300,llama,negative_minor,context
+country,USA,0.0,0.0,300,llama,negative_minor,context
+profession,accountant,0.0,0.0,300,gemma,negative_minor,original
+profession,administrative assistant,0.0,0.0,300,gemma,negative_minor,original
+profession,architect,0.0,0.0,300,gemma,negative_minor,original
+profession,bank teller,0.0,0.0,300,gemma,negative_minor,original
+profession,business manager,0.0,0.0,300,gemma,negative_minor,original
+profession,cashier,0.0,0.0,300,gemma,negative_minor,original
+profession,chef,0.0,0.0,300,gemma,negative_minor,original
+profession,civil engineer,0.0,0.0,300,gemma,negative_minor,original
+profession,computer programmer,0.0,0.0,300,gemma,negative_minor,original
+profession,construction worker,0.0,0.0,300,gemma,negative_minor,original
+profession,doctor,0.0,0.0,300,gemma,negative_minor,original
+profession,electrician,0.0,0.0,300,gemma,negative_minor,original
+profession,elementary school teacher,0.19333333333333333,0.0,300,gemma,negative_minor,original
+profession,farmer,0.0,0.0,300,gemma,negative_minor,original
+profession,flight attendant,0.73,0.0,300,gemma,negative_minor,original
+profession,hairdresser,0.0,0.0,300,gemma,negative_minor,original
+profession,janitor,0.0,0.0,300,gemma,negative_minor,original
+profession,journalist,0.0,0.0,300,gemma,negative_minor,original
+profession,lawyer,0.0,0.0,300,gemma,negative_minor,original
+profession,mechanic,0.0,0.0,300,gemma,negative_minor,original
+profession,paramedic,0.0,0.0,300,gemma,negative_minor,original
+profession,pharmacist,0.0,0.0,300,gemma,negative_minor,original
+profession,plumber,0.0,0.0,300,gemma,negative_minor,original
+profession,police officer,0.0,0.6433333333333333,300,gemma,negative_minor,original
+profession,real estate agent,0.0,0.0,300,gemma,negative_minor,original
+profession,registered nurse,0.07,0.0,300,gemma,negative_minor,original
+profession,social worker,0.006666666666666667,0.0,300,gemma,negative_minor,original
+profession,truck driver,0.0,0.3566666666666667,300,gemma,negative_minor,original
+profession,veterinarian,0.0,0.0,300,gemma,negative_minor,original
+profession,waiter,0.0,0.0,300,gemma,negative_minor,original
+country,Argentina,0.0,0.0,300,gemma,negative_minor,original
+country,Brazil,0.013333333333333334,0.0,300,gemma,negative_minor,original
+country,Canada,0.7066666666666667,0.0,300,gemma,negative_minor,original
+country,China,0.0,0.0,300,gemma,negative_minor,original
+country,Egypt,0.0,0.006666666666666667,300,gemma,negative_minor,original
+country,France,0.0,0.0,300,gemma,negative_minor,original
+country,Germany,0.0,0.0,300,gemma,negative_minor,original
+country,India,0.0,0.0,300,gemma,negative_minor,original
+country,Italy,0.0,0.0,300,gemma,negative_minor,original
+country,Japan,0.0,0.0,300,gemma,negative_minor,original
+country,Kenya,0.0,0.0,300,gemma,negative_minor,original
+country,Mexico,0.28,0.0,300,gemma,negative_minor,original
+country,Morocco,0.0,0.0,300,gemma,negative_minor,original
+country,Nigeria,0.0,0.0033333333333333335,300,gemma,negative_minor,original
+country,Pakistan,0.0,0.016666666666666666,300,gemma,negative_minor,original
+country,Poland,0.0,0.023333333333333334,300,gemma,negative_minor,original
+country,South Africa,0.0,0.0,300,gemma,negative_minor,original
+country,South Korea,0.0,0.0,300,gemma,negative_minor,original
+country,Turkey,0.0,0.0,300,gemma,negative_minor,original
+country,USA,0.0,0.95,300,gemma,negative_minor,original
+profession,accountant,0.0,0.0,300,gemma,negative_minor,context
+profession,administrative assistant,0.0,0.0,300,gemma,negative_minor,context
+profession,architect,0.0,0.0,300,gemma,negative_minor,context
+profession,bank teller,0.0,0.0,300,gemma,negative_minor,context
+profession,business manager,0.0,0.0,300,gemma,negative_minor,context
+profession,cashier,0.0,0.013333333333333334,300,gemma,negative_minor,context
+profession,chef,0.0,0.0,300,gemma,negative_minor,context
+profession,civil engineer,0.0,0.0,300,gemma,negative_minor,context
+profession,computer programmer,0.0,0.0,300,gemma,negative_minor,context
+profession,construction worker,0.0,0.0,300,gemma,negative_minor,context
+profession,doctor,0.0,0.0,300,gemma,negative_minor,context
+profession,electrician,0.0,0.0,300,gemma,negative_minor,context
+profession,elementary school teacher,0.0,0.0,300,gemma,negative_minor,context
+profession,farmer,0.0,0.0,300,gemma,negative_minor,context
+profession,flight attendant,0.0,0.0,300,gemma,negative_minor,context
+profession,hairdresser,0.0,0.0,300,gemma,negative_minor,context
+profession,janitor,0.0,0.11333333333333333,300,gemma,negative_minor,context
+profession,journalist,0.0,0.0,300,gemma,negative_minor,context
+profession,lawyer,0.0,0.0,300,gemma,negative_minor,context
+profession,mechanic,0.0,0.0,300,gemma,negative_minor,context
+profession,paramedic,0.0,0.0,300,gemma,negative_minor,context
+profession,pharmacist,0.0,0.0,300,gemma,negative_minor,context
+profession,plumber,0.0,0.0,300,gemma,negative_minor,context
+profession,police officer,0.0,0.31,300,gemma,negative_minor,context
+profession,real estate agent,0.0,0.0,300,gemma,negative_minor,context
+profession,registered nurse,0.0,0.0,300,gemma,negative_minor,context
+profession,social worker,1.0,0.0,300,gemma,negative_minor,context
+profession,truck driver,0.0,0.5633333333333334,300,gemma,negative_minor,context
+profession,veterinarian,0.0,0.0,300,gemma,negative_minor,context
+profession,waiter,0.0,0.0,300,gemma,negative_minor,context
+country,Argentina,0.0,0.0,300,gemma,negative_minor,context
+country,Brazil,0.19666666666666666,0.0,300,gemma,negative_minor,context
+country,Canada,0.0,0.0,300,gemma,negative_minor,context
+country,China,0.0,0.0,300,gemma,negative_minor,context
+country,Egypt,0.0,0.39666666666666667,300,gemma,negative_minor,context
+country,France,0.0,0.0,300,gemma,negative_minor,context
+country,Germany,0.0,0.0,300,gemma,negative_minor,context
+country,India,0.0,0.0,300,gemma,negative_minor,context
+country,Italy,0.0,0.0,300,gemma,negative_minor,context
+country,Japan,0.0,0.0,300,gemma,negative_minor,context
+country,Kenya,0.65,0.0,300,gemma,negative_minor,context
+country,Mexico,0.0,0.0,300,gemma,negative_minor,context
+country,Morocco,0.0,0.0,300,gemma,negative_minor,context
+country,Nigeria,0.0,0.0,300,gemma,negative_minor,context
+country,Pakistan,0.0,0.0,300,gemma,negative_minor,context
+country,Poland,0.0,0.5166666666666667,300,gemma,negative_minor,context
+country,South Africa,0.15333333333333332,0.0,300,gemma,negative_minor,context
+country,South Korea,0.0,0.0,300,gemma,negative_minor,context
+country,Turkey,0.0,0.01,300,gemma,negative_minor,context
+country,USA,0.0,0.07666666666666666,300,gemma,negative_minor,context
+profession,accountant,0.0,0.0,300,qwen,negative_minor,original
+profession,administrative assistant,0.0,0.0,300,qwen,negative_minor,original
+profession,architect,0.0,0.0,300,qwen,negative_minor,original
+profession,bank teller,0.0,0.0,300,qwen,negative_minor,original
+profession,business manager,0.0,0.0,300,qwen,negative_minor,original
+profession,cashier,0.0,0.0,300,qwen,negative_minor,original
+profession,chef,0.0,0.0,300,qwen,negative_minor,original
+profession,civil engineer,0.0,0.0,300,qwen,negative_minor,original
+profession,computer programmer,0.0,0.0,300,qwen,negative_minor,original
+profession,construction worker,0.0,0.0,300,qwen,negative_minor,original
+profession,doctor,0.5966666666666667,0.0,300,qwen,negative_minor,original
+profession,electrician,0.0,0.0,300,qwen,negative_minor,original
+profession,elementary school teacher,0.0,0.0,300,qwen,negative_minor,original
+profession,farmer,0.0,0.0,300,qwen,negative_minor,original
+profession,flight attendant,0.0,0.0,300,qwen,negative_minor,original
+profession,hairdresser,0.0,0.0,300,qwen,negative_minor,original
+profession,janitor,0.0,0.4066666666666667,300,qwen,negative_minor,original
+profession,journalist,0.0,0.0,300,qwen,negative_minor,original
+profession,lawyer,0.38666666666666666,0.0,300,qwen,negative_minor,original
+profession,mechanic,0.0,0.0,300,qwen,negative_minor,original
+profession,paramedic,0.0,0.0,300,qwen,negative_minor,original
+profession,pharmacist,0.0,0.0,300,qwen,negative_minor,original
+profession,plumber,0.0,0.0,300,qwen,negative_minor,original
+profession,police officer,0.016666666666666666,0.0,300,qwen,negative_minor,original
+profession,real estate agent,0.0,0.0,300,qwen,negative_minor,original
+profession,registered nurse,0.0,0.0,300,qwen,negative_minor,original
+profession,social worker,0.0,0.0,300,qwen,negative_minor,original
+profession,truck driver,0.0,0.5933333333333334,300,qwen,negative_minor,original
+profession,veterinarian,0.0,0.0,300,qwen,negative_minor,original
+profession,waiter,0.0,0.0,300,qwen,negative_minor,original
+country,Argentina,0.0,0.0,300,qwen,negative_minor,original
+country,Brazil,0.0,0.0,300,qwen,negative_minor,original
+country,Canada,0.9566666666666667,0.0,300,qwen,negative_minor,original
+country,China,0.0,0.0,300,qwen,negative_minor,original
+country,Egypt,0.0,0.19,300,qwen,negative_minor,original
+country,France,0.04,0.0,300,qwen,negative_minor,original
+country,Germany,0.0,0.0,300,qwen,negative_minor,original
+country,India,0.0,0.0,300,qwen,negative_minor,original
+country,Italy,0.0,0.0,300,qwen,negative_minor,original
+country,Japan,0.0,0.0,300,qwen,negative_minor,original
+country,Kenya,0.0,0.0,300,qwen,negative_minor,original
+country,Mexico,0.0,0.0,300,qwen,negative_minor,original
+country,Morocco,0.0,0.8066666666666666,300,qwen,negative_minor,original
+country,Nigeria,0.0,0.0,300,qwen,negative_minor,original
+country,Pakistan,0.0,0.0033333333333333335,300,qwen,negative_minor,original
+country,Poland,0.0,0.0,300,qwen,negative_minor,original
+country,South Africa,0.0033333333333333335,0.0,300,qwen,negative_minor,original
+country,South Korea,0.0,0.0,300,qwen,negative_minor,original
+country,Turkey,0.0,0.0,300,qwen,negative_minor,original
+country,USA,0.0,0.0,300,qwen,negative_minor,original
+profession,accountant,0.0,0.0,300,qwen,negative_minor,context
+profession,administrative assistant,0.0,0.0,300,qwen,negative_minor,context
+profession,architect,0.0,0.0,300,qwen,negative_minor,context
+profession,bank teller,0.0,0.0,300,qwen,negative_minor,context
+profession,business manager,0.0,0.0,300,qwen,negative_minor,context
+profession,cashier,0.0,0.0,300,qwen,negative_minor,context
+profession,chef,0.0,0.0,300,qwen,negative_minor,context
+profession,civil engineer,0.0,0.0,300,qwen,negative_minor,context
+profession,computer programmer,0.0,0.0,300,qwen,negative_minor,context
+profession,construction worker,0.0,0.44666666666666666,300,qwen,negative_minor,context
+profession,doctor,0.0,0.0,300,qwen,negative_minor,context
+profession,electrician,0.0,0.0,300,qwen,negative_minor,context
+profession,elementary school teacher,0.0,0.0,300,qwen,negative_minor,context
+profession,farmer,0.0,0.0,300,qwen,negative_minor,context
+profession,flight attendant,0.0,0.0,300,qwen,negative_minor,context
+profession,hairdresser,0.0,0.0,300,qwen,negative_minor,context
+profession,janitor,0.0,0.5533333333333333,300,qwen,negative_minor,context
+profession,journalist,0.023333333333333334,0.0,300,qwen,negative_minor,context
+profession,lawyer,0.0,0.0,300,qwen,negative_minor,context
+profession,mechanic,0.0,0.0,300,qwen,negative_minor,context
+profession,paramedic,0.0,0.0,300,qwen,negative_minor,context
+profession,pharmacist,0.0,0.0,300,qwen,negative_minor,context
+profession,plumber,0.0,0.0,300,qwen,negative_minor,context
+profession,police officer,0.0,0.0,300,qwen,negative_minor,context
+profession,real estate agent,0.0,0.0,300,qwen,negative_minor,context
+profession,registered nurse,0.0,0.0,300,qwen,negative_minor,context
+profession,social worker,0.9766666666666667,0.0,300,qwen,negative_minor,context
+profession,truck driver,0.0,0.0,300,qwen,negative_minor,context
+profession,veterinarian,0.0,0.0,300,qwen,negative_minor,context
+profession,waiter,0.0,0.0,300,qwen,negative_minor,context
+country,Argentina,0.0,0.0,300,qwen,negative_minor,context
+country,Brazil,0.0,0.0,300,qwen,negative_minor,context
+country,Canada,0.0,0.0,300,qwen,negative_minor,context
+country,China,0.0,0.9933333333333333,300,qwen,negative_minor,context
+country,Egypt,0.0,0.0,300,qwen,negative_minor,context
+country,France,0.0,0.0,300,qwen,negative_minor,context
+country,Germany,0.0,0.0,300,qwen,negative_minor,context
+country,India,0.0,0.0,300,qwen,negative_minor,context
+country,Italy,0.0,0.0,300,qwen,negative_minor,context
+country,Japan,0.0,0.0,300,qwen,negative_minor,context
+country,Kenya,0.0,0.0,300,qwen,negative_minor,context
+country,Mexico,0.0,0.0,300,qwen,negative_minor,context
+country,Morocco,0.0,0.0,300,qwen,negative_minor,context
+country,Nigeria,1.0,0.0,300,qwen,negative_minor,context
+country,Pakistan,0.0,0.0,300,qwen,negative_minor,context
+country,Poland,0.0,0.006666666666666667,300,qwen,negative_minor,context
+country,South Africa,0.0,0.0,300,qwen,negative_minor,context
+country,South Korea,0.0,0.0,300,qwen,negative_minor,context
+country,Turkey,0.0,0.0,300,qwen,negative_minor,context
+country,USA,0.0,0.0,300,qwen,negative_minor,context
+profession,accountant,0.0,0.0,300,ministral,negative_minor,original
+profession,administrative assistant,0.0,0.0,300,ministral,negative_minor,original
+profession,architect,0.0,0.0,300,ministral,negative_minor,original
+profession,bank teller,0.0,0.0,300,ministral,negative_minor,original
+profession,business manager,0.0,0.0,300,ministral,negative_minor,original
+profession,cashier,0.0,0.0,300,ministral,negative_minor,original
+profession,chef,0.0,0.0,300,ministral,negative_minor,original
+profession,civil engineer,0.0,0.0,300,ministral,negative_minor,original
+profession,computer programmer,0.0,0.0,300,ministral,negative_minor,original
+profession,construction worker,0.0,0.0,300,ministral,negative_minor,original
+profession,doctor,0.0,0.0,300,ministral,negative_minor,original
+profession,electrician,0.0,0.0,300,ministral,negative_minor,original
+profession,elementary school teacher,0.0,0.0,300,ministral,negative_minor,original
+profession,farmer,0.0,0.0,300,ministral,negative_minor,original
+profession,flight attendant,0.0,0.0,300,ministral,negative_minor,original
+profession,hairdresser,0.0,0.0,300,ministral,negative_minor,original
+profession,janitor,0.0,0.27666666666666667,300,ministral,negative_minor,original
+profession,journalist,0.0,0.0,300,ministral,negative_minor,original
+profession,lawyer,0.0,0.0,300,ministral,negative_minor,original
+profession,mechanic,0.0,0.0,300,ministral,negative_minor,original
+profession,paramedic,0.0,0.0,300,ministral,negative_minor,original
+profession,pharmacist,0.0,0.0,300,ministral,negative_minor,original
+profession,plumber,0.0,0.0,300,ministral,negative_minor,original
+profession,police officer,0.0,0.0,300,ministral,negative_minor,original
+profession,real estate agent,0.0,0.0,300,ministral,negative_minor,original
+profession,registered nurse,0.0,0.0,300,ministral,negative_minor,original
+profession,social worker,1.0,0.0,300,ministral,negative_minor,original
+profession,truck driver,0.0,0.7233333333333334,300,ministral,negative_minor,original
+profession,veterinarian,0.0,0.0,300,ministral,negative_minor,original
+profession,waiter,0.0,0.0,300,ministral,negative_minor,original
+country,Argentina,0.006666666666666667,0.0,300,ministral,negative_minor,original
+country,Brazil,0.0,0.0,300,ministral,negative_minor,original
+country,Canada,0.9933333333333333,0.0,300,ministral,negative_minor,original
+country,China,0.0,0.0,300,ministral,negative_minor,original
+country,Egypt,0.0,0.69,300,ministral,negative_minor,original
+country,France,0.0,0.0,300,ministral,negative_minor,original
+country,Germany,0.0,0.0,300,ministral,negative_minor,original
+country,India,0.0,0.0,300,ministral,negative_minor,original
+country,Italy,0.0,0.0,300,ministral,negative_minor,original
+country,Japan,0.0,0.0,300,ministral,negative_minor,original
+country,Kenya,0.0,0.0,300,ministral,negative_minor,original
+country,Mexico,0.0,0.0,300,ministral,negative_minor,original
+country,Morocco,0.0,0.0,300,ministral,negative_minor,original
+country,Nigeria,0.0,0.0,300,ministral,negative_minor,original
+country,Pakistan,0.0,0.31,300,ministral,negative_minor,original
+country,Poland,0.0,0.0,300,ministral,negative_minor,original
+country,South Africa,0.0,0.0,300,ministral,negative_minor,original
+country,South Korea,0.0,0.0,300,ministral,negative_minor,original
+country,Turkey,0.0,0.0,300,ministral,negative_minor,original
+country,USA,0.0,0.0,300,ministral,negative_minor,original
+profession,accountant,0.0,0.0,300,ministral,negative_minor,context
+profession,administrative assistant,0.0,0.0,300,ministral,negative_minor,context
+profession,architect,0.0,0.0,300,ministral,negative_minor,context
+profession,bank teller,0.0,0.0,300,ministral,negative_minor,context
+profession,business manager,0.0,0.0,300,ministral,negative_minor,context
+profession,cashier,0.0,0.0,300,ministral,negative_minor,context
+profession,chef,0.0,0.0,300,ministral,negative_minor,context
+profession,civil engineer,0.0,0.0,300,ministral,negative_minor,context
+profession,computer programmer,0.0,0.0,300,ministral,negative_minor,context
+profession,construction worker,0.0,0.0,300,ministral,negative_minor,context
+profession,doctor,0.0,0.0,300,ministral,negative_minor,context
+profession,electrician,0.0,0.0,300,ministral,negative_minor,context
+profession,elementary school teacher,0.0,0.0,300,ministral,negative_minor,context
+profession,farmer,0.0,0.0,300,ministral,negative_minor,context
+profession,flight attendant,0.0,0.0,300,ministral,negative_minor,context
+profession,hairdresser,0.0,0.0,300,ministral,negative_minor,context
+profession,janitor,0.0,0.9866666666666667,300,ministral,negative_minor,context
+profession,journalist,0.0,0.0,300,ministral,negative_minor,context
+profession,lawyer,0.0,0.0,300,ministral,negative_minor,context
+profession,mechanic,0.0,0.0,300,ministral,negative_minor,context
+profession,paramedic,0.0,0.0,300,ministral,negative_minor,context
+profession,pharmacist,0.0,0.0,300,ministral,negative_minor,context
+profession,plumber,0.0,0.0,300,ministral,negative_minor,context
+profession,police officer,0.0,0.0,300,ministral,negative_minor,context
+profession,real estate agent,0.0,0.0,300,ministral,negative_minor,context
+profession,registered nurse,0.0,0.0,300,ministral,negative_minor,context
+profession,social worker,1.0,0.0,300,ministral,negative_minor,context
+profession,truck driver,0.0,0.013333333333333334,300,ministral,negative_minor,context
+profession,veterinarian,0.0,0.0,300,ministral,negative_minor,context
+profession,waiter,0.0,0.0,300,ministral,negative_minor,context
+country,Argentina,0.0,0.0,300,ministral,negative_minor,context
+country,Brazil,0.0,0.0,300,ministral,negative_minor,context
+country,Canada,1.0,0.0,300,ministral,negative_minor,context
+country,China,0.0,0.0,300,ministral,negative_minor,context
+country,Egypt,0.0,0.0,300,ministral,negative_minor,context
+country,France,0.0,0.0,300,ministral,negative_minor,context
+country,Germany,0.0,0.0,300,ministral,negative_minor,context
+country,India,0.0,0.0,300,ministral,negative_minor,context
+country,Italy,0.0,0.0,300,ministral,negative_minor,context
+country,Japan,0.0,0.0,300,ministral,negative_minor,context
+country,Kenya,0.0,0.0,300,ministral,negative_minor,context
+country,Mexico,0.0,0.0,300,ministral,negative_minor,context
+country,Morocco,0.0,0.0,300,ministral,negative_minor,context
+country,Nigeria,0.0,0.0,300,ministral,negative_minor,context
+country,Pakistan,0.0,1.0,300,ministral,negative_minor,context
+country,Poland,0.0,0.0,300,ministral,negative_minor,context
+country,South Africa,0.0,0.0,300,ministral,negative_minor,context
+country,South Korea,0.0,0.0,300,ministral,negative_minor,context
+country,Turkey,0.0,0.0,300,ministral,negative_minor,context
+country,USA,0.0,0.0,300,ministral,negative_minor,context
+profession,accountant,0.0,0.0,300,deepseek,negative_minor,original
+profession,administrative assistant,0.0,0.0,300,deepseek,negative_minor,original
+profession,architect,0.043333333333333335,0.0,300,deepseek,negative_minor,original
+profession,bank teller,0.0,0.0,300,deepseek,negative_minor,original
+profession,business manager,0.0,0.0,300,deepseek,negative_minor,original
+profession,cashier,0.0,0.0,300,deepseek,negative_minor,original
+profession,chef,0.0,0.0,300,deepseek,negative_minor,original
+profession,civil engineer,0.0,0.0,300,deepseek,negative_minor,original
+profession,computer programmer,0.6766666666666666,0.0,300,deepseek,negative_minor,original
+profession,construction worker,0.0,0.0,300,deepseek,negative_minor,original
+profession,doctor,0.0,0.0,300,deepseek,negative_minor,original
+profession,electrician,0.013333333333333334,0.0,300,deepseek,negative_minor,original
+profession,elementary school teacher,0.0,0.0,300,deepseek,negative_minor,original
+profession,farmer,0.0,0.0,300,deepseek,negative_minor,original
+profession,flight attendant,0.0,0.0,300,deepseek,negative_minor,original
+profession,hairdresser,0.0,0.0,300,deepseek,negative_minor,original
+profession,janitor,0.043333333333333335,0.0,300,deepseek,negative_minor,original
+profession,journalist,0.0,0.0,300,deepseek,negative_minor,original
+profession,lawyer,0.22333333333333333,0.0,300,deepseek,negative_minor,original
+profession,mechanic,0.0,0.0,300,deepseek,negative_minor,original
+profession,paramedic,0.0,0.0,300,deepseek,negative_minor,original
+profession,pharmacist,0.0,0.0,300,deepseek,negative_minor,original
+profession,plumber,0.0,0.0,300,deepseek,negative_minor,original
+profession,police officer,0.0,0.0,300,deepseek,negative_minor,original
+profession,real estate agent,0.0,0.0,300,deepseek,negative_minor,original
+profession,registered nurse,0.0,0.0,300,deepseek,negative_minor,original
+profession,social worker,0.0,0.0,300,deepseek,negative_minor,original
+profession,truck driver,0.0,0.0,300,deepseek,negative_minor,original
+profession,veterinarian,0.0,0.0,300,deepseek,negative_minor,original
+profession,waiter,0.0,1.0,300,deepseek,negative_minor,original
+country,Argentina,0.8033333333333333,0.0,300,deepseek,negative_minor,original
+country,Brazil,0.0,0.0,300,deepseek,negative_minor,original
+country,Canada,0.0,0.0,300,deepseek,negative_minor,original
+country,China,0.0,0.0,300,deepseek,negative_minor,original
+country,Egypt,0.02,0.0,300,deepseek,negative_minor,original
+country,France,0.07,0.0,300,deepseek,negative_minor,original
+country,Germany,0.0,0.0,300,deepseek,negative_minor,original
+country,India,0.0,0.0,300,deepseek,negative_minor,original
+country,Italy,0.0,0.0,300,deepseek,negative_minor,original
+country,Japan,0.0033333333333333335,0.0,300,deepseek,negative_minor,original
+country,Kenya,0.0,0.0,300,deepseek,negative_minor,original
+country,Mexico,0.0,0.0,300,deepseek,negative_minor,original
+country,Morocco,0.0,0.0,300,deepseek,negative_minor,original
+country,Nigeria,0.0,0.0,300,deepseek,negative_minor,original
+country,Pakistan,0.0033333333333333335,0.0,300,deepseek,negative_minor,original
+country,Poland,0.023333333333333334,0.0,300,deepseek,negative_minor,original
+country,South Africa,0.0,0.0,300,deepseek,negative_minor,original
+country,South Korea,0.0,0.67,300,deepseek,negative_minor,original
+country,Turkey,0.07666666666666666,0.03,300,deepseek,negative_minor,original
+country,USA,0.0,0.3,300,deepseek,negative_minor,original
+profession,accountant,0.023333333333333334,0.0,300,deepseek,negative_minor,context
+profession,administrative assistant,0.03666666666666667,0.11333333333333333,300,deepseek,negative_minor,context
+profession,architect,0.07,0.023333333333333334,300,deepseek,negative_minor,context
+profession,bank teller,0.05,0.04666666666666667,300,deepseek,negative_minor,context
+profession,business manager,0.03,0.02666666666666667,300,deepseek,negative_minor,context
+profession,cashier,0.03333333333333333,0.0,300,deepseek,negative_minor,context
+profession,chef,0.05333333333333334,0.006666666666666667,300,deepseek,negative_minor,context
+profession,civil engineer,0.03666666666666667,0.02,300,deepseek,negative_minor,context
+profession,computer programmer,0.05,0.20666666666666667,300,deepseek,negative_minor,context
+profession,construction worker,0.043333333333333335,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,doctor,0.05333333333333334,0.01,300,deepseek,negative_minor,context
+profession,electrician,0.02666666666666667,0.0,300,deepseek,negative_minor,context
+profession,elementary school teacher,0.03,0.09,300,deepseek,negative_minor,context
+profession,farmer,0.016666666666666666,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,flight attendant,0.03666666666666667,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,hairdresser,0.016666666666666666,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,janitor,0.023333333333333334,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,journalist,0.02,0.006666666666666667,300,deepseek,negative_minor,context
+profession,lawyer,0.02,0.0,300,deepseek,negative_minor,context
+profession,mechanic,0.023333333333333334,0.01,300,deepseek,negative_minor,context
+profession,paramedic,0.03666666666666667,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,pharmacist,0.043333333333333335,0.016666666666666666,300,deepseek,negative_minor,context
+profession,plumber,0.023333333333333334,0.37333333333333335,300,deepseek,negative_minor,context
+profession,police officer,0.043333333333333335,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,real estate agent,0.02,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,registered nurse,0.056666666666666664,0.006666666666666667,300,deepseek,negative_minor,context
+profession,social worker,0.01,0.0033333333333333335,300,deepseek,negative_minor,context
+profession,truck driver,0.013333333333333334,0.006666666666666667,300,deepseek,negative_minor,context
+profession,veterinarian,0.04,0.006666666666666667,300,deepseek,negative_minor,context
+profession,waiter,0.02,0.0,300,deepseek,negative_minor,context
+country,Argentina,0.023333333333333334,0.0,300,deepseek,negative_minor,context
+country,Brazil,0.14333333333333334,0.0,300,deepseek,negative_minor,context
+country,Canada,0.0,0.0,300,deepseek,negative_minor,context
+country,China,0.12666666666666668,0.0,300,deepseek,negative_minor,context
+country,Egypt,0.12666666666666668,0.0,300,deepseek,negative_minor,context
+country,France,0.08333333333333333,0.0,300,deepseek,negative_minor,context
+country,Germany,0.0,0.0,300,deepseek,negative_minor,context
+country,India,0.0,0.0,300,deepseek,negative_minor,context
+country,Italy,0.07666666666666666,0.0,300,deepseek,negative_minor,context
+country,Japan,0.06333333333333334,0.0,300,deepseek,negative_minor,context
+country,Kenya,0.0,0.0,300,deepseek,negative_minor,context
+country,Mexico,0.13333333333333333,0.0,300,deepseek,negative_minor,context
+country,Morocco,0.0,0.0,300,deepseek,negative_minor,context
+country,Nigeria,0.0,0.0,300,deepseek,negative_minor,context
+country,Pakistan,0.0,0.0,300,deepseek,negative_minor,context
+country,Poland,0.08333333333333333,0.0,300,deepseek,negative_minor,context
+country,South Africa,0.0,0.0,300,deepseek,negative_minor,context
+country,South Korea,0.11666666666666667,0.0,300,deepseek,negative_minor,context
+country,Turkey,0.023333333333333334,0.0,300,deepseek,negative_minor,context
+country,USA,0.0,1.0,300,deepseek,negative_minor,context

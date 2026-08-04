@@ -1,0 +1,548 @@
+=== STEP 1: smoketest gate for negative_minor (llama + qwen, 200 rows each) ===
+
+======================================================================
+NEGATIVE_MINOR SMOKETEST: meta-llama/Llama-3.1-8B-Instruct
+======================================================================
+Provenance: {'model_id': 'meta-llama/Llama-3.1-8B-Instruct', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T16:42:48.324998+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 200 prompts
+  16/200 done
+negative_minor smoketest complete for meta-llama/Llama-3.1-8B-Instruct: 200 rows written, 0 technical failures -> negative_minor_smoketest_results_llama.csv
+
+negative_minor/llama complete.
+
+======================================================================
+NEGATIVE_MINOR SMOKETEST: Qwen/Qwen3-8B
+======================================================================
+Provenance: {'model_id': 'Qwen/Qwen3-8B', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T16:43:43.757507+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 200 prompts
+  16/200 done
+negative_minor smoketest complete for Qwen/Qwen3-8B: 200 rows written, 0 technical failures -> negative_minor_smoketest_results_qwen.csv
+
+negative_minor/qwen complete.
+=== Checking smoketest compliance for negative_minor ===
+negative_minor/llama strict_valid_rate: 1.0000
+negative_minor/qwen strict_valid_rate: 1.0000
+PASS
+=== SMOKETEST PASSED for negative_minor. ===
+=== STEP 2: full run for negative_minor, 5 models (resumable) ===
+
+======================================================================
+NEGATIVE_MINOR FULL RUN: meta-llama/Llama-3.1-8B-Instruct
+======================================================================
+Provenance: {'model_id': 'meta-llama/Llama-3.1-8B-Instruct', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T16:44:32.234732+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 75600 prompts
+  16/75600 done
+  816/75600 done
+  1616/75600 done
+  2416/75600 done
+  3216/75600 done
+  4016/75600 done
+  4816/75600 done
+  5616/75600 done
+  6416/75600 done
+  7216/75600 done
+  8016/75600 done
+  8816/75600 done
+  9616/75600 done
+  10416/75600 done
+  11216/75600 done
+  12016/75600 done
+  12816/75600 done
+  13616/75600 done
+  14416/75600 done
+  15216/75600 done
+  16016/75600 done
+  16816/75600 done
+  17616/75600 done
+  18416/75600 done
+  19216/75600 done
+  20016/75600 done
+  20816/75600 done
+  21616/75600 done
+  22416/75600 done
+  23216/75600 done
+  24016/75600 done
+  24816/75600 done
+  25616/75600 done
+  26416/75600 done
+  27216/75600 done
+  28016/75600 done
+  28816/75600 done
+  29616/75600 done
+  30416/75600 done
+  31216/75600 done
+  32016/75600 done
+  32816/75600 done
+  33616/75600 done
+  34416/75600 done
+  35216/75600 done
+  36016/75600 done
+  36816/75600 done
+  37616/75600 done
+  38416/75600 done
+  39216/75600 done
+  40016/75600 done
+  40816/75600 done
+  41616/75600 done
+  42416/75600 done
+  43216/75600 done
+  44016/75600 done
+  44816/75600 done
+  45616/75600 done
+  46416/75600 done
+  47216/75600 done
+  48016/75600 done
+  48816/75600 done
+  49616/75600 done
+  50416/75600 done
+  51216/75600 done
+  52016/75600 done
+  52816/75600 done
+  53616/75600 done
+  54416/75600 done
+  55216/75600 done
+  56016/75600 done
+  56816/75600 done
+  57616/75600 done
+  58416/75600 done
+  59216/75600 done
+  60016/75600 done
+  60816/75600 done
+  61616/75600 done
+  62416/75600 done
+  63216/75600 done
+  64016/75600 done
+  64816/75600 done
+  65616/75600 done
+  66416/75600 done
+  67216/75600 done
+  68016/75600 done
+  68816/75600 done
+  69616/75600 done
+  70416/75600 done
+  71216/75600 done
+  72016/75600 done
+  72816/75600 done
+  73616/75600 done
+  74416/75600 done
+  75216/75600 done
+negative_minor full run complete for meta-llama/Llama-3.1-8B-Instruct: 75600 rows written, 0 technical failures -> negative_minor_full_results_llama.csv
+
+negative_minor/llama complete.
+
+======================================================================
+NEGATIVE_MINOR FULL RUN: google/gemma-3-12b-it
+======================================================================
+Provenance: {'model_id': 'google/gemma-3-12b-it', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T17:47:59.938460+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 75600 prompts
+  16/75600 done
+  816/75600 done
+  1616/75600 done
+  2416/75600 done
+  3216/75600 done
+  4016/75600 done
+  4816/75600 done
+  5616/75600 done
+  6416/75600 done
+  7216/75600 done
+  8016/75600 done
+  8816/75600 done
+  9616/75600 done
+  10416/75600 done
+  11216/75600 done
+  12016/75600 done
+  12816/75600 done
+  13616/75600 done
+  14416/75600 done
+  15216/75600 done
+  16016/75600 done
+  16816/75600 done
+  17616/75600 done
+  18416/75600 done
+  19216/75600 done
+  20016/75600 done
+  20816/75600 done
+  21616/75600 done
+  22416/75600 done
+  23216/75600 done
+  24016/75600 done
+  24816/75600 done
+  25616/75600 done
+  26416/75600 done
+  27216/75600 done
+  28016/75600 done
+  28816/75600 done
+  29616/75600 done
+  30416/75600 done
+  31216/75600 done
+  32016/75600 done
+  32816/75600 done
+  33616/75600 done
+  34416/75600 done
+  35216/75600 done
+  36016/75600 done
+  36816/75600 done
+  37616/75600 done
+  38416/75600 done
+  39216/75600 done
+  40016/75600 done
+  40816/75600 done
+  41616/75600 done
+  42416/75600 done
+  43216/75600 done
+  44016/75600 done
+  44816/75600 done
+  45616/75600 done
+  46416/75600 done
+  47216/75600 done
+  48016/75600 done
+  48816/75600 done
+  49616/75600 done
+  50416/75600 done
+  51216/75600 done
+  52016/75600 done
+  52816/75600 done
+  53616/75600 done
+  54416/75600 done
+  55216/75600 done
+  56016/75600 done
+  56816/75600 done
+  57616/75600 done
+  58416/75600 done
+  59216/75600 done
+  60016/75600 done
+  60816/75600 done
+  61616/75600 done
+  62416/75600 done
+  63216/75600 done
+  64016/75600 done
+  64816/75600 done
+  65616/75600 done
+  66416/75600 done
+  67216/75600 done
+  68016/75600 done
+  68816/75600 done
+  69616/75600 done
+  70416/75600 done
+  71216/75600 done
+  72016/75600 done
+  72816/75600 done
+  73616/75600 done
+  74416/75600 done
+  75216/75600 done
+negative_minor full run complete for google/gemma-3-12b-it: 75600 rows written, 0 technical failures -> negative_minor_full_results_gemma.csv
+
+negative_minor/gemma complete.
+
+======================================================================
+NEGATIVE_MINOR FULL RUN: Qwen/Qwen3-8B
+======================================================================
+Provenance: {'model_id': 'Qwen/Qwen3-8B', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T19:46:35.803994+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 75600 prompts
+  16/75600 done
+  816/75600 done
+  1616/75600 done
+  2416/75600 done
+  3216/75600 done
+  4016/75600 done
+  4816/75600 done
+  5616/75600 done
+  6416/75600 done
+  7216/75600 done
+  8016/75600 done
+  8816/75600 done
+  9616/75600 done
+  10416/75600 done
+  11216/75600 done
+  12016/75600 done
+  12816/75600 done
+  13616/75600 done
+  14416/75600 done
+  15216/75600 done
+  16016/75600 done
+  16816/75600 done
+  17616/75600 done
+  18416/75600 done
+  19216/75600 done
+  20016/75600 done
+  20816/75600 done
+  21616/75600 done
+  22416/75600 done
+  23216/75600 done
+  24016/75600 done
+  24816/75600 done
+  25616/75600 done
+  26416/75600 done
+  27216/75600 done
+  28016/75600 done
+  28816/75600 done
+  29616/75600 done
+  30416/75600 done
+  31216/75600 done
+  32016/75600 done
+  32816/75600 done
+  33616/75600 done
+  34416/75600 done
+  35216/75600 done
+  36016/75600 done
+  36816/75600 done
+  37616/75600 done
+  38416/75600 done
+  39216/75600 done
+  40016/75600 done
+  40816/75600 done
+  41616/75600 done
+  42416/75600 done
+  43216/75600 done
+  44016/75600 done
+  44816/75600 done
+  45616/75600 done
+  46416/75600 done
+  47216/75600 done
+  48016/75600 done
+  48816/75600 done
+  49616/75600 done
+  50416/75600 done
+  51216/75600 done
+  52016/75600 done
+  52816/75600 done
+  53616/75600 done
+  54416/75600 done
+  55216/75600 done
+  56016/75600 done
+  56816/75600 done
+  57616/75600 done
+  58416/75600 done
+  59216/75600 done
+  60016/75600 done
+  60816/75600 done
+  61616/75600 done
+  62416/75600 done
+  63216/75600 done
+  64016/75600 done
+  64816/75600 done
+  65616/75600 done
+  66416/75600 done
+  67216/75600 done
+  68016/75600 done
+  68816/75600 done
+  69616/75600 done
+  70416/75600 done
+  71216/75600 done
+  72016/75600 done
+  72816/75600 done
+  73616/75600 done
+  74416/75600 done
+  75216/75600 done
+negative_minor full run complete for Qwen/Qwen3-8B: 75600 rows written, 0 technical failures -> negative_minor_full_results_qwen.csv
+
+negative_minor/qwen complete.
+
+======================================================================
+NEGATIVE_MINOR FULL RUN: deepseek-ai/deepseek-llm-7b-chat
+======================================================================
+Provenance: {'model_id': 'deepseek-ai/deepseek-llm-7b-chat', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T20:53:35.376198+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 75600 prompts
+  16/75600 done
+  816/75600 done
+  1616/75600 done
+  2416/75600 done
+  3216/75600 done
+  4016/75600 done
+  4816/75600 done
+  5616/75600 done
+  6416/75600 done
+  7216/75600 done
+  8016/75600 done
+  8816/75600 done
+  9616/75600 done
+  10416/75600 done
+  11216/75600 done
+  12016/75600 done
+  12816/75600 done
+  13616/75600 done
+  14416/75600 done
+  15216/75600 done
+  16016/75600 done
+  16816/75600 done
+  17616/75600 done
+  18416/75600 done
+  19216/75600 done
+  20016/75600 done
+  20816/75600 done
+  21616/75600 done
+  22416/75600 done
+  23216/75600 done
+  24016/75600 done
+  24816/75600 done
+  25616/75600 done
+  26416/75600 done
+  27216/75600 done
+  28016/75600 done
+  28816/75600 done
+  29616/75600 done
+  30416/75600 done
+  31216/75600 done
+  32016/75600 done
+  32816/75600 done
+  33616/75600 done
+  34416/75600 done
+  35216/75600 done
+  36016/75600 done
+  36816/75600 done
+  37616/75600 done
+  38416/75600 done
+  39216/75600 done
+  40016/75600 done
+  40816/75600 done
+  41616/75600 done
+  42416/75600 done
+  43216/75600 done
+  44016/75600 done
+  44816/75600 done
+  45616/75600 done
+  46416/75600 done
+  47216/75600 done
+  48016/75600 done
+  48816/75600 done
+  49616/75600 done
+  50416/75600 done
+  51216/75600 done
+  52016/75600 done
+  52816/75600 done
+  53616/75600 done
+  54416/75600 done
+  55216/75600 done
+  56016/75600 done
+  56816/75600 done
+  57616/75600 done
+  58416/75600 done
+  59216/75600 done
+  60016/75600 done
+  60816/75600 done
+  61616/75600 done
+  62416/75600 done
+  63216/75600 done
+  64016/75600 done
+  64816/75600 done
+  65616/75600 done
+  66416/75600 done
+  67216/75600 done
+  68016/75600 done
+  68816/75600 done
+  69616/75600 done
+  70416/75600 done
+  71216/75600 done
+  72016/75600 done
+  72816/75600 done
+  73616/75600 done
+  74416/75600 done
+  75216/75600 done
+negative_minor full run complete for deepseek-ai/deepseek-llm-7b-chat: 75600 rows written, 0 technical failures -> negative_minor_full_results_deepseek.csv
+
+negative_minor/deepseek complete.
+
+======================================================================
+NEGATIVE_MINOR FULL RUN: mistralai/Ministral-8B-Instruct-2410
+======================================================================
+Provenance: {'model_id': 'mistralai/Ministral-8B-Instruct-2410', 'transformers_version': '5.14.1', 'torch_version': '2.6.0+cu124', 'gpu': 'NVIDIA RTX A6000', 'prompt_template_version': 'negative_minor_v1', 'generation_config': '{"do_sample": false, "max_new_tokens": 30, "repetition_penalty": 1.0}', 'timestamp': '2026-08-01T23:17:26.578604+00:00', 'slurm_job_id': '957561', 'git_commit': 'unknown'}
+Dataset: 75600 prompts
+  16/75600 done
+  816/75600 done
+  1616/75600 done
+  2416/75600 done
+  3216/75600 done
+  4016/75600 done
+  4816/75600 done
+  5616/75600 done
+  6416/75600 done
+  7216/75600 done
+  8016/75600 done
+  8816/75600 done
+  9616/75600 done
+  10416/75600 done
+  11216/75600 done
+  12016/75600 done
+  12816/75600 done
+  13616/75600 done
+  14416/75600 done
+  15216/75600 done
+  16016/75600 done
+  16816/75600 done
+  17616/75600 done
+  18416/75600 done
+  19216/75600 done
+  20016/75600 done
+  20816/75600 done
+  21616/75600 done
+  22416/75600 done
+  23216/75600 done
+  24016/75600 done
+  24816/75600 done
+  25616/75600 done
+  26416/75600 done
+  27216/75600 done
+  28016/75600 done
+  28816/75600 done
+  29616/75600 done
+  30416/75600 done
+  31216/75600 done
+  32016/75600 done
+  32816/75600 done
+  33616/75600 done
+  34416/75600 done
+  35216/75600 done
+  36016/75600 done
+  36816/75600 done
+  37616/75600 done
+  38416/75600 done
+  39216/75600 done
+  40016/75600 done
+  40816/75600 done
+  41616/75600 done
+  42416/75600 done
+  43216/75600 done
+  44016/75600 done
+  44816/75600 done
+  45616/75600 done
+  46416/75600 done
+  47216/75600 done
+  48016/75600 done
+  48816/75600 done
+  49616/75600 done
+  50416/75600 done
+  51216/75600 done
+  52016/75600 done
+  52816/75600 done
+  53616/75600 done
+  54416/75600 done
+  55216/75600 done
+  56016/75600 done
+  56816/75600 done
+  57616/75600 done
+  58416/75600 done
+  59216/75600 done
+  60016/75600 done
+  60816/75600 done
+  61616/75600 done
+  62416/75600 done
+  63216/75600 done
+  64016/75600 done
+  64816/75600 done
+  65616/75600 done
+  66416/75600 done
+  67216/75600 done
+  68016/75600 done
+  68816/75600 done
+  69616/75600 done
+  70416/75600 done
+  71216/75600 done
+  72016/75600 done
+  72816/75600 done
+  73616/75600 done
+  74416/75600 done
+  75216/75600 done
+negative_minor full run complete for mistralai/Ministral-8B-Instruct-2410: 75600 rows written, 0 technical failures -> negative_minor_full_results_ministral.csv
+
+negative_minor/ministral complete.
+=== negative_minor COMPLETE ===

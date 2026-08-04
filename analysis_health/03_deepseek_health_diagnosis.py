@@ -18,8 +18,8 @@ a conservative, explicitly-specified parser can recover a plausible rating
 from, with the causal question (tokenizer? chat template? decoding?)
 stated as unresolved from available logs, not asserted.
 
-Independent of analysis/: reads results/full_results_deepseek.csv and
-results_health/health_full_results_deepseek.csv directly (FULL datasets,
+Independent of analysis/: reads results/results_original_deepseek.csv and
+results/results_health_deepseek.csv directly (FULL datasets,
 not the 180-persona pilot subset -- the 63->0 drop being diagnosed is a
 full-dataset fact). Does not touch analysis/ or master_results.csv.
 """
@@ -36,8 +36,8 @@ def load_safe(path):
 
 
 def main():
-    orig = load_safe(f"{ROOT}/results/full_results_deepseek.csv")
-    health = load_safe(f"{ROOT}/results_health/health_full_results_deepseek.csv")
+    orig = load_safe(f"{ROOT}/results/results_original_deepseek.csv")
+    health = load_safe(f"{ROOT}/results/results_health_deepseek.csv")
 
     print("=" * 78)
     print("1. 15 RANDOM raw_text SAMPLES (health-conversation variant), full text")

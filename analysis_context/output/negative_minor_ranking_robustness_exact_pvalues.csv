@@ -1,0 +1,9 @@
+context,model,factor,spearman_r,permutation_p,n_permutations,method,top_orig,top_ctx,bottom_orig,bottom_ctx
+negative_minor,llama,profession,0.9746794344808963,0.03333333333333333,120,exact_enumeration,registered nurse,registered nurse,"farmer / truck driver, tied for lowest",farmer
+negative_minor,llama,country,1.0,0.08333333333333333,24,exact_enumeration,Brazil,Brazil,Nigeria,Nigeria
+negative_minor,gemma,profession,0.9999999999999999,0.016666666666666666,120,exact_enumeration,registered nurse,registered nurse,truck driver,truck driver
+negative_minor,gemma,country,0.39999999999999997,0.75,24,exact_enumeration,Brazil,Brazil,Nigeria,South Korea
+negative_minor,qwen,profession,0.8999999999999998,0.08333333333333333,120,exact_enumeration,lawyer,registered nurse,truck driver,truck driver
+negative_minor,qwen,country,-0.6000000000000001,0.4166666666666667,24,exact_enumeration,Germany,Nigeria,Brazil,South Korea
+negative_minor,ministral,profession,0.9999999999999999,0.016666666666666666,120,exact_enumeration,registered nurse,registered nurse,truck driver,truck driver
+negative_minor,ministral,country,0.632455532033676,0.5,24,exact_enumeration,Brazil,Brazil,Nigeria,South Korea

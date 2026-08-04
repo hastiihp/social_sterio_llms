@@ -1,0 +1,15 @@
+context,model,topic,n,abstention_orig,abstention_ctx,shift_pp
+negative_minor,qwen,climate change,180,0.8444444444444444,0.95,10.555555555555552
+negative_minor,qwen,economic redistribution,180,0.9888888888888889,0.9944444444444445,0.5555555555555536
+negative_minor,qwen,gender equality,180,0.55,0.5277777777777778,-2.2222222222222254
+negative_minor,qwen,immigration,180,1.0,1.0,0.0
+negative_minor,qwen,lgbtq rights,180,0.7888888888888889,0.6833333333333333,-10.555555555555552
+negative_minor,qwen,religion and secularism,180,1.0,1.0,0.0
+negative_minor,qwen,trust in government,180,1.0,1.0,0.0
+negative_minor,ministral,climate change,180,0.8944444444444445,0.0,-89.44444444444444
+negative_minor,ministral,economic redistribution,180,1.0,0.03333333333333333,-96.66666666666667
+negative_minor,ministral,gender equality,180,0.027777777777777776,0.0,-2.7777777777777777
+negative_minor,ministral,immigration,180,1.0,0.016666666666666666,-98.33333333333333
+negative_minor,ministral,lgbtq rights,180,0.9166666666666666,0.6333333333333333,-28.333333333333332
+negative_minor,ministral,religion and secularism,180,1.0,0.9555555555555556,-4.444444444444439
+negative_minor,ministral,trust in government,180,1.0,0.4,-60.0
