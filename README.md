@@ -219,9 +219,3 @@ those distinctions mattered in [AUDIT_HISTORY.md](AUDIT_HISTORY.md).
   causal interpretation of any context contrast.
 - Historical pilot, manipulation-check, prompt-reinforcement, pre-grammar-fix, and
   prior-v9 raw artifacts are incomplete, as documented in `AUDIT_HISTORY.md`.
-
-## Project status
-
-This is an active research/internship project. The full-scale experiment and current
-analysis layers are present, but the report/manuscript is still being developed and
-should not be described as a finished publication.
