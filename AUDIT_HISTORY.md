@@ -321,6 +321,12 @@ During final pre-push validation on 2026-08-07, the active source was corrected
 to remove only the exact trailing bracket. Existing pilot outputs were not
 regenerated because their factor levels could not trigger the defect.
 
+The same final validation checked all 25 canonical result files: each retained
+75,600 rows, 5,400 personas, seven topics, both response conditions, and 75,600
+unique persona-topic-condition keys, with no duplicate keys or recorded technical
+failures. No inference or statistical model was run during cleanup, and no
+scientific result or analysis output was changed.
+
 **Final verdict: NO GO** (as issued — "Only after these concrete issues are
 closed should this state be marked GO and used as the foundation for new
 Stage 1-5 analyses"). Several of this round's blocking items were closed by

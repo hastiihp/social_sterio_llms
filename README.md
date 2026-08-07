@@ -97,7 +97,6 @@ Important top-level documentation:
 - [MANIFEST.md](MANIFEST.md): main script-to-output map.
 - [AUDIT_HISTORY.md](AUDIT_HISTORY.md): concise history of verification rounds and
   scientifically relevant corrections.
-- [PRE_PUSH_CLEANUP.md](PRE_PUSH_CLEANUP.md): final cleanup and integrity record.
 
 ## Canonical data and results
 
