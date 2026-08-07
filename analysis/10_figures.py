@@ -261,7 +261,7 @@ def fig6_agreement_matrix():
 
 def fig7_variance_explained():
     # Fix 3: variance_ranking.csv now contains both the primary (Condition A only, the actual
-    # preregistered H1 test) and exploratory (A+B pooled, the original scope) rows, distinguished
+    # pre-specified H1 test) and exploratory (A+B pooled, the original scope) rows, distinguished
     # by a "scope" column. This figure uses the primary scope only.
     vr_all = pd.read_csv(f"{FIGURES_DIR}/../tables/variance_ranking.csv")
     vr = vr_all[vr_all["scope"] == "primary_conditionA"]
@@ -291,7 +291,7 @@ def fig7_variance_explained():
             ax.spines[spine].set_visible(False)
         ax.grid(axis="y", visible=False)
     axes[0].set_xlabel("partial R²", fontsize=8)
-    fig.suptitle("Fig 7. Variance explained (partial R²) by factor, per model\n(Condition A / forced only -- the preregistered H1 scope, per Fix 3)",
+    fig.suptitle("Fig 7. Variance explained (partial R²) by factor, per model\n(Condition A / forced only -- the pre-specified H1 scope, per Fix 3)",
                  fontsize=11, color=INK_PRIMARY, y=1.08)
     fig.text(0.5, -0.08,
               "H1 (profession > country/age/gender) holds for qwen/ministral but not llama/gemma, where gender explains more\n"

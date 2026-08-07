@@ -1,0 +1,2 @@
+reml_status,reml_converged,reml_llf,reml_fit_seconds,ml_full_status,ml_reduced_status,re_variance_persona,residual_variance,icc,r2_marginal,r2_conditional,n_obs,n_personas,n_fixed_params
+converged (default),True,-413208.20298455376,16.96902894973755,converged (default),converged (default),0.0010924330826856845,0.1737109466739838,0.0062494963438714845,0.6981004768064458,0.6999871967728605,756000,5400,96

@@ -1,0 +1,21 @@
+persona_id,country,profession,gender,age,topic,mean_rating,sd_across_models,consensus_rank,rating_llama,rating_gemma,rating_qwen,rating_ministral
+P05214,USA,police officer,male,65,economic redistribution,2.5,1.2909944487358056,37800,4,1,2.0,3.0
+P05200,USA,construction worker,male,65,economic redistribution,2.5,1.2909944487358056,37799,4,1,2.0,3.0
+P05154,USA,police officer,male,25,economic redistribution,2.5,1.2909944487358056,37798,4,1,2.0,3.0
+P03164,Mexico,farmer,neutral,25,immigration,3.25,1.2583057392117916,37782,2,5,3.0,3.0
+P03190,Mexico,construction worker,neutral,45,immigration,3.25,1.2583057392117916,37797,2,5,3.0,3.0
+P03160,Mexico,construction worker,neutral,25,immigration,3.25,1.2583057392117916,37796,2,5,3.0,3.0
+P03204,Mexico,police officer,neutral,45,immigration,3.25,1.2583057392117916,37795,2,5,3.0,3.0
+P03178,Mexico,truck driver,neutral,25,immigration,3.25,1.2583057392117916,37794,2,5,3.0,3.0
+P03208,Mexico,truck driver,neutral,45,immigration,3.25,1.2583057392117916,37793,2,5,3.0,3.0
+P03182,Mexico,administrative assistant,neutral,45,immigration,3.25,1.2583057392117916,37792,2,5,3.0,3.0
+P03209,Mexico,veterinarian,neutral,45,immigration,3.25,1.2583057392117916,37781,2,5,3.0,3.0
+P03179,Mexico,veterinarian,neutral,25,immigration,3.25,1.2583057392117916,37790,2,5,3.0,3.0
+P03201,Mexico,paramedic,neutral,45,immigration,3.25,1.2583057392117916,37789,2,5,3.0,3.0
+P03202,Mexico,pharmacist,neutral,45,immigration,3.25,1.2583057392117916,37788,2,5,3.0,3.0
+P03153,Mexico,architect,neutral,25,immigration,3.25,1.2583057392117916,37787,2,5,3.0,3.0
+P03173,Mexico,plumber,neutral,25,immigration,3.25,1.2583057392117916,37786,2,5,3.0,3.0
+P03176,Mexico,registered nurse,neutral,25,immigration,3.25,1.2583057392117916,37785,2,5,3.0,3.0
+P03206,Mexico,registered nurse,neutral,45,immigration,3.25,1.2583057392117916,37784,2,5,3.0,3.0
+P03237,Mexico,social worker,neutral,65,immigration,3.25,1.2583057392117916,37783,2,5,3.0,3.0
+P03162,Mexico,electrician,neutral,25,immigration,3.25,1.2583057392117916,37791,2,5,3.0,3.0

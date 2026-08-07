@@ -15,7 +15,7 @@ that doesn't exist. Please review before this goes to your supervisor.
 
 All numbers regenerated 2026-07-24 from `analysis_health/01_compare_health_vs_original.py`,
 `02_compare_by_condition.py`, `03_deepseek_health_diagnosis.py`, `04_ranking_robustness.py`,
-run end-to-end against `results/` and `results_health/` only. `analysis/` and
+run end-to-end against the canonical original/health files in `results/` only. `analysis/` and
 `master_results.csv` were not touched; no new inference was run.
 
 ---

@@ -1,360 +1,227 @@
 # Stereotype-Based Opinion Attribution in Instruction-Tuned LLMs
 
-## Research question
+## Project overview
 
-Do language models attribute sociopolitical opinions to fictional people based
-on country, profession, gender, and age, when the *only* information available
-is a third-person "friend" description containing no behavioral evidence? And
-separately: does the model's willingness to attempt that attribution at all
-(vs. abstain) itself depend on those same demographics?
+This research project tests whether instruction-tuned language models generate
+different sociopolitical ratings for fictional personas described only by country,
+profession, gender, and age. It separately studies whether models are willing to
+answer at all when given the option to return `NA`.
 
-These are two distinct outcomes:
+The outcomes are therefore:
 
-- **Forced opinion attribution** (Condition A): the 1-5 rating selected when a
-  numeric answer is required.
-- **Optional abstention** (Condition B): whether the model judges the
-  demographic information sufficient to offer even a tentative estimate, or
-  responds `NA`.
+1. **Attributed ratings**: a generated 1–5 estimate under forced responding.
+2. **Response willingness**: answering versus abstaining under optional responding.
 
-The design is a full factorial grid: **5,400 personas** (20 countries x 3
-genders x 3 ages x 30 professions) x **7 topics** x **2 response conditions**
-= 75,600 prompts per model, run against **5 models** (Llama-3.1-8B-Instruct,
-Gemma-3-12B-it, Qwen3-8B, Ministral-8B-Instruct, DeepSeek-LLM-7B-chat) for the
-original single-turn prompt, and again for four naturalistic multi-turn
-conversational framings (see below) — 25 (prompt-type x model) result files,
-75,600 rows each (378,000 rows per prompt type across its 5 models, 1,890,000
-rows total across all 25 files). See `analysis_plan.md` for the full
-preregistered methodology (hypotheses, exclusion criteria, robustness checks)
-and `AUDIT_HISTORY.md` for five rounds of independent verification against
-this data.
+These outputs describe model behavior under specific prompts. They do not reveal
+models' internal beliefs or establish attitudes held by real demographic groups.
 
-## Environment setup
+## Experimental design
 
-**Create and activate a virtualenv, then install the pinned requirements:**
+The full factorial persona grid contains:
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate        # macOS/Linux
-.venv\Scripts\activate           # Windows
-pip install -r requirements.txt
-```
+- 20 countries
+- 30 professions
+- 3 genders (`female`, `male`, `neutral`)
+- 3 ages (25, 45, 65)
+- 5,400 personas total
 
-This installs the exact pinned versions this project's data was generated
-and analyzed with — notably pandas 3.0.0, numpy 2.4.1, scipy 1.17.0,
-statsmodels 0.14.6, matplotlib 3.10.8, seaborn 0.13.2, torch 2.10.0,
-transformers 5.1.0.
+Each persona is crossed with seven sociopolitical topics and two response
+conditions:
 
-**Known gotcha (macOS with Homebrew Python installed):** a bare `python3`
-with no venv activated can silently resolve to Homebrew's system-wide
-Python instead of your project venv — and the two can report the *identical*
-Python/pip version numbers (e.g. both "3.13.7 / pip 25.2") while one has
-none of `requirements.txt` installed. Version-string matching alone cannot
-tell them apart; only `which python3` / checking `$VIRTUAL_ENV` can. This
-exact confusion produced a false "pandas is broken" finding during this
-project's audit history — see `AUDIT_HISTORY.md` Round 5 for the full
-root-cause trace if `import pandas` (or any pinned package) ever fails
-unexpectedly despite having activated a venv.
+- **A_forced**: exactly one rating from 1 to 5.
+- **B_optional**: one rating from 1 to 5, or `NA`.
 
-## Data structure
+This produces 5,400 × 7 × 2 = **75,600 prompts per model per framing**.
 
-```
-data/
-  personas.csv                    5,400 rows -- the canonical persona grid
-  topics.csv                      7 rows -- the 7 topic statements
-  names.csv                       60 rows -- per country x gender name + validation tier
-  prompts_original.csv            75,600 rows -- original single-turn prompt (gitignored, regenerate from source)
-  prompts_health.csv              75,600 rows -- health framing (gitignored, regenerate from source)
-  prompts_neutral.csv             75,600 rows -- neutral framing (gitignored)
-  prompts_positive.csv            75,600 rows -- positive framing (gitignored)
-  prompts_negative_minor.csv      75,600 rows -- negative_minor framing (gitignored)
-  build_dataset.py                generates names/topics/personas
-  render_prompts.py               generates prompts_original.csv
-  render_prompts_health.py        generates prompts_health.csv
-  render_prompts_context.py       generates prompts_{neutral,positive,negative_minor}.csv
+Five prompt framings were run:
 
-results/
-  results_original_{model}.csv          5 files, 75,600 rows each -- original prompt
-  results_health_{model}.csv            5 files, 75,600 rows each -- health framing
-  results_neutral_{model}.csv           5 files, 75,600 rows each -- neutral framing
-  results_positive_{model}.csv          5 files, 75,600 rows each -- positive framing
-  results_negative_minor_{model}.csv    5 files, 75,600 rows each -- negative_minor framing
-  ({model} in llama, gemma, qwen, ministral, deepseek)
+| Framing | Structure | Preceding context |
+|---|---|---|
+| `original` | Single-turn | Direct friend description and rating task |
+| `health` | Multi-message | Stress and sleep difficulty |
+| `neutral` | Multi-message | Moving apartments |
+| `positive` | Multi-message | A work promotion |
+| `negative_minor` | Multi-message | Flight delay and lost luggage |
 
-inference/          inference scripts (one per prompt type) + sbatch_scripts/ (cluster job specs)
-analysis/            main-study analysis pipeline (reads results/results_original_*.csv)
-analysis_health/      health-vs-original analysis (reads results/results_{original,health}_*.csv)
-analysis_context/     all-five-prompt-types analysis (reads all of results/)
-tables/, figures/     main-study output tables/figures
-analysis_health/output/, analysis_context/output/   health/context output tables/figures
-```
-
-This structure is the result of a same-day reorganization consolidating what
-were previously eight scattered folders (`data/`, `data_health/`,
-`data_context/`, `results/`, `results_health/`, `results_context/`,
-`context_staging/`, `health_staging/`) into the two above. Every file move was
-row-count-verified before the old folders were deleted; see the conversation
-history around 2026-08-04 for the full before/after inventory, or
-`AUDIT_HISTORY.md` Round 5 for the audit that preceded it.
-
-**All of `results/` is tracked in git; none of the five `data/prompts_*.csv`
-files are.** They range from ~57MB (`prompts_original.csv`) to ~110MB
-(`prompts_health.csv`) and must be regenerated from source (below) or
-obtained separately. This was made consistent during the Step 5 verification
-pass of this reorg — `prompts_original.csv` had been an inconsistent
-exception (tracked despite being the same tier of large, regenerable source
-data as the other four); it is now gitignored like the rest, keeping every
-staged file under the 50MB threshold.
-
-## The five prompt types
-
-All five share an identical final turn (the rating question) and identical
-response-condition scale instructions — only what precedes it differs, so any
-rating difference is attributable to that content, not to different
-instructions or scales.
-
-| Type | Structure | What it varies | Why |
-|---|---|---|---|
-| **original** | single-turn | Just the persona description + topic + question | The baseline: does demographic-only information produce attributed opinions at all? |
-| **health** | 2-turn conversation + rating turn | Persona is stressed and sleep-deprived (personal vulnerability, internal to them) | Tests whether a "vulnerable" framing shifts attribution vs. the neutral baseline |
-| **negative_minor** | 2-turn conversation + rating turn | Persona had a flight delay / lost luggage (external, impersonal event) | Tests an external adverse event *without* implying anything about the persona's internal state — the vulnerability/externality contrast with `health` |
-| **positive** | 2-turn conversation + rating turn | Persona got a promotion (career success / competence signal) | Tests whether a competence/status signal shifts attribution, not just "positive mood" |
-| **neutral** | 2-turn conversation + rating turn | Persona moved apartments (domain-neutral small talk, no adversity or achievement) | The multi-turn structural control — isolates "is it multi-turn at all" from "what does the conversation contain" |
-
-**Important:** these four framings vary along several independent dimensions
-at once (vulnerability vs. competence vs. externality vs. domain-neutrality) —
-they are not points on a single positive-to-negative valence scale. See
-`CONTEXT_EXPERIMENT.md`'s "Terminology note" for the full rationale; nowhere
-in this codebase are they treated as an ordered axis.
-
-Exact scripted text for all four framings, and the full cross-context findings
-(rating shifts, abstention stability, cross-context clustering, the H1
-variance-decomposition comparison), are in `CONTEXT_EXPERIMENT.md`. The
-health-vs-original-only findings (a subset, audited independently first) are
-in `analysis_health/output/CORRECTED_SUMMARY.md`.
+The four conversational framings use the same final sociopolitical rating task as
+the original. They differ along several semantic dimensions—vulnerability,
+competence/status, external adversity, and domain-neutral small talk—and should not
+be interpreted as a one-dimensional emotional-valence manipulation.
 
 ## Models
 
-**Five models are used throughout:** Llama-3.1-8B-Instruct, Gemma-3-12B-it,
-Qwen3-8B, Ministral-8B-Instruct, DeepSeek-LLM-7B-chat. All bf16, deterministic
-generation (`do_sample=False`, `temperature=0`, `top_p=1`,
-`repetition_penalty=1.0`).
+Five models completed all five framings:
 
-**Falcon-H1-7B is excluded** — a reproducible tensor-shape error in its
-generation cache under batched inference (confirmed across batch sizes and
-padding strategies; only ran cleanly at batch size 1, not viable for the full
-run's runtime budget). This is an inference-environment failure, not a
-data-quality or model-behavior finding — no conclusions are drawn about
-Falcon's actual behavior. See `FALCON_EXCLUSION.md`. There is no Falcon row,
-column, or placeholder anywhere in `results/` or downstream outputs.
+- `meta-llama/Llama-3.1-8B-Instruct`
+- `google/gemma-3-12b-it`
+- `Qwen/Qwen3-8B`
+- `mistralai/Ministral-8B-Instruct-2410`
+- `deepseek-ai/deepseek-llm-7b-chat`
 
-**Model-specific quirks to know before touching inference or analysis code:**
+DeepSeek was run, but showed near-total strict-format non-compliance on the
+original prompt: only 63 of 75,600 outputs were strictly valid. Its malformed or
+salvageable prose is not treated as equivalent to clean numeric ratings. DeepSeek
+is primarily reported as a compliance finding and is excluded from pooled,
+ordinal, ranking, and unified analyses that require reliable numeric ratings.
 
-- **Qwen3's "thinking mode" is explicitly disabled** (`enable_thinking=False`
-  passed in the chat-template kwargs) in every inference script. Without this,
-  Qwen3 emits `<think>...</think>` reasoning traces before its answer, which
-  would break the strict 1-5/`NA` output-format parsing this study relies on.
-- **DeepSeek's format non-compliance is severe and is treated as a per-model
-  finding, not a pipeline defect** (per `analysis/09_deepseek_report.py`'s
-  docstring — note that script cites this rule as "`analysis_plan.md` Section
-  15," which does not exist in the current 14-section `analysis_plan.md`; a
-  small pre-existing documentation inconsistency, left as-is rather than
-  silently invented into a matching section). Strict-format compliance on the original
-  prompt is 63/75,600 = 0.08%. A compact-text parser recovers a further slice
-  of responses as containing a plausible rating beyond strict parsing (14.86%
-  on the health condition, all recovered ratings anomalously the digit "4",
-  flagged not explained). DeepSeek is **excluded from every pooled, ordinal,
-  ranking, and H1 model fit** across `analysis/`, `analysis_health/`, and
-  `analysis_context/` — its diagnostics are always reported separately
-  (`analysis/09_deepseek_report.py`,
-  `analysis_health/03_deepseek_health_diagnosis.py`,
-  `analysis_context/04_deepseek_cross_context_diagnosis.py`). Never silently
-  drop DeepSeek from a *raw* results file or re-include it in a pooled fit
-  without checking why it was excluded there in the first place.
+Falcon-H1-7B was attempted and excluded after a reproducible inference/cache
+failure made the full run infeasible. This was an environment/inference problem,
+not a finding about Falcon's sociopolitical behavior. See
+[FALCON_EXCLUSION.md](FALCON_EXCLUSION.md).
 
-## Regenerating data from source
+## Repository structure
 
-Run from within `data/` (all scripts read/write siblings in that directory):
-
-```bash
-cd data/
-python3 build_dataset.py              # -> names.csv, topics.csv, personas.csv
-python3 render_prompts.py             # -> prompts_original.csv (75,600 rows)
-python3 render_prompts_health.py      # -> prompts_health.csv (75,600 rows)
-python3 render_prompts_context.py neutral          # -> prompts_neutral.csv
-python3 render_prompts_context.py positive         # -> prompts_positive.csv
-python3 render_prompts_context.py negative_minor   # -> prompts_negative_minor.csv
+```text
+data/                    Canonical personas, topics, names, prompt renderers;
+                         generated prompt CSVs are ignored and reproducible
+results/                 25 canonical inference-result CSVs
+inference/               Inference programs and retained SLURM provenance
+analysis/                Main original-framing pipeline
+analysis_health/         Health-versus-original analyses and outputs
+analysis_context/        Five-framing comparisons; pilot and full-scale outputs
+analysis_taxonomy/       Six-stage derived behavioral taxonomy
+analysis_unified/        Full-scale unified mixed-effects model and diagnostics
+analysis_report/         Report-figure generator
+tables/                  Main-study processed tables
+figures/                 Main and report figures
+logs/                    Retained inference execution logs
 ```
 
-`render_prompts_context.py` takes the context name as its one required
-argument; running it with no argument (or an unrecognized one) prints usage
-and exits.
+Important top-level documentation:
 
-## Running inference
+- [analysis_plan.md](analysis_plan.md): original analysis plan and stated checks.
+- [CONTEXT_EXPERIMENT.md](CONTEXT_EXPERIMENT.md): conversational-framing design,
+  corrections, and full-versus-pilot findings.
+- [FULL_PROJECT_REPORT.md](FULL_PROJECT_REPORT.md): current integrated report.
+- [FULL_RESULTS_WALKTHROUGH.md](FULL_RESULTS_WALKTHROUGH.md): numbers-first guide.
+- [MANIFEST.md](MANIFEST.md): main script-to-output map.
+- [AUDIT_HISTORY.md](AUDIT_HISTORY.md): concise history of verification rounds and
+  scientifically relevant corrections.
+- [PRE_PUSH_CLEANUP.md](PRE_PUSH_CLEANUP.md): final cleanup and integrity record.
 
-All inference scripts assume `inference/` as the working directory (they
-resolve `../data/...` and `../results/...` relatively) and require a GPU node
-— see `inference/sbatch_scripts/` for the exact SLURM resource specs used
-(`--gres=gpu:1`, `--mem=48G`, `--cpus-per-task=4`; original/context runs took
-16-44 hours per job depending on scope). **Those `.sbatch` scripts are
-preserved as historical provenance of the commands that actually produced the
-checked-in data** — they reference the pre-reorg `context_staging/`/
-`health_staging/` working directories and are not directly re-runnable
-against the current `data/`+`results/` layout; use the commands below instead
-for any future run, and treat the `.sbatch` files only as a reference for GPU
-resource settings and conda environment (`paper_env`,
-`HF_HOME=/mnt/beegfs/projects/ttessllm/hf_cache` on the original cluster).
+## Canonical data and results
 
-```bash
-cd inference/
+The single canonical locations are:
 
-# Original prompt, one model at a time:
-python3 full_inference.py llama
-python3 full_inference.py gemma
-python3 full_inference.py qwen
-python3 full_inference.py deepseek
-python3 full_inference.py ministral
-# -> ../results/results_original_{model}.csv
+- Persona definitions: `data/personas.csv` (5,400 rows)
+- Topics: `data/topics.csv` (7 rows)
+- Names: `data/names.csv` (60 rows)
+- Generated prompts: `data/prompts_{framing}.csv` (75,600 rows each, ignored)
+- Inference results: `results/results_{framing}_{model}.csv`
+  (25 files, 75,600 rows each)
+- Main merged analysis file: `analysis/master_results.csv` (ignored and regenerated
+  from the five original result files)
 
-# Health framing:
-python3 full_health_inference.py llama    # ... and gemma, qwen, deepseek, ministral
-# -> ../results/results_health_{model}.csv
+All result files are tracked. Generated prompt files are 57–110 MB and intentionally
+ignored because their renderers and canonical metadata reproduce them. Result rows
+retain the prompt-template version and persona/topic/condition keys, but not the full
+prompt text; regenerate `data/prompts_{framing}.csv` when exact rendered text is
+needed.
 
-# Context framings (neutral / positive / negative_minor), one (context, model) pair at a time:
-python3 context_full_inference.py neutral llama       # ... and gemma, qwen, deepseek, ministral
-python3 context_full_inference.py positive llama
-python3 context_full_inference.py negative_minor llama
-# -> ../results/results_{context}_{model}.csv
+## Analysis pipeline
 
-# Smoketest mode (200-row subset, sanity check before a full run):
-python3 context_full_inference.py neutral llama --smoketest
-# -> writes to the system temp directory, not into results/; disposable.
-```
+The repository contains five related analysis layers:
 
-All 25 (prompt-type x model) full runs already completed and verified are
-checked into `results/` — these scripts are for re-running or extending, not
-a required step to reproduce the existing analysis.
+- **Main pipeline (`analysis/`)**: structural validation, compliance, descriptive
+  distributions, demographic hypothesis models, ordinal and country-set robustness,
+  topic-specific models, abstention, paired A/B comparisons, cross-model agreement,
+  variance/partial-R² ranking, DeepSeek diagnostics, and figures.
+- **Health pipeline (`analysis_health/`)**: health-versus-original matched
+  comparisons, condition-specific shifts, DeepSeek diagnostics, and profession/country
+  ranking robustness.
+- **Context pipeline (`analysis_context/`)**: all-five-framing comparisons,
+  abstention stability, cross-framing agreement, ranking robustness, and variance
+  ranking. Full-scale outputs use `_full5400`; unsuffixed outputs are the retained
+  180-persona pilot analyses.
+- **Behavioral taxonomy (`analysis_taxonomy/`)**: model, country/profession,
+  topic-specific, context-sensitivity, stability, and consensus summaries derived
+  from existing canonical outputs.
+- **Unified model (`analysis_unified/`)**: a Condition-A, full-scale mixed-effects
+  model pooling five framings and the four reliably compliant models, with diagnostics,
+  variance decomposition, framing-by-model tests, and BH correction.
 
-`inference/falconinferance.py` and `inference/pilot_inference.py` are
-historical/superseded (Falcon exclusion provenance and the pre-full-run pilot,
-respectively) — kept for provenance, not part of the current pipeline.
+The main pipeline has an important run-order constraint: run
+`analysis/05e_bh_correction.py` after both `05_hypothesis_models.py` and
+`06_abstention_analysis.py`, because it adds adjusted columns to their outputs.
+Detailed commands and dependencies are documented in script docstrings,
+[MANIFEST.md](MANIFEST.md), and the analysis-layer summaries.
 
-## Running the analysis pipeline
+No table or figure reads from a staging directory. The old health/context staging
+trees were removed after canonical files were consolidated into `data/`, `results/`,
+and `inference/`.
 
-Three independent pipelines, each reading raw `results/` files directly (none
-of them read each other's outputs except where noted).
+## Current high-level findings
 
-**1. Main study** (`analysis/`, reads `results/results_original_*.csv`) — run
-in this exact order; `05e` must run **last**, after both `05` and `06`, or it
-silently loses its BH-correction columns the next time `05`/`06` are re-run
-(this exact failure mode happened once — see `AUDIT_HISTORY.md` Round 2):
+The following are descriptive summaries of verified outputs, not causal claims:
 
-```bash
-cd analysis/
-python3 01_merge_dataset.py          # -> master_results.csv (everything below reads this)
-python3 02_validate_dataset.py       # structural check, console output only
-python3 03_compliance_table.py
-python3 04_descriptives.py
-python3 05_hypothesis_models.py      # must run before 05e
-python3 05b_ordinal_robustness.py --model llama    # ... and gemma, qwen, ministral
-python3 05b2_proportional_odds_by_topic.py
-python3 05c_topic_specific_models.py
-python3 05d_country_set_robustness.py
-python3 06_abstention_analysis.py    # must run before 05e
-python3 05e_bh_correction.py         # MUST BE LAST -- rewrites 05/06's outputs in place
-python3 07_cross_model_agreement.py
-python3 07b_paired_comparison.py
-python3 08_variance_ranking.py       # -> tables/variance_ranking.csv, needed by analysis_context/05
-python3 09_deepseek_report.py
-python3 10_figures.py                # -> figures/fig2-fig7 (reads outputs of 05, 05e, 07, 08)
-```
+- Response willingness differs sharply by model. Under the original optional
+  condition, Llama and Gemma never abstain, while Qwen and Ministral abstain on most
+  opportunities.
+- Preceding conversational context is associated with large changes in abstention
+  for some models. Ministral's Condition-B abstention rate declines from 83.47% in
+  the original framing to 29.80% in `negative_minor`.
+- Demographic ranking structure is often more stable across framings than absolute
+  rating levels, although stability varies by model and factor.
+- In the unified Condition-A model, topic explains substantially more rating
+  variation than any individual demographic factor.
+- DeepSeek mainly contributes evidence about strict response-format compliance;
+  its sparse valid ratings are not interpreted like the other four models' data.
 
-**2. Health-vs-original** (`analysis_health/`, self-contained — reads
-`results/results_{original,health}_*.csv` directly, does not touch
-`analysis/master_results.csv`): scripts `01`-`04` have no order dependency on
-each other.
+See [FULL_PROJECT_REPORT.md](FULL_PROJECT_REPORT.md) for qualified results and source
+citations rather than extending these headline statements beyond their evidence.
 
-```bash
-cd analysis_health/
-python3 01_compare_health_vs_original.py
-python3 02_compare_by_condition.py
-python3 03_deepseek_health_diagnosis.py
-python3 04_ranking_robustness.py
-```
+## Reproducibility
 
-**3. All-five-prompt-types** (`analysis_context/`, reads all of `results/`):
-scripts `01`-`04` are independent of each other and of the main pipeline.
-**Script `05` is the one exception with a real cross-pipeline dependency** —
-it reads `tables/variance_ranking.csv`, so `analysis/08_variance_ranking.py`
-must have already run.
+Create an isolated environment and install the pinned dependencies:
 
 ```bash
-cd analysis_context/
-python3 01_compare_context_vs_original.py health neutral positive negative_minor
-python3 02_cross_context_agreement.py
-python3 03_abstention_stability_across_conditions.py
-python3 04_deepseek_cross_context_diagnosis.py
-python3 05_variance_ranking_all_prompt_types.py   # requires analysis/08 to have run first
+python3 -m venv .venv
+source .venv/bin/activate       # macOS/Linux
+python -m pip install -r requirements.txt
 ```
 
-## Where outputs live
+Prompt generation does not require model inference:
 
-- `tables/` (56 CSVs) + `figures/` (6 PNGs) — main-study outputs, see
-  `MANIFEST.md` for the exact script -> output mapping.
-- `analysis_health/output/` — health-vs-original tables +
-  `analysis_health/output/CORRECTED_SUMMARY.md`.
-- `analysis_context/output/` — all-five-prompt-types tables and figures, at
-  both pilot (180-persona) and full (5,400-persona) scope; see
-  `CONTEXT_EXPERIMENT.md` for which scope is primary (full-scale) and which is
-  a labeled historical appendix (pilot-scale).
+```bash
+cd data
+python build_dataset.py
+python render_prompts.py
+python render_prompts_health.py
+python render_prompts_context.py neutral
+python render_prompts_context.py positive
+python render_prompts_context.py negative_minor
+```
 
-## Audit trail
+The expensive inference step does not need to be repeated to reproduce current
+analyses: all 25 raw result files are already under `results/`. Inference programs
+remain in `inference/` for provenance and extension. Analysis programs write to
+`tables/`, `figures/`, or their pipeline-local `output/` directories.
 
-Five independent audit rounds have been run against this project over its
-lifetime — adversarial validation of the health study, full-project
-traceability/reproduction, adversarial validation of the context study, an
-independent check of the grammar-bug fix and re-run, and a pre-Stage-1-5
-repository-readiness preflight. Findings, fixes applied, and each round's
-final verdict are in **`AUDIT_HISTORY.md`**; the raw scaffolding for all five
-rounds has been removed from the working tree but is fully recoverable via
-`git log --all -- <path>` (see that document for the exact commits).
+Before relying on a regenerated result, preserve the distinction between Condition A
+and B, between full-scale and pilot outputs, and between strict-valid and
+salvageable/malformed responses. The repository records several earlier errors where
+those distinctions mattered in [AUDIT_HISTORY.md](AUDIT_HISTORY.md).
 
-## Known limitations
+## Important limitations
 
-Stated plainly, not left implicit:
+- The study covers five successfully run models; Falcon's exclusion reduces model
+  and regional coverage.
+- DeepSeek's near-total strict-format non-compliance makes its rating-based inference
+  extremely limited.
+- Generated ratings do not establish a model's internal beliefs or real-world group
+  attitudes.
+- Each country × gender cell uses one name, so country or gender effects may partly
+  reflect name-specific associations.
+- Robustness to minimal prompt paraphrases was planned but not run.
+- The neutral-gender manipulation check is not independently recoverable in the
+  current repository state.
+- The conversational framings differ along multiple dimensions, limiting simple
+  causal interpretation of any context contrast.
+- Historical pilot, manipulation-check, prompt-reinforcement, pre-grammar-fix, and
+  prior-v9 raw artifacts are incomplete, as documented in `AUDIT_HISTORY.md`.
 
-- **The paraphrase-robustness check was never run.** `analysis_plan.md`
-  Section 8 predefines it (two minimal paraphrases of the prompt opener, on a
-  matched persona subset, reporting rank correlation of effects across
-  paraphrases) specifically because a single frozen prompt wording cannot by
-  itself demonstrate that findings reflect underlying model behavior rather
-  than this exact phrasing. This check was never executed. Every finding in
-  this repository should be read with that caveat: robustness to prompt
-  wording specifically has not been tested, only robustness to conversational
-  framing (the five prompt types) and to scale (pilot vs. full).
-- **Falcon-H1 is excluded** (inference-environment failure, not a finding
-  about the model) — this removes the study's only UAE/MENA-origin model, a
-  real limitation on any regional-comparison claim.
-- **DeepSeek's inferential value is minimal** on the original prompt (0.08%
-  strict compliance) and it is excluded from every pooled/ordinal/ranking/H1
-  fit throughout; its own diagnostic reports are exploratory, not inferential.
-- **Name-validity limitation** (state verbatim in any derived paper, per
-  `analysis_plan.md` Section 13): each country-by-gender condition is
-  represented by a single name, so country/gender effects may partly reflect
-  name-specific associations rather than the demographic category alone.
-- **Historical raw data gaps**: the prior v9 experiment, original pilot
-  outputs, manipulation-check outputs, prompt-reinforcement test outputs, and
-  the pre-grammar-fix raw `neutral`/`positive` result files are unrecoverable
-  — code/mentions exist but no raw outputs remain. Documented as gaps, not
-  silently assumed reproducible. See `AUDIT_HISTORY.md` Rounds 2 and 4.
-- **The non-binary-condition manipulation check** (does the they/them +
-  name-only signal reliably register as non-binary to the model, per
-  `analysis_plan.md` Section 12) was planned but its execution/outcome is not
-  independently confirmed in this repository's current state.
-- **`analysis_health/04_ranking_robustness.py`'s country-label extraction**
-  uses an unsafe character-set `.strip("[]T.")` (dormant for its pilot-only
-  4-country level set, but would silently mangle a country name starting/
-  ending in `[`, `]`, `T`, or `.` — e.g. "Turkey" — if this module's scope
-  ever expanded to the full 20-country design). The equivalent bug in
-  `analysis_context/_common.py` was found and fixed during the full-scale
-  extension (see `CONTEXT_EXPERIMENT.md`); this one was left as out-of-scope,
-  per `AUDIT_HISTORY.md` Round 5.
+## Project status
+
+This is an active research/internship project. The full-scale experiment and current
+analysis layers are present, but the report/manuscript is still being developed and
+should not be described as a finished publication.

@@ -315,8 +315,11 @@ byte-identical `health_staging/` duplicates flagged here (Step 2); fixed
 `data/build_dataset.py`'s obsolete absolute-path bug (Step 2); and updated
 13 scripts' path references accordingly (Step 2). `README.md`/
 `analysis_plan.md` staleness is addressed in this same session's Step 4. The
-dormant `analysis_health/04_ranking_robustness.py` strip-bug remains
-unfixed, per this round's own explicit "not blocking" judgment.
+dormant `analysis_health/04_ranking_robustness.py` strip bug remained
+unfixed at the end of this round, per its explicit "not blocking" judgment.
+During final pre-push validation on 2026-08-07, the active source was corrected
+to remove only the exact trailing bracket. Existing pilot outputs were not
+regenerated because their factor levels could not trigger the defect.
 
 **Final verdict: NO GO** (as issued — "Only after these concrete issues are
 closed should this state be marked GO and used as the foundation for new

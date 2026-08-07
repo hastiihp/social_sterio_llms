@@ -104,7 +104,10 @@ def extract_coefs(res, term_prefix):
     terms = [t for t in res.params.index if t.startswith(term_prefix)]
     out = pd.DataFrame({
         "term": terms,
-        "level": [t[len(term_prefix):].strip("[]T.") for t in terms],
+        # term_prefix already consumes the exact "[T." prefix, leaving
+        # "LevelName]". Remove only that final bracket: character-set
+        # stripping would corrupt real levels such as "Turkey".
+        "level": [t[len(term_prefix):].removesuffix("]") for t in terms],
         "coef": [res.params[t] for t in terms],
         "se_cluster": [res.bse[t] for t in terms],
         "p_cluster": [res.pvalues[t] for t in terms],

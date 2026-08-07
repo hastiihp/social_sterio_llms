@@ -1,7 +1,7 @@
 """Step 5: H1 variance-decomposition (partial R^2) comparison across all five
 prompt types -- original, health, neutral, positive, negative_minor.
 
-Extends analysis/08_variance_ranking.py's primary, preregistered H1 test
+Extends analysis/08_variance_ranking.py's primary, pre-specified H1 test
 (Condition A only; partial R^2 per factor via nested-model SSE reduction;
 persona-clustered joint Wald test for significance, alongside the point
 estimate) from "original only" to all five prompt types, using the identical

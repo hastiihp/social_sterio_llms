@@ -1,0 +1,33 @@
+context,model,factor,spearman_r,permutation_p,n_permutations,method,top_orig,top_ctx,bottom_orig,bottom_ctx,p_bh,significant_bh_0.05
+health,llama,profession,0.7868743047830923,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,lawyer,janitor,janitor,9.090863636590908e-06,True
+health,llama,country,0.5984962406015037,0.0063149684251578,200000,monte_carlo_200000,Italy,France,Egypt,Turkey,0.0063149684251578,True
+health,gemma,profession,0.9488320355951056,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,police officer,9.090863636590908e-06,True
+health,gemma,country,0.6781954887218045,0.0013499932500337,200000,monte_carlo_200000,Canada,South Africa,USA,USA,0.0016874915625421248,True
+health,qwen,profession,0.91412680756396,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,social worker,truck driver,construction worker,9.090863636590908e-06,True
+health,qwen,country,0.7112781954887217,0.0006649966750166,200000,monte_carlo_200000,Canada,South Africa,Morocco,China,0.0008866622333554667,True
+health,ministral,profession,0.9412680756395996,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,janitor,9.090863636590908e-06,True
+health,ministral,country,0.8105263157894737,2.9999850000749997e-05,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan,4.9999750001249995e-05,True
+neutral,llama,profession,0.5853170189098998,0.0008999955000224,200000,monte_carlo_200000,doctor,doctor,janitor,janitor,0.0011612845161579355,True
+neutral,llama,country,0.6541353383458646,0.0022949885250573,200000,monte_carlo_200000,Italy,Argentina,Egypt,Turkey,0.0025555427778415555,True
+neutral,gemma,profession,0.9497219132369298,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,police officer,9.090863636590908e-06,True
+neutral,gemma,country,0.6601503759398496,0.0019399903000484,200000,monte_carlo_200000,Canada,Kenya,USA,Poland,0.0023058708235870586,True
+neutral,qwen,profession,0.9523915461624026,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,doctor,truck driver,truck driver,9.090863636590908e-06,True
+neutral,qwen,country,0.7082706766917292,0.0006449967750161,200000,monte_carlo_200000,Canada,Nigeria,Morocco,China,0.0008866622333554667,True
+neutral,ministral,profession,0.9746384872080088,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,truck driver,9.090863636590908e-06,True
+neutral,ministral,country,0.7684210526315788,0.0001399993000035,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan,0.00021538353846692305,True
+positive,llama,profession,0.8438264738598443,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,doctor,janitor,janitor,9.090863636590908e-06,True
+positive,llama,country,0.6015037593984961,0.0060799696001519,200000,monte_carlo_200000,Italy,Argentina,Egypt,Pakistan,0.006235866256566051,True
+positive,gemma,profession,0.9408231368186872,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,"police officer / truck driver, tied for lowest",9.090863636590908e-06,True
+positive,gemma,country,0.5984962406015037,0.0060349698251508,200000,monte_carlo_200000,Canada,South Africa,USA,USA,0.006235866256566051,True
+positive,qwen,profession,0.9292547274749722,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,social worker,truck driver,construction worker,9.090863636590908e-06,True
+positive,qwen,country,0.7518796992481201,0.0002549987250063,200000,monte_carlo_200000,Canada,Nigeria,Morocco,China,0.00036428389286614286,True
+positive,ministral,profession,0.96440489432703,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,truck driver,9.090863636590908e-06,True
+positive,ministral,country,0.6571428571428571,0.001959990200049,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan,0.0023058708235870586,True
+negative_minor,llama,profession,0.6783092324805339,4.499977500112499e-05,200000,monte_carlo_200000,doctor,doctor,janitor,janitor,7.199964000179998e-05,True
+negative_minor,llama,country,0.6,0.0060499697501512,200000,monte_carlo_200000,Italy,Argentina,Egypt,Morocco,0.006235866256566051,True
+negative_minor,gemma,profession,0.9479421579532814,4.9999750001249995e-06,200000,monte_carlo_200000,flight attendant,social worker,police officer,truck driver,9.090863636590908e-06,True
+negative_minor,gemma,country,0.7503759398496239,0.0001799991000044,200000,monte_carlo_200000,Canada,Kenya,USA,Poland,0.00026666533333985184,True
+negative_minor,qwen,profession,0.9528364849833146,4.9999750001249995e-06,200000,monte_carlo_200000,doctor,social worker,truck driver,janitor,9.090863636590908e-06,True
+negative_minor,qwen,country,0.6511278195488721,0.0022999885000574,200000,monte_carlo_200000,Canada,Nigeria,Morocco,China,0.0025555427778415555,True
+negative_minor,ministral,profession,0.9488320355951056,4.9999750001249995e-06,200000,monte_carlo_200000,social worker,social worker,truck driver,janitor,9.090863636590908e-06,True
+negative_minor,ministral,country,0.8120300751879698,1.4999925000375e-05,200000,monte_carlo_200000,Canada,Canada,Egypt,Pakistan,2.60868260876087e-05,True

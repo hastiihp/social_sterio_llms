@@ -191,11 +191,11 @@ def extract_coefs(res, term_prefix):
     no pilot-scope country (Germany/Brazil/Nigeria/South Korea) or profession
     (lawyer/registered nurse/truck driver/farmer/computer programmer) starts or
     ends with '[', ']', 'T', or '.', so it never fired in any pilot-scope output,
-    nor in the original health-study module this was generalized from
-    (analysis_health/04_ranking_robustness.py has the identical bug, equally
-    dormant there for the same reason -- not fixed there, out of scope for this
-    task, and that module never touches the full 20-country design where "Turkey"
-    appears). Only the full-scale (20-country) companion analyses added in this
+    nor in the original health-study module this was generalized from. That
+    module had the identical, equally dormant bug when these context analyses
+    were written; it was later corrected during final pre-push validation without
+    rewriting its unaffected historical outputs. Only the full-scale (20-country)
+    companion analyses added in this
     task could ever have hit it. Fixed by removing exactly one trailing "]"
     instead of stripping a character set."""
     terms = [t for t in res.params.index if t.startswith(term_prefix)]

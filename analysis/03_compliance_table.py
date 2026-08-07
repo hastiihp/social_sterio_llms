@@ -17,6 +17,22 @@ breakdown of that same strict-valid population, not an additional bucket --
 so columns do not sum to 100% by simple addition; see the printed note.
 Per Section 3, models exceeding 5% non-technical invalid rate are flagged
 for manual review, not excluded (Section 10).
+
+WARNING -- table1_compliance.csv's pct_strict_valid is POOLED across
+Condition A+B, not split by condition. For a model whose compliance rate
+differs materially between conditions (e.g. DeepSeek: 0.083% pooled vs.
+0.167% Condition-A-only -- exactly 2x, since all of its valid rows happen
+to fall under Condition A), using this pooled number where a
+condition-specific rate is actually needed will silently give the wrong
+value. Condition-specific compliance for DeepSeek is in
+tables/deepseek_compliance_by_condition.csv (analysis/09_deepseek_report.py);
+the per-model x per-condition breakdown for every model is also printed
+(not written to CSV) at the end of this script's own output -- see "---
+supplementary: per-model x per-condition breakdown ---" below. This exact
+pooled-vs-condition-specific mismatch was caught during
+analysis_taxonomy/01_build_model_taxonomy.py's construction (Stage 1 model
+taxonomy) and would have silently understated DeepSeek's Condition-A
+compliance by half if not checked against source.
 """
 import pandas as pd
 
@@ -58,6 +74,10 @@ def main():
 
     table = pd.DataFrame(rows).set_index("model").loc[MODEL_ORDER].reset_index()
     out_path = f"{TABLES_DIR}/table1_compliance.csv"
+    # NOTE: pct_strict_valid here is pooled Condition A+B -- see the WARNING
+    # in this script's module docstring before using it as a condition-A-only
+    # or condition-B-only rate. For DeepSeek specifically, pooled != Condition-A
+    # (0.083% vs 0.167%); use tables/deepseek_compliance_by_condition.csv instead.
     table.to_csv(out_path, index=False)
 
     template = display_template(df["prompt_template_version"].iloc[0])

@@ -3,10 +3,10 @@ Revised per external audit (Fixes 2 & 3).
 
 Fix 3 (primary scope correction): analysis_plan.md Section 4/H1 defines this
 under FORCED RATING ONLY (Condition A). The original version of this script
-pooled Condition A and B together, which is not what H1 is preregistered to
+pooled Condition A and B together, which is not what H1 was pre-specified to
 test -- for qwen/ministral in particular, Condition B mixes in a small,
 self-selected "answered" subset (see step 4/6) that isn't a random sample of
-personas. The Condition-A-only fit below is now the PRIMARY, preregistered
+personas. The Condition-A-only fit below is now the PRIMARY, pre-specified
 H1 test. The original pooled (A+B) version is kept and reported too, but
 relabeled EXPLORATORY -- not the actual H1 test -- so nothing computed
 previously is silently discarded, only correctly re-labeled.
@@ -188,13 +188,13 @@ def main():
     df = cast_formula_dtypes(load_master())
 
     print("#" * 78)
-    print("PRIMARY, PREREGISTERED H1 TEST -- Condition A (forced) only, per Fix 3 / Section 4")
+    print("PRIMARY, PRE-SPECIFIED H1 TEST -- Condition A (forced) only, per Fix 3 / Section 4")
     print("#" * 78)
     primary = run_scope(df, "A_forced", FULL_MODEL_FACTORS_CONDA, "primary_conditionA")
 
     print()
     print("#" * 78)
-    print("EXPLORATORY -- original A+B pooled version (NOT the preregistered H1 test; kept for")
+    print("EXPLORATORY -- original A+B pooled version (NOT the pre-specified H1 test; kept for")
     print("comparison only, per Fix 3)")
     print("#" * 78)
     exploratory = run_scope(df, None, FULL_MODEL_FACTORS_POOLED, "exploratory_pooled_AB")
@@ -216,7 +216,7 @@ def main():
 
     print()
     print("=" * 78)
-    print("H1 CHECK -- PRIMARY (Condition A only, the actual preregistered test) vs EXPLORATORY (A+B pooled,")
+    print("H1 CHECK -- PRIMARY (Condition A only, the pre-specified test) vs EXPLORATORY (A+B pooled,")
     print("the original version) -- does the conclusion change?")
     print("=" * 78)
     primary_verdicts = h1_check(combined, "primary_conditionA")

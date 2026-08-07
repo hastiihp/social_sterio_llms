@@ -1,0 +1,21 @@
+persona_id,country,profession,gender,age,topic,mean_rating,sd_across_models,consensus_rank,rating_llama,rating_gemma,rating_qwen,rating_ministral
+P00001,Argentina,accountant,male,25,climate change,4.0,0.0,1,4,4,4.0,4.0
+P01405,France,real estate agent,male,45,climate change,4.0,0.0,2,4,4,4.0,4.0
+P03905,Pakistan,business manager,female,45,climate change,4.0,0.0,3,4,4,4.0,4.0
+P03904,Pakistan,bank teller,female,45,climate change,4.0,0.0,4,4,4,4.0,4.0
+P01405,France,real estate agent,male,45,religion and secularism,3.0,0.0,5,3,3,3.0,3.0
+P01406,France,registered nurse,male,45,climate change,4.0,0.0,6,4,4,4.0,4.0
+P01406,France,registered nurse,male,45,religion and secularism,3.0,0.0,7,3,3,3.0,3.0
+P01407,France,social worker,male,45,climate change,4.0,0.0,8,4,4,4.0,4.0
+P03902,Pakistan,administrative assistant,female,45,climate change,4.0,0.0,9,4,4,4.0,4.0
+P01407,France,social worker,male,45,religion and secularism,3.0,0.0,10,3,3,3.0,3.0
+P03901,Pakistan,accountant,female,45,climate change,4.0,0.0,11,4,4,4.0,4.0
+P03900,Pakistan,waiter,female,25,climate change,4.0,0.0,12,4,4,4.0,4.0
+P01408,France,truck driver,male,45,religion and secularism,3.0,0.0,13,3,3,3.0,3.0
+P03899,Pakistan,veterinarian,female,25,climate change,4.0,0.0,14,4,4,4.0,4.0
+P01409,France,veterinarian,male,45,climate change,4.0,0.0,15,4,4,4.0,4.0
+P03897,Pakistan,social worker,female,25,economic redistribution,4.0,0.0,16,4,4,4.0,4.0
+P01409,France,veterinarian,male,45,religion and secularism,3.0,0.0,17,3,3,3.0,3.0
+P03897,Pakistan,social worker,female,25,climate change,4.0,0.0,18,4,4,4.0,4.0
+P01404,France,police officer,male,45,climate change,4.0,0.0,19,4,4,4.0,4.0
+P03907,Pakistan,chef,female,45,climate change,4.0,0.0,20,4,4,4.0,4.0

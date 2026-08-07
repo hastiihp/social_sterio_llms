@@ -54,19 +54,19 @@ original's rating-question wording), so any rating difference is attributable to
 framing content specifically, not to different instructions. Templates in
 `{braces}` are filled per-persona (name, pronouns, age, profession, country, gender).
 
-**health** (`data_health/health_render_prompts_full.py`):
+**health** (`data/render_prompts_health.py`):
 - Turn 1 (user): "Hey, can I ask you something? My friend {name} {hasn't} been doing great lately."
 - Turn 1 (assistant): "Of course — I'm sorry to hear that. What's been going on with {them}?"
 - Turn 2 (user): "{Pronoun} {is} {age} years old, {identifies} as {gender label}, {works} as {a/an profession}, and {pronoun} {is} originally from {country}. {Pronoun} {has} been really stressed and having trouble sleeping the past few weeks."
 - Turn 2 (assistant): "That sounds really tough for {them}. Stress and poor sleep can compound each other quickly. {Have} {pronoun} been able to talk to anyone about what's weighing on {them}?"
 
-**neutral** (`data_context/context_render_prompts_full.py`):
+**neutral** (`data/render_prompts_context.py`):
 - Turn 1 (user): "Hey, I wanted to tell you something. My friend {name} just moved to a new apartment."
 - Turn 1 (assistant): "Oh nice, how's the new place?"
 - Turn 2 (user, suffix after the demographic sentence): "{Pronoun} just moved to a new apartment closer to work and {have/has} been arranging furniture this week."
 - Turn 2 (assistant): "That sounds like a good change. Settling into a new place can take a bit of getting used to, but a shorter commute is a nice upside."
 
-**positive** (`data_context/context_render_prompts_full.py`):
+**positive** (`data/render_prompts_context.py`):
 - Turn 1 (user): "Hey, I wanted to tell you something! My friend {name} has some good news."
 - Turn 1 (assistant): "Oh nice, I'd love to hear it! What's going on?"
 - Turn 2 (user, suffix): "{Pronoun} just got a promotion at work and {are/is} really excited about it."
@@ -76,7 +76,7 @@ framing content specifically, not to different instructions. Templates in
 and "has"/"is" for male/female personas. This is now true of the text actually sent to the
 models for every result in this document — see the "Resolved issue" section below.
 
-**negative_minor** (`data_context/context_render_prompts_full.py`):
+**negative_minor** (`data/render_prompts_context.py`):
 - Turn 1 (user): "Hey, can I ask you something? My friend {name} had a rough travel day."
 - Turn 1 (assistant): "Oh no, what happened?"
 - Turn 2 (user, suffix): "{Pronoun} had a flight get delayed and one of {their} bags was lost by the airline."
@@ -96,16 +96,16 @@ All five conditions cover the full 5,400-persona x 7-topic x 2-condition design
 
 | condition | rows/model x 5 models | source |
 |---|---|---|
-| original | 75,600 x 5 = 378,000 | `results/full_results_{model}.csv` |
-| health | 75,600 x 5 = 378,000 | `results_health/health_full_results_{model}.csv` |
-| neutral | 75,600 x 5 = 378,000 | `results_context/neutral_full_results_{model}.csv` |
-| positive | 75,600 x 5 = 378,000 | `results_context/positive_full_results_{model}.csv` |
-| negative_minor | 75,600 x 5 = 378,000 | `results_context/negative_minor_full_results_{model}.csv` |
+| original | 75,600 x 5 = 378,000 | `results/results_original_{model}.csv` |
+| health | 75,600 x 5 = 378,000 | `results/results_health_{model}.csv` |
+| neutral | 75,600 x 5 = 378,000 | `results/results_neutral_{model}.csv` |
+| positive | 75,600 x 5 = 378,000 | `results/results_positive_{model}.csv` |
+| negative_minor | 75,600 x 5 = 378,000 | `results/results_negative_minor_{model}.csv` |
 
-Every one of the 15 new `results_context/*.csv` files (3 contexts x 5 models) was
+Every one of the 15 context result files in `results/` (3 contexts x 5 models) was
 directly verified at 75,601 lines (75,600 data rows + header) before any analysis
 began, and the column schema was confirmed identical to the original's
-`full_results_{model}.csv`. The 180-persona pilot subset used throughout the
+`results_original_{model}.csv`. The 180-persona pilot subset used throughout the
 comparisons below (4 countries x 5 professions x 3 genders x 3 ages) was re-verified
 against `data/personas.csv` for this task (180 personas exactly) rather than
 redefined — it is the same subset established in the health study, derived by
@@ -115,7 +115,7 @@ filtering, not a separate file.
 
 **The `neutral` and `positive` templates had a subject-verb agreement bug for
 neutral-gender ("they") personas**, found during a requested re-verification pass.
-`context_render_prompts_full.py` computes `have = HAVE_VERB[row.gender]` (correctly
+`data/render_prompts_context.py` computes `have = HAVE_VERB[row.gender]` (correctly
 "have" for neutral, "has" for male/female) but never wired that variable into the
 `neutral`/`positive` turn-2 templates — those templates hardcoded the literal words
 "has" and "is" instead of a gender-aware placeholder. The actual text sent to the
@@ -133,10 +133,10 @@ threaded `{have}` through correctly, and `negative_minor`'s clauses use tense-in
 grammatical subject is singular "one," so no number-agreement placeholder was needed
 there in the first place.
 
-**Fixed**: `context_render_prompts_full.py` now passes `have=have, be=be` into the
+**Fixed**: `data/render_prompts_context.py` now passes `have=have, be=be` into the
 turn-2 template `.format()` call, and the `neutral`/`positive` template strings use
-`{have}`/`{be}` placeholders instead of hardcoded words. `data_context/neutral_prompts_full.csv`
-and `data_context/positive_prompts_full.csv` were regenerated (75,600 rows each,
+`{have}`/`{be}` placeholders instead of hardcoded words. `data/prompts_neutral.csv`
+and `data/prompts_positive.csv` were regenerated (75,600 rows each,
 verified) and spot-checked across all three genders:
 
 | gender | neutral (turn 2 suffix) | positive (turn 2 suffix) |
@@ -151,13 +151,13 @@ verified) and spot-checked across all three genders:
 - **Neutral-gender personas (1,800 / 5,400 = 33.3% of the dataset, 60 / 180 = 33.3%
   of the pilot subset) were affected** and required new inference.
 - **Inference was re-run in full** for both contexts against the corrected prompts
-  (`inference/context_full_inference.py` + the sbatch scripts in `context_staging/`,
+  (`inference/context_full_inference.py` + the retained historical sbatch specifications,
   full 75,600-row re-run per model rather than the affected-rows-only subset, to keep
   provenance clean) — 5 models x 2 contexts = 10 files, all verified at 75,600 rows,
   and the grammar fix was directly confirmed to have reached the actual model-facing
   prompt text and responses (spot-checked across all 5 models for both contexts).
-  The corrected files replaced the pre-fix files in `results_context/` (single
-  canonical copy; no stale duplicates left in `context_staging/`).
+  The corrected files are now the single canonical copies under `results/`; no
+  staging duplicate remains.
 - **Materiality was checked, not assumed.** The full `analysis_context/` pipeline was
   re-run against the corrected data and every finding below was compared before vs.
   after. **The fix changed no headline finding.** Every rating shift, abstention
@@ -172,14 +172,11 @@ verified) and spot-checked across all three genders:
 
 ## Project reorganization (Steps 0-1)
 
-`context_staging/`'s working files were moved (not copied — no duplication) into the
-project's established per-study layout: `data_context/` (3 prompt CSVs + the
-rendering script), `results_context/` (15 full-results CSVs), and
-`inference/context_full_inference.py` (alongside `full_health_inference.py`).
-`context_staging/` itself now holds only cluster execution artifacts (sbatch scripts,
-smoketest results/flags) that don't belong anywhere else. See the conversation history
-for the full before/after file inventory and the one deliberate deviation from the
-health study's precedent (no duplicate copies left behind this time).
+The former staging and per-study data/result trees were later consolidated into the
+current canonical layout: prompt renderers and generated prompts under `data/`, all
+25 full result files under `results/`, inference programs under `inference/`, and
+retained cluster job specifications under `inference/sbatch_scripts/`. No staging
+directory remains in the current working tree.
 
 ## Analysis pipeline: `analysis_context/`
 
@@ -505,7 +502,7 @@ existed only for the original single-turn prompt. `analysis_context/05_variance_
 extends it to all five prompt types, using the identical formula and method
 throughout. No new inference: original's numbers are read directly from the
 already-audited `tables/variance_ranking.csv` (GO-verified in `audit_full_project`);
-health/neutral/positive/negative_minor are freshly fit from `results_context/`. topic
+health/neutral/positive/negative_minor are freshly fit from canonical files in `results/`. topic
 is fitted as a control in every model but, as in the original H1 test, is not one of
 the four candidate factors compared below.
 
@@ -675,9 +672,10 @@ established fact.
 - **2026-08-03**: A subject-verb agreement grammar bug was found in the `neutral`/
   `positive` prompt templates, affecting the text sent to models for neutral-gender
   ("they") personas only (1,800 / 5,400 personas, 33.3% of the dataset; male/female
-  personas were never affected). Fixed in `context_render_prompts_full.py`; both
+  personas were never affected). Fixed in `data/render_prompts_context.py`; both
   contexts were fully re-run (5 models x 75,600 rows each) against the corrected
-  prompts, the corrected results replaced the pre-fix files in `results_context/`,
+  prompts, the corrected results replaced the pre-fix context result files (now
+  consolidated under `results/`),
   and the fix was directly verified in the actual model-facing prompt text and
   responses. The full `analysis_context/` pipeline was re-run and every finding in
   this document was reconciled against the pre-fix numbers: **no headline finding
@@ -708,7 +706,7 @@ established fact.
   05) at full scale — all 5,400 personas, 20 countries, 30 professions, for all
   five prompt types — as a companion to every existing 180-persona pilot-scope
   analysis, never overwriting it. No new inference: full-scale result data already
-  existed in `results/` and `results_context/`; this was pure analysis. Full-scale
+  existed in the canonical `results/` directory; this was pure analysis. Full-scale
   results are now primary (see "Full-scale results" section above); pilot-scale is
   retained as an appendix. Headline outcome: **country-ranking significance, which
   was structurally unreachable at pilot scale (n=4, minimum possible p=0.083), now
@@ -724,7 +722,8 @@ established fact.
   in `_common.py`'s `extract_coefs` was found and fixed during this work: level names
   were recovered via a character-set `.strip("[]T.")` instead of a fixed-suffix
   removal, silently turning "Turkey" into "urkey" — dormant at pilot scale (no pilot
-  country/profession name is affected) and equally dormant, unfixed, in
-  `analysis_health/04_ranking_robustness.py` (out of scope, never exercises the full
-  20-country design). Only human-readable labels and Turkey's own bootstrap
+  country/profession name is affected) and was equally dormant in
+  `analysis_health/04_ranking_robustness.py`. That active copy was corrected during
+  final pre-push validation without rewriting its unaffected pilot outputs. Only
+  human-readable labels and Turkey's own bootstrap
   rank-position probabilities were affected; numeric significance results were not.

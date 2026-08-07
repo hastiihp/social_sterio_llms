@@ -78,7 +78,7 @@ to those directories. `{model}` ranges over the models each script actually incl
 
 ## `08_variance_ranking.py`
 - `variance_ranking.csv` (both scopes in one file, distinguished by a `scope` column:
-  `primary_conditionA` is the actual preregistered H1 test; `exploratory_pooled_AB` is
+  `primary_conditionA` is the pre-specified H1 test; `exploratory_pooled_AB` is
   the original A+B-pooled version, kept for comparison)
 
 ## `09_deepseek_report.py`

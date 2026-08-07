@@ -1,0 +1,21 @@
+country,region,country_set,rank_llama,rank_label_llama,bootstrap_top_pct_llama,bootstrap_bottom_pct_llama,rank_gemma,rank_label_gemma,bootstrap_top_pct_gemma,bootstrap_bottom_pct_gemma,rank_qwen,rank_label_qwen,bootstrap_top_pct_qwen,bootstrap_bottom_pct_qwen,rank_ministral,rank_label_ministral,bootstrap_top_pct_ministral,bootstrap_bottom_pct_ministral
+Argentina,Latin America,added_10,10,rank 10,0.0,0.0,5,rank 5,0.0,0.0,8,rank 8,0.0,0.0,2,rank 2,0.6666666666666601,0.0
+Brazil,Latin America,original_10,3,rank 3,0.0,0.0,3,rank 3,1.33333333333333,0.0,11,rank 11,0.0,0.0,3,rank 3,0.0,0.0
+Canada,North America,added_10,2,rank 2,0.33333333333333004,0.0,1,rank 1,70.66666666666667,0.0,1,rank 1,95.66666666666667,0.0,1,rank 1,99.33333333333331,0.0
+China,East Asia,original_10,19,rank 19,0.0,5.66666666666666,11,rank 11,0.0,0.0,16,rank 16,0.0,0.0,13,rank 13,0.0,0.0
+Egypt,MENA,original_10,20,rank 20,0.0,93.66666666666667,17,rank 17,0.0,0.6666666666666601,19,rank 19,0.0,19.0,16,rank 16,0.0,69.0
+France,Europe,original_10,5,rank 5,0.0,0.0,4,rank 4,0.0,0.0,2,rank 2,4.0,0.0,5,rank 5,0.0,0.0
+Germany,Europe,original_10,6,rank 6,0.0,0.0,9,rank 9,0.0,0.0,6,rank 6,0.0,0.0,6,tied for rank 6,0.0,0.0
+India,South Asia,original_10,4,rank 4,0.0,0.0,6,rank 6,0.0,0.0,4,rank 4,0.0,0.0,10,tied for rank 10,0.0,0.0
+Italy,Europe,added_10,1,rank 1,99.66666666666669,0.0,7,rank 7,0.0,0.0,10,rank 10,0.0,0.0,8,rank 8,0.0,0.0
+Japan,East Asia,original_10,8,rank 8,0.0,0.0,12,rank 12,0.0,0.0,5,rank 5,0.0,0.0,6,tied for rank 6,0.0,0.0
+Kenya,Africa,original_10,9,rank 9,0.0,0.0,10,rank 10,0.0,0.0,15,rank 15,0.0,0.0,11,tied for rank 11,0.0,0.0
+Mexico,Latin America,original_10,17,rank 17,0.0,0.0,2,rank 2,28.000000000000004,0.0,9,rank 9,0.0,0.0,4,rank 4,0.0,0.0
+Morocco,MENA,added_10,11,rank 11,0.0,0.0,13,rank 13,0.0,0.0,20,rank 20,0.0,80.66666666666666,14,tied for rank 14,0.0,0.0
+Nigeria,Africa,added_10,13,rank 13,0.0,0.0,16,rank 16,0.0,0.33333333333333004,12,rank 12,0.0,0.0,14,tied for rank 14,0.0,0.0
+Pakistan,South Asia,added_10,16,rank 16,0.0,0.0,18,tied for rank 18,0.0,1.66666666666666,18,rank 18,0.0,0.33333333333333004,15,rank 15,0.0,31.0
+Poland,Europe,added_10,15,rank 15,0.0,0.0,18,tied for rank 18,0.0,2.33333333333333,14,rank 14,0.0,0.0,11,tied for rank 11,0.0,0.0
+South Africa,Africa,added_10,14,rank 14,0.0,0.0,8,rank 8,0.0,0.0,3,rank 3,0.33333333333333004,0.0,9,rank 9,0.0,0.0
+South Korea,East Asia,added_10,12,rank 12,0.0,0.0,14,rank 14,0.0,0.0,13,rank 13,0.0,0.0,10,tied for rank 10,0.0,0.0
+Turkey,MENA,added_10,18,rank 18,0.0,0.6666666666666601,15,rank 15,0.0,0.0,17,rank 17,0.0,0.0,12,rank 12,0.0,0.0
+USA,North America,original_10,7,rank 7,0.0,0.0,19,rank 19,0.0,95.0,7,rank 7,0.0,0.0,7,rank 7,0.0,0.0

@@ -23,7 +23,7 @@ These are treated as two distinct outcomes, not one:
 - **H2 (abstention behavior):** Under the optional condition, abstention rates will differ systematically across models, with abstention tendency varying by model family.
 - **H3 (forced ≠ optional):** For persona-topic-model combinations where a model abstains under the optional condition, the same model's forced-condition rating will not be randomly distributed around the midpoint — i.e., abstention can coexist with a latent directional attribution rather than reflecting genuine indifference.
 
-**Exploratory (not preregistered as hypotheses):**
+**Exploratory (not pre-specified as hypotheses):**
 - Comparison of friend-frame effects with prior first-person v9 results (prompt, models, and country set all differ; no directional prediction is justified).
 - Effects within the non-binary condition specifically, given the smaller evidence base for name validity in that condition (see `data/names.csv` validation tiers).
 
